@@ -1,11 +1,13 @@
 .flair {
-  background-image: url('<%= options.spritePath %>');
+  background: url('{{#imageurl spritepath}}{{/imageurl}}') no-repeat;
+  border: none !important;
+  line-height: 16px;
 }
-
-<% layout.images.forEach(function (image) { %>.<%= image.className %> {
-  background-position: <%= getCSSValue(-image.x) %> <%= getCSSValue(-image.y) %>;
+{{#each layout.images}}
+.{{ className }} {
+  background-position: -{{#pixel x}}{{/pixel}} -{{#pixel y}}{{/pixel}};
   width: auto;
-  padding-left: <%= getCSSValue(image.width) %>;
-  height: <%= getCSSValue(image.height) %>;
+  padding-left: {{#pixel width plus="2"}}{{/pixel}};
+  height: {{#pixel height}}{{/pixel}};
 }
-<% }); %>
+{{/each}}
