@@ -1,0 +1,40 @@
+/*==================================================
+4.1 Sidebar Search
+================================================== */
+
+#search {
+    padding: 0 10px;
+}
+
+#search input{
+    width: 300px;
+}
+
+#search input[type=text] {
+    height: 18px;
+    font-size: 0px;
+    padding-left: 20px;
+    width: 276px;
+}
+
+#search input[type=text]:focus {
+    font-size: 16px;
+    outline: none;
+}
+
+#searchexpando {
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+#searchexpando label {
+    display: block;
+}
+
+#searchexpando label input {
+    display: inline;
+    width: 17px;
+    padding: 0;
+    margin: 0;
+}

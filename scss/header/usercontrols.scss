@@ -1,0 +1,22 @@
+/*==================================================
+4.3 User Controls
+================================================== */
+#header-bottom-right {
+    background-color: transparent;
+    right: 40px;
+    top: 102px;
+}
+
+.res #header-bottom-right {
+    top: 103px;
+}
+
+#header-bottom-right a {
+    color: #333;
+}
+
+#userbarToggle {
+    background: none!important;
+    color: #333!important;
+    border: none!important;    
+}
