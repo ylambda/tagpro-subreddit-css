@@ -1,9 +1,7 @@
 $index_major: $index_major + 1;
 $index_minor: 0;
 /*!==================================================
-#{$index_major}.#{$index_minor} Header
+#{$index_major}.#{$index_minor} Extra Goodies
 ================================================== */
-@import 'subreddit-bar';
-@import 'subreddit-logo';
-@import 'subreddit-navigation';
-@import 'usercontrols';
+
+@import 'autowikibot';

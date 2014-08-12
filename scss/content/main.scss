@@ -1,0 +1,48 @@
+$index_major: $index_major + 1;
+$index_minor: 0;
+/*!==================================================
+#{$index_major}.#{$index_minor} Content
+================================================== */
+
+.content {
+    margin-top: 33px;
+    margin-left: 40px;
+    margin-right: 39px;
+    padding-right: 320px;
+    background-color: #fff;
+}
+
+.content:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.content {
+    border-right:1px solid #ccc;
+}
+
+.stickied .title,
+.stickied-tagline,
+.stickied .title:visited {
+    color:green!important;
+}
+
+div.expando form div.usertext-body .md {
+    border:none !important;
+    background:none !important;
+    padding:5px 0;
+}
+
+.single-page .content div.sitetable.linklisting {
+    margin:0;
+}
+
+.single-page .content div.sitetable.linklisting div.thing {
+    padding:20px;
+}
+
+@import 'listing';
+@import 'arrow';
+@import 'trashtalk';
+

@@ -1,6 +1,6 @@
-$index_minor: $index_minor + 1;
+$index_patch: $index_patch + 1;
 /*!==================================================
-#{$index_major}.#{$index_minor} Menubars
+#{$index_major}.#{$index_minor}.#{$index_patch} Menubar
 ================================================== */
 
 .titlebox .md > blockquote:first-child {
@@ -157,3 +157,4 @@ $index_minor: $index_minor + 1;
 .titlebox blockquote:first-child ul:nth-of-type(4) li:first-child {
     width: 97px;
 }
+

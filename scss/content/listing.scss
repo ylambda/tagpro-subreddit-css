@@ -1,0 +1,18 @@
+$index_minor: $index_minor + 1;
+/*!==================================================
+#{$index_major}.#{$index_minor} Post Listing
+================================================== */
+
+div.link {
+    display: block;
+    padding: 10px;
+    margin: 0;
+    position: relative;
+}
+div.link span.rank {
+    display: none;
+}
+div.link div.midcol {
+    margin: 0 10px 0 0;
+}
+

@@ -1,0 +1,17 @@
+$index_minor: $index_minor + 1;
+/*!==================================================
+#{$index_major}.#{$index_minor} Trashtalk Threads
+================================================== */
+
+/** Bold and Uppercase Posts **/
+#siteTable a.title[href*="trash_talk_thread"]:before { 
+    font-weight: bold;
+    text-transform: uppercase;
+}
+body.post-linkflair-trashtalkthread .commentarea, body.post-linkflair-black .commentarea {
+    text-transform: uppercase;
+    font-weight:bold;
+}
+body.post-linkflair-trashtalkthread .arrow.down, body.post-linkflair-black .arrow.down {
+    display: none;
+}

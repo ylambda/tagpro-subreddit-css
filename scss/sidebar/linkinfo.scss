@@ -1,0 +1,17 @@
+$index_minor: $index_minor + 1;
+/*==================================================
+#{$index_major}.#{$index_minor} Linkinfo
+================================================== */
+
+.linkinfo {
+  letter-spacing:0;
+    background:#FBFBFB;
+    border: 1px solid #c8c8c8;
+    border-radius: 0px;
+    line-height: 30px;
+    overflow: hidden;
+    color: #444444;
+    font-family:Verdana, Arial, sans-serif; 
+    font-weight: bold; 
+    margin: 0 9px 10px 10px!important;
+}

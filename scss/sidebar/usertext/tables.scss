@@ -1,0 +1,56 @@
+$index_patch: $index_patch + 1;
+/*!==================================================
+#{$index_major}.#{$index_minor}.#{$index_patch} Tables
+================================================== */
+
+body > .side .md table td {
+    font-family: sans-serif;
+    font-size: 11px;
+    border-top: none;
+    border-left: 1px solid #EEE;
+    border-bottom: none;
+    vertical-align: middle;
+}
+
+body > .side .md table tr:hover {  /** Gray background on hover for all tables **/
+  background-color: #D4D4D4;
+}
+
+body .side .md table:nth-of-type(1) th {
+    background-color: yellow;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    border-right: 1px solid yellow;
+    color: black;
+    font-size: 110%;
+    font-weight: bold;
+    padding: .3em;
+    text-align: left;
+}
+
+body .side .md table:nth-of-type(2) th {
+    background-color: red;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    border-right: 1px solid red;
+    color: white;
+    font-size: 110%;
+    font-weight: bold;
+    padding: .3em;
+    text-align: left;
+}
+
+body .side .md table:nth-of-type(3) th {
+    background-color: blue;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    border-right: 1px solid blue;
+    color: white;
+    font-size: 110%;
+    font-weight: bold;
+    padding: .3em;
+    text-align: left;
+}

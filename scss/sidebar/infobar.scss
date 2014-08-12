@@ -1,0 +1,80 @@
+$index_minor: $index_minor + 1;
+/*==================================================
+#{$index_major}.#{$index_minor} Infobar
+================================================== */
+
+.subscribers, .users-online, .users-online .number:after, .subscribers .number:after {
+    font-size:12px;
+}
+.subscribers, .users-online {
+    position: relative; 
+    top:0px;
+    display:inline-block;
+}
+.subscribers .word, .users-online .word, .users-online:before {
+    display: none;
+}
+.subscribers .number {
+    display: inline-block; 
+    color:blue;
+    font-weight:bold; /*remove later*/
+    width:200px;
+}
+.subscribers .number:after  {
+    color:black;
+    font-weight: initial;/*remove later*/
+    content: " Some Balls ";
+}
+.users-online .number:after {
+    content: " Online"
+}
+
+.users-online {
+    margin-left: 5px;
+    margin-top:50px;
+}
+
+.side .flairselector + form:before {
+    content: 'Add your in-game name, server, and team name! Example: Some Ball // Centra // Ampersaints';
+    display: block;
+    margin-top: 3px;
+}
+
+.titlebox .redditname,
+.leavemoderator,
+.leavecontributor-button,
+.bottom {
+    display:none;
+}
+
+/* 10K HYPE BOX!!!*/
+
+.subscribers {
+    font-size: 3em;
+    font-family: monospace;
+    border: #8d8d8d 4px solid;
+    color:black;
+    background: url(%%bgtile%%) 0 40px;
+    padding: 25px 45px 25px 45px;
+    position:relative;
+    top:30px;
+    text-shadow: 0px 0px 1px #000;
+}
+
+@-webkit-keyframes mover {
+    0% {background-position:0 40px;}
+    50% {background-position:20px 20px;}
+    100% {background-position:40px 0px;}
+}
+
+@keyframes mover {
+    0% {background-position:0 40px;}
+    50% {background-position:20px 20px;}
+    100% {background-position:40px 0px;}
+}
+
+.subscribers:hover{
+  -webkit-animation: mover 0.5s linear infinite;
+  animation: mover 0.5s linear infinite;
+}
+

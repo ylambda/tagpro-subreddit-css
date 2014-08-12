@@ -1,0 +1,14 @@
+$index_minor: $index_minor + 1;
+/*==================================================
+#{$index_major}.#{$index_minor} Sponsorship
+================================================== */
+
+/*** Fixes the width issue in the Wiki ***/
+.wiki-page .wiki-page-content {
+  margin-right: 5%;
+}
+
+#wikiactions > .title > h1 { display: block; }
+#wikiactions > .content { margin-top: 0; }
+#wikiactions > .title { height: auto; }
+

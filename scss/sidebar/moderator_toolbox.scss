@@ -1,0 +1,36 @@
+$index_minor: $index_minor + 1;
+/*==================================================
+#{$index_major}.#{$index_minor} Moderator Toolbox
+================================================== */
+
+div.sidecontentbox#moderation_tools {
+    padding-bottom:20px;
+}
+div.sidecontentbox#moderation_tools ul.content li a {
+    background:none;
+}
+div.sidecontentbox div.title {
+    height:34px;
+}
+div.sidecontentbox div.title h1 {
+    display:none;
+}
+div.sidecontentbox#moderation_tools div.title:before {
+    content:"Moderation Tool Box";
+    display:block;
+    width:300px;
+    font-size:12px;
+    padding:20px 0 0 20px;
+    color:#A6A8AB;
+}
+.collapse-button {
+    display:none !important;
+}
+div.sidecontentbox ul.content {
+    padding:5px 20px 5px;
+    margin-right: 0 !important;
+    margin-top: 24px;
+    border: 1px solid #CCC !important;
+    border-right: none !important;
+    border-left: none !important;
+}

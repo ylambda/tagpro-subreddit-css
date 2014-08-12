@@ -1,5 +1,39 @@
+$index_major: $index_major + 1;
+$index_minor: 0;
 /*==================================================
-4. Sidebar
+#{$index_major}.#{$index_minor} Sidebar
 ================================================== */
 
+.side {
+    margin-top: 33px;
+    margin-right: 40px;
+    width: 320px;
+    padding: 10px 0 40px;
+    z-index: 9;
+    border-left: #ccc solid 1px;
+    background: #fff;
+}
+
+.side:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+.spacer {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
 @import 'search';
+@import 'sponsorship';
+@import 'linkinfo';
+@import 'submit';
+@import 'infobar';
+@import 'usertext/main';
+@import 'wiki';
+@import 'moderator_toolbox';
+@import 'advertisement';
+@import 'moderator_list';
+@import 'recent';

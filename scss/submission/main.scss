@@ -1,0 +1,20 @@
+$index_major: $index_major + 1;
+$index_minor: 0;
+/*==================================================
+#{$index_major}.#{$index_minor} Submission Page
+================================================== */
+
+.submit-page #title-field .title {
+    visibility: hidden;
+    font-size: 0pt;
+}
+
+
+.submit-page #title-field .title:before {
+    content: "Read the Sidebar and search the subreddit before posting! Have a general question? Search the wiki before posting. Have a bug or suggestion? Search the Road Map spreadsheet before posting.";
+    visibility: visible!important;
+    font-size: 18pt!important;
+    color: red;
+    font-weight: bolder;
+    margin-right: 90px;
+}
