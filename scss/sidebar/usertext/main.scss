@@ -1,4 +1,4 @@
-$index_minor: $index_major + 0;
+$index_minor: $index_minor + 1;
 $index_patch: 0;
 /*!==================================================
 #{$index_major}.#{$index_minor}.#{$index_patch} Usertext
@@ -39,3 +39,4 @@ $index_patch: 0;
 @import 'tables';
 @import 'social';
 @import 'sticky';
+@import 'banner';

@@ -3,6 +3,12 @@ $index_minor: 0;
 /*!==================================================
 #{$index_major}.#{$index_minor} Header
 ================================================== */
+
+#header {
+  background: none;
+  border: none;
+}
+
 @import 'subreddit-bar';
 @import 'subreddit-logo';
 @import 'subreddit-navigation';
