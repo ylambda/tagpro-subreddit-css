@@ -1,7 +1,4 @@
-$index_minor: $index_minor + 1;
-/*!==================================================
-#{$index_major}.#{$index_minor} Subreddit Navigation
-================================================== */
+@include minor("Subreddit Navigation");
 
 #header-bottom-left .tabmenu {
     margin-left: 280px;

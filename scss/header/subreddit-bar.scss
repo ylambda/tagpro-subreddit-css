@@ -1,7 +1,4 @@
-$index_minor: $index_minor + 1;
-/*!==================================================
-#{$index_major}.#{$index_minor} Subreddit Bar
-================================================== */
+@include minor("Subreddit Bar");
 
 #sr-header-area {
     height: 19px;

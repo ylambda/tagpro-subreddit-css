@@ -1,7 +1,5 @@
-$index_minor: $index_minor + 1;
-/*!==================================================
-#{$index_major}.#{$index_minor} Subreddit Logo
-================================================== */
+@include minor("Subreddit Logo");
+
 #header-bottom-left {
     height: 80px;
     margin-left: 40px;

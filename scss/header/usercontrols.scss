@@ -1,7 +1,5 @@
-$index_minor: $index_minor + 1;
-/*==================================================
-#{$index_major}.#{$index_minor} User Controls
-================================================== */
+@include minor("User Controls");
+
 #header-bottom-right {
     background-color: transparent;
     right: 40px;
