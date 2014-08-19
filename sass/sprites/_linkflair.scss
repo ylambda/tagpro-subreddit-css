@@ -2,90 +2,86 @@
    Linkflair
 ================================================== */
 
-.linkflair div.entry p .linkflairlabel{
+.linkflair .linkflairlabel {
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 0;
+    background: url(%%linkSprite%%) no-repeat;
     display: block;
     height: 76px;
-    border: none !important;
+    border: none;
     width: 0;
-    padding:0 !important;
+    padding: 0;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
     -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-    background: url(%%linkSprite%%) no-repeat;
+       -moz-border-radius: 0px;
+            border-radius: 0px;
 }
-.linkflair div.entry p .linkflairlabel:hover{
-    -webkit-border-top-right-radius: 50px;
-    opacity:0.9;
-    color:#fff;
+
+.linkflair .linkflairlabel:hover {
+    opacity: .9;
+    color: #fff;
     font-weight: normal;
     line-height: 70px;
     text-indent: 60px;
     font-size: 18px;
     letter-spacing: 1px;
-    width:230px !important;
+    width:  230px;
     height: 79px;
-    max-width:270px !important;
-    padding: 0 !important;
-}
-.linkflair-red div.entry p .linkflairlabel, .linkflair-bug div.entry p .linkflairlabel {
-    border-left:#B42932 solid 5px !important;
-    background: url(%%linkSprite%%) no-repeat 0 -90px!important;
-    background-color: #B42932!important;
-}
-.linkflair-green div.entry p .linkflairlabel, .linkflair-suggestion div.entry p .linkflairlabel {
-    border-left:#37AE65 solid 5px !important;
-    background: url(%%linkSprite%%) no-repeat 0 -567px;
-    background-color:#37AE65;
-}
-.linkflair-black div.entry p .linkflairlabel, .linkflair-trashtalkthread div.entry p .linkflairlabel {
-    border-left:black solid 5px !important;
-    background: url(%%linkSprite%%) no-repeat 0 -667px;
-    background-color:black;
-}
-.linkflair-purple div.entry p .linkflairlabel, .linkflair-announcement div.entry p .linkflairlabel {
-    border-left:#995AB3 solid 5px !important;
-    background: url(%%linkSprite%%) no-repeat 0 10px;
-    background-color:#995AB3;
-}
-.linkflair-orange div.entry p .linkflairlabel, .linkflair-gamethread div.entry p .linkflairlabel {
-    border-left:#E27D33 solid 5px !important;
-    background: url(%%linkSprite%%) no-repeat 0 -290px;
-    background-color:#E27D33;
-}
-.linkflair-yellow div.entry p .linkflairlabel, .linkflair-build div.entry p .linkflairlabel {
-    border-left:#EEC338 solid 5px !important;
-    background: url(%%linkSprite%%) no-repeat 0 -190px;
-    background-color:#EEC338;
-}
-.linkflair-blue div.entry p .linkflairlabel, .linkflair-mltp div.entry p .linkflairlabel {
-    border-left:#4299D7 solid 5px !important;
-    background: url(%%linkSprite%%) no-repeat 0 -380px;
-    background-color:#4299D7;
-}
-.linkflair-asphalt div.entry p .linkflairlabel, .linkflair-shared div.entry p .linkflairlabel, .linkflair-tw div.entry p .linkflairlabel {
-    border-left:#36495D solid 5px !important;
-    background: url(%%linkSprite%%) no-repeat 0 -467px;
-    background-color:#36495D;
-}
-.linkflair-grey div.entry p .linkflairlabel {
-    border-left:#808C8D solid 5px !important;
-    background-position: -1121px 5px;
-    text-shadow:-1px 2px #5F6A6A;
-}
-.linkflair-generic div.entry p .linkflairlabel {
-    border-left:#333 solid 5px !important;
-    background: none;
-}
-.linkflair-generic div.entry p a.title {
-    font-weight: bolder;
-}
-.linkflair-generic div.entry p .linkflairlabel:hover {
-    width:0px !important;
+    max-width: 270px;
+    padding: 0;
+    -webkit-border-top-right-radius: 50px;
+       -moz-border-top-right-radius: 50px;
+            border-top-right-radius: 50px;
 }
 
+.linkflair-bug .linkflairlabel {
+    border-left: #B42932 solid 5px;
+    background-position: 0 -90px;
+    background-color: #B42932;
+}
+
+.linkflair-suggestion .linkflairlabel {
+    border-left: #37AE65 solid 5px;
+    background-position: 0 -567px;
+    background-color: #37AE65;
+}
+
+.linkflair-trashtalkthread .linkflairlabel {
+    border-left: black solid 5px;
+    background-position: 0 -667px;
+    background-color: black;
+}
+
+.linkflair-announcement .linkflairlabel {
+    border-left: #995AB3 solid 5px;
+    background-position: 0 10px;
+    background-color: #995AB3;
+}
+
+.linkflair-gamethread .linkflairlabel {
+    border-left: #E27D33 solid 5px;
+    background-position: 0 -290px;
+    background-color: #E27D33;
+}
+
+.linkflair-build .linkflairlabel {
+    border-left: #EEC338 solid 5px;
+    background-position: 0 -190px;
+    background-color: #EEC338;
+}
+
+.linkflair-mltp .linkflairlabel {
+    border-left: #4299D7 solid 5px;
+    background-position: 0 -380px;
+    background-color: #4299D7;
+}
+
+.linkflair-shared .linkflairlabel,
+.linkflair-tw .linkflairlabel {
+    border-left: #36495D solid 5px;
+    background-position: 0 -467px;
+    background-color: #36495D;
+}
