@@ -3,3 +3,45 @@
 ================================================== */
 
 @import "_tilesheet.scss";
+
+/* Animated Speedpad */
+.md a[href^="#tile-speedpad"] {
+    background: url(%%speedpad%%) no-repeat;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: speedpad .7s steps(4) infinite;
+    -moz-animation: speedpad .7s steps(4) infinite;
+    -ms-animation: speedpad .7s steps(4) infinite;
+    -o-animation: speedpad .7s steps(4) infinite;
+    animation: speedpad .7s steps(4) infinite;
+}
+
+.md a[href^="#tile-speedpad"]:hover {
+    animation: none;
+    background-position: -160px 0;
+}
+
+@-webkit-keyframes speedpad {
+    from { background-position: 0 0; }
+    to { background-position: -160px 0; }
+}
+
+@-moz-keyframes speedpad {
+    from { background-position: 0 0; }
+    to { background-position: -160px 0; }
+}
+
+@-ms-keyframes speedpad {
+    from { background-position: 0 0; }
+    to { background-position: -160px 0; }
+}
+
+@-o-keyframes speedpad {
+    from { background-position: 0 0; }
+    to { background-position: -160px 0; }
+}
+
+@keyframes speedpad {
+    from { background-position: 0 0; }
+    to { background-position: -160px 0; }
+}
