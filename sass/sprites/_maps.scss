@@ -1,0 +1,22 @@
+/*!==================================================
+   Maps
+================================================== */
+
+.md a[href^="#map-"] {
+  background: url('%%maps%%') no-repeat;
+  border: none;
+  display: inline-block;
+  cursor: default;
+}
+
+@debug "#{$maps-map}";
+
+@each $map in sprite_names($maps-map) {
+  @debug "#{sprite-position($maps-map, $map)}";
+  .md a[href^="#map-#{$map}"] {
+    background-position: sprite-position($maps-map, $map);
+    width: image-width(sprite-file($maps-map, $map));
+    height: image-height(sprite-file($maps-map, $map));
+    line-height: image-height(sprite-file($maps-map, $map));
+  }
+}

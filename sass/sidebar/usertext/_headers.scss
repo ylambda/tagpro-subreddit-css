@@ -1,0 +1,39 @@
+/*!==================================================
+   Sidebar Usertext Headers
+================================================== */
+
+@mixin header() {
+    border-bottom: 1px solid black;
+    margin: 5px 13px 5px -10px;
+    padding: 5px 0 5px 20px;
+    z-index: 100;
+    background-color: #C9C9C9;
+    width: 314px;
+    color: #000;
+    font-size: medium;
+    font-weight: normal;
+    display: block;
+
+    &:after {
+        content: "";
+        display: block;
+        border-color: transparent transparent transparent black;
+        border-style: solid;
+        border-width: 15px;
+        height: 0px;
+        width: 0px;
+        position: absolute;
+        z-index: -1;
+        margin-left: 299px;
+        margin-top: -10px;
+    }
+}
+
+.sidecontentbox .title h1 {
+  @include header();
+  margin: 0;
+}
+
+.titlebox .usertext .md > h1 {
+  @include header();
+}

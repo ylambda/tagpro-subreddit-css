@@ -1,0 +1,35 @@
+/*!==================================================
+   User Flair
+================================================== */
+
+.flair {
+  background: url('%%flair%%') no-repeat;
+  border: none;
+  line-height: 16px;
+}
+
+@each $flair in sprite_names($flair-map) {
+  .flair-#{$flair} {
+    background-position: sprite-position($flair-map, $flair);
+    width: auto;
+    padding-left: image-width(sprite-file($flair-map, $flair)) + 2px;
+    height: image-height(sprite-file($flair-map, $flair));
+  }
+}
+
+
+.md a[href^="#flair-"] {
+  background: url('%%flair%%') no-repeat;
+  border: none;
+  line-height: 16px;
+  display: inline-block;
+  cursor: default;
+}
+
+@each $flair in sprite_names($flair-map) {
+  .md a[href^="#flair-#{$flair}"] {
+    background-position: sprite-position($flair-map, $flair);
+    width: image-width(sprite-file($flair-map, $flair));
+    height: image-height(sprite-file($flair-map, $flair));
+  }
+}

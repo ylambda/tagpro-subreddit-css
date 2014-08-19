@@ -1,0 +1,25 @@
+/*!==================================================
+   Sidebar Usertext Annoucement
+================================================== */
+
+.titlebox .usertext-body .md h4 {
+    display: block;
+    position: absolute;
+    z-index: 300;
+    font-family: "Segoe UI", Arial, Verdana;
+    top: 25px;
+    left: 380px;
+    font-size: 14px;
+    line-height: 30px;
+    height: 30px;
+    background-color: #08C;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 0px 5px 0px;
+    color: #fff;
+    box-shadow: 0px 9px 29px -6px;
+}
+
+.titlebox .usertext-body .md h4 a {
+    color: #fff;
+}

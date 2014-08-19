@@ -1,0 +1,41 @@
+/*!==================================================
+   Content
+================================================== */
+
+.content {
+    margin: 33px 39px -8px 40px;
+    padding-right: 320px;
+    background-color: #fff;
+}
+
+.content:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.stickied .title,
+.stickied-tagline,
+.stickied .title:visited {
+    color:green!important;
+}
+
+div.expando form div.usertext-body .md {
+    border:none !important;
+    background:none !important;
+    padding:5px 0;
+}
+
+/* submission page */
+.content .submit .spacer {
+    margin-bottom: 10px;
+}
+
+.content .sitetable {
+    padding-right: 320px;
+}
+
+@import '_listing';
+@import '_arrow';
+@import '_trashtalk';
+

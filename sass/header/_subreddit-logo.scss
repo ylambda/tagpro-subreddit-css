@@ -1,0 +1,31 @@
+/*!==================================================
+   Subreddit Logo
+================================================== */
+
+#header-bottom-left {
+    height: 80px;
+    margin-left: 40px;
+}
+
+#header-img {
+    margin-left: 1px;
+}
+
+.pagename {
+    position: absolute;
+    top: 0px;
+    line-height: 95px;
+}
+
+.pagename a {
+    display: block;
+    height: 40px;
+    width: 252px;
+    background: url(%%misc%%) no-repeat;
+    background-position: sprite-position($misc, subreddit_logo);
+    text-indent: -9999px;
+    font-size: 0px;
+    position: absolute;
+    top: 56px;
+    left: 2px;
+}

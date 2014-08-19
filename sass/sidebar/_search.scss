@@ -1,0 +1,38 @@
+/*!==================================================
+   Sidebar Search
+================================================== */
+
+#search {
+    padding: 0 10px;
+}
+
+#search input{
+    width: 300px;
+}
+
+#search input[type=text] {
+    height: 18px;
+    margin-bottom: 10px;
+}
+
+#search input[type=text]:focus {
+  outline: none;
+}
+
+#searchexpando {
+    padding: 0;
+    background: none;
+    border: none;
+    margin-bottom: 10px;
+}
+
+#searchexpando label {
+    display: block;
+}
+
+#searchexpando label input {
+    display: inline;
+    width: 17px;
+    padding: 0;
+    margin: 0;
+}

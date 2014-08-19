@@ -1,0 +1,21 @@
+/*!==================================================
+   Main
+================================================== */
+
+
+//Force creation of sprites
+$misc: sprite-map("misc/*.png", $layout: vertical, $spacing: 5px);
+@debug "asdasd #{$misc}";
+$flair-map: sprite-map("flair/*.png", $layout: horizontal, $spacing: 5px);
+@debug "sdasd #{$flair-map}";
+$maps-map: sprite-map("maps/*.png", $layout: diagonal, $spacing: 5px);
+@debug "#{$maps-map}";
+
+@import 'base/_main';
+@import 'header/_main';
+@import 'sidebar/_main';
+@import 'content/_main';
+@import 'footer/_main';
+@import 'wiki/_main';
+@import 'sprites/_main';
+@import 'res/_main';

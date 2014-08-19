@@ -1,0 +1,41 @@
+/*!==================================================
+   Sidebar
+================================================== */
+
+.side {
+    margin-top: 33px;
+    margin-right: 40px;
+    width: 320px;
+    padding: 330px 0 0px;
+    z-index: 9;
+    border-left: #ccc solid 1px;
+    background: #fff;
+}
+
+.side:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+.side .spacer {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+.side .login-form-side {
+   border: 1px solid #ccc;
+   background-color: #fbfbfb;
+   width: 299px;
+   margin: 0 auto 5px;
+}
+
+@import '_search';
+@import '_linkinfo';
+@import '_buttons';
+@import '_infobar';
+@import 'usertext/_main';
+@import '_advertisement';
+@import '_sidecontent';

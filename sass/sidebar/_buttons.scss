@@ -1,0 +1,71 @@
+/*!==================================================
+   Sidebar Buttons
+================================================== */
+
+$button_color: #048;
+$button_shadow: #bcbcbc;
+
+@mixin sidebar-btn($color, $shadow) {
+    $border: 5px;
+    $size: 4px;
+
+    color: $color;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    word-spacing: 1px;
+
+    cursor: pointer;
+    padding: 8px 0px;
+    width: 250px;
+    display: inline-block;
+    margin: 0px 35px 10px;
+    background: linear-gradient(#f4f4f4, #ececec);
+    border: 1px solid $shadow;
+    box-shadow: 0 $size $shadow;
+    border-radius: 0 0 $border $border;
+    position: relative;
+    -webkit-transition: none;
+       -moz-transition: none;
+            transition: none;
+
+    &:active {
+        border-radius: 0 0 $border $border;
+        top: $size;
+        box-shadow: none;
+    }
+
+    &:hover {
+        background: linear-gradient(#ececec, #dfdfdf);
+        border: 1px solid $button_shadow;
+        color: $color;
+    }
+}
+
+.morelink {
+  @include sidebar-btn($button_color, $button_shadow);
+}
+
+.morelink a {
+    color: $button_color;
+    font-weight: bold;
+}
+
+.morelink:hover a {
+    color: $button_color;
+    font-weight: bold;
+}
+
+.morelink .nub {
+    display: none;
+}
+
+/* Keep away from the advertisement */
+.submit-link {
+    margin-top: 10px;
+}
+
+/* Hide "Create your own subreddit" */
+.create {
+  display: none;
+}

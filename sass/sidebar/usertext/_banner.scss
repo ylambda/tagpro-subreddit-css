@@ -1,0 +1,82 @@
+/*!==================================================
+   Sidebar Usertext Banner
+================================================== */
+
+.side .md > p:last-child a {
+    position: absolute;
+    top: 150px;
+    height: 300px;
+    width: 300px;
+    display: none; 
+}
+
+.side .md > p:last-child a[href^="#"] {
+    cursor: default;
+}
+
+
+/* First Sidebar Banner */
+.side form[id$="a"] .md > p:last-child a:nth-of-type(1),
+.side form[id$="b"] .md > p:last-child a:nth-of-type(1),
+.side form[id$="c"] .md > p:last-child a:nth-of-type(1),
+.side form[id$="d"] .md > p:last-child a:nth-of-type(1),
+.side form[id$="e"] .md > p:last-child a:nth-of-type(1),
+.side form[id$="f"] .md > p:last-child a:nth-of-type(1) {
+    display: block;
+    background: url(%%tagpro-pigoon%%) no-repeat top center;
+}
+
+/* Second Sidebar Banner */
+.side form[id$="g"] .md > p:last-child a:nth-of-type(2),
+.side form[id$="h"] .md > p:last-child a:nth-of-type(2),
+.side form[id$="i"] .md > p:last-child a:nth-of-type(2),
+.side form[id$="j"] .md > p:last-child a:nth-of-type(2),
+.side form[id$="k"] .md > p:last-child a:nth-of-type(2),
+.side form[id$="l"] .md > p:last-child a:nth-of-type(2) {
+    display: block;
+    background: url(%%tagpro-pigoon%%) no-repeat top center;
+}
+
+/* Third Sidebar Banner */
+.side form[id$="m"] .md > p:last-child a:nth-of-type(3),
+.side form[id$="n"] .md > p:last-child a:nth-of-type(3),
+.side form[id$="o"] .md > p:last-child a:nth-of-type(3),
+.side form[id$="p"] .md > p:last-child a:nth-of-type(3),
+.side form[id$="q"] .md > p:last-child a:nth-of-type(3),
+.side form[id$="r"] .md > p:last-child a:nth-of-type(3) {
+    display: block;
+    background: url(%%tagpro-pigoon%%) no-repeat top center;
+}
+
+/* Fourth Sidebar Banner */
+.side form[id$="s"] .md > p:last-child a:nth-of-type(4),
+.side form[id$="t"] .md > p:last-child a:nth-of-type(4),
+.side form[id$="u"] .md > p:last-child a:nth-of-type(4),
+.side form[id$="v"] .md > p:last-child a:nth-of-type(4),
+.side form[id$="w"] .md > p:last-child a:nth-of-type(4),
+.side form[id$="x"] .md > p:last-child a:nth-of-type(4) {
+    display: block;
+    background: url(%%tagpro-pigoon%%) no-repeat top center;
+}
+
+/* Fifth Sidebar Banner */
+.side form[id$="y"] .md > p:last-child a:nth-of-type(5),
+.side form[id$="z"] .md > p:last-child a:nth-of-type(5),
+.side form[id$="0"] .md > p:last-child a:nth-of-type(5),
+.side form[id$="1"] .md > p:last-child a:nth-of-type(5),
+.side form[id$="2"] .md > p:last-child a:nth-of-type(5),
+.side form[id$="3"] .md > p:last-child a:nth-of-type(5) {
+    display: block;
+    background: url(%%tagpro-pigoon%%) no-repeat top center;
+}
+
+/* Sixth Sidebar Banner */
+.side form[id$="4"] .md > p:last-child a:nth-of-type(6),
+.side form[id$="5"] .md > p:last-child a:nth-of-type(6),
+.side form[id$="6"] .md > p:last-child a:nth-of-type(6),
+.side form[id$="7"] .md > p:last-child a:nth-of-type(6),
+.side form[id$="8"] .md > p:last-child a:nth-of-type(6),
+.side form[id$="9"] .md > p:last-child a:nth-of-type(6) {
+    display: block;
+    background: url(%%tagpro-pigoon%%) no-repeat top center;
+}
