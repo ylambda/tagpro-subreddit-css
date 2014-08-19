@@ -2,14 +2,12 @@
    Main
 ================================================== */
 
-
-//Force creation of sprites
 $misc: sprite-map("misc/*.png", $layout: vertical, $spacing: 5px);
-@debug "asdasd #{$misc}";
+@debug "CREATE MISC SPRITES: #{$misc}";
 $flair-map: sprite-map("flair/*.png", $layout: horizontal, $spacing: 5px);
-@debug "sdasd #{$flair-map}";
+@debug "CREATE FLAIR SPRITES: #{$flair-map}";
 $maps-map: sprite-map("maps/*.png", $layout: diagonal, $spacing: 5px);
-@debug "#{$maps-map}";
+@debug "CREATE MAP SPRITES: #{$maps-map}";
 
 @import 'base/_main';
 @import 'header/_main';

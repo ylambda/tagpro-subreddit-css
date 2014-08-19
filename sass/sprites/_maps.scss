@@ -9,10 +9,7 @@
   cursor: default;
 }
 
-@debug "#{$maps-map}";
-
 @each $map in sprite_names($maps-map) {
-  @debug "#{sprite-position($maps-map, $map)}";
   .md a[href^="#map-#{$map}"] {
     background-position: sprite-position($maps-map, $map);
     width: image-width(sprite-file($maps-map, $map));
