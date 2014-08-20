@@ -4,9 +4,93 @@
 
 @import "_tilesheet.scss";
 
-/* Animated Speedpad */
+/* Animated Red Speedpad */
+.md a[href^="#tile-speedpadred"] {
+    background: url(%%animated%%) no-repeat;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: speedpadred .7s steps(4) infinite;
+    -moz-animation: speedpadred .7s steps(4) infinite;
+    -ms-animation: speedpadred .7s steps(4) infinite;
+    -o-animation: speedpadred .7s steps(4) infinite;
+    animation: speedpadred .7s steps(4) infinite;
+}
+
+.md a[href^="#tile-speedpadred"]:hover {
+    animation: none;
+    background-position: -160px 0;
+}
+
+@-webkit-keyframes speedpadred {
+    from { background-position: 0 0; }
+    to { background-position: -160px 0; }
+}
+
+@-moz-keyframes speedpadred {
+    from { background-position: 0 0; }
+    to { background-position: -160px 0; }
+}
+
+@-ms-keyframes speedpadred {
+    from { background-position: 0 0; }
+    to { background-position: -160px 0; }
+}
+
+@-o-keyframes speedpadred {
+    from { background-position: 0 0; }
+    to { background-position: -160px 0; }
+}
+
+@keyframes speedpadred {
+    from { background-position: 0 0; }
+    to { background-position: -160px 0; }
+}
+
+/* Animated Blue Speedpad */
+.md a[href^="#tile-speedpadblue"] {
+    background: url(%%animated%%) no-repeat;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: speedpadblue .7s steps(4) infinite;
+    -moz-animation: speedpadblue .7s steps(4) infinite;
+    -ms-animation: speedpadblue .7s steps(4) infinite;
+    -o-animation: speedpadblue .7s steps(4) infinite;
+    animation: speedpadblue .7s steps(4) infinite;
+}
+
+.md a[href^="#tile-speedpadblue"]:hover {
+    animation: none;
+    background-position: -160px -41px;
+}
+
+@-webkit-keyframes speedpadblue {
+    from { background-position: 0 -41px; }
+    to { background-position: -160px -41px; }
+}
+
+@-moz-keyframes speedpadblue {
+    from { background-position: 0 -41px; }
+    to { background-position: -160px -41px; }
+}
+
+@-ms-keyframes speedpadblue {
+    from { background-position: 0 -41px; }
+    to { background-position: -160px -41px; }
+}
+
+@-o-keyframes speedpadblue {
+    from { background-position: 0 -41px; }
+    to { background-position: -160px -41px; }
+}
+
+@keyframes speedpadblue {
+    from { background-position: 0 -41px; }
+    to { background-position: -160px -41px:; }
+}
+
+/* Animated Blue Speedpad */
 .md a[href^="#tile-speedpad"] {
-    background: url(%%speedpad%%) no-repeat;
+    background: url(%%animated%%) no-repeat;
     width: 40px;
     height: 40px;
     -webkit-animation: speedpad .7s steps(4) infinite;
@@ -18,30 +102,72 @@
 
 .md a[href^="#tile-speedpad"]:hover {
     animation: none;
-    background-position: -160px 0;
+    background-position: -160px -81px;
 }
 
 @-webkit-keyframes speedpad {
-    from { background-position: 0 0; }
-    to { background-position: -160px 0; }
+    from { background-position: 0 -81px; }
+    to { background-position: -160px -81px; }
 }
 
 @-moz-keyframes speedpad {
-    from { background-position: 0 0; }
-    to { background-position: -160px 0; }
+    from { background-position: 0 -81px; }
+    to { background-position: -160px -81px; }
 }
 
 @-ms-keyframes speedpad {
-    from { background-position: 0 0; }
-    to { background-position: -160px 0; }
+    from { background-position: 0 -81px; }
+    to { background-position: -160px -81px; }
 }
 
 @-o-keyframes speedpad {
-    from { background-position: 0 0; }
-    to { background-position: -160px 0; }
+    from { background-position: 0 -81px; }
+    to { background-position: -160px -81px; }
 }
 
 @keyframes speedpad {
-    from { background-position: 0 0; }
-    to { background-position: -160px 0; }
+    from { background-position: 0 -81px; }
+    to { background-position: -160px -81px:; }
+}
+
+/* Animated Portal */
+.md a[href^="#tile-portal"] {
+    background: url(%%animated%%) no-repeat;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: portal .7s steps(4) infinite;
+    -moz-animation: portal .7s steps(4) infinite;
+    -ms-animation: portal .7s steps(4) infinite;
+    -o-animation: portal .7s steps(4) infinite;
+    animation: portal .7s steps(4) infinite;
+}
+
+.md a[href^="#tile-portal"]:hover {
+    animation: none;
+    background-position: -160px -121px;
+}
+
+@-webkit-keyframes portal {
+    from { background-position: 0 -121px; }
+    to { background-position: -160px -121px; }
+}
+
+@-moz-keyframes portal {
+    from { background-position: 0 -121px; }
+    to { background-position: -160px -121px; }
+}
+
+@-ms-keyframes portal {
+    from { background-position: 0 -121px; }
+    to { background-position: -160px -121px; }
+}
+
+@-o-keyframes portal {
+    from { background-position: 0 -121px; }
+    to { background-position: -160px -121px; }
+}
+
+@keyframes portal {
+    from { background-position: 0 -121px; }
+    to { background-position: -160px -121px:; }
 }
