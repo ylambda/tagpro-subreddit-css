@@ -2,12 +2,11 @@
    Main
 ================================================== */
 
+$misc-spacing: 5px;
+$misc-layout: vertical;
 $misc: sprite-map("misc/*.png", $layout: vertical, $spacing: 5px);
 @debug "CREATE MISC SPRITES: #{$misc}";
-$flair-map: sprite-map("flair/*.png", $layout: horizontal, $spacing: 5px);
-@debug "CREATE FLAIR SPRITES: #{$flair-map}";
-$maps-map: sprite-map("maps/*.png", $layout: diagonal, $spacing: 5px);
-@debug "CREATE MAP SPRITES: #{$maps-map}";
+
 
 @import 'base/_main';
 @import 'header/_main';

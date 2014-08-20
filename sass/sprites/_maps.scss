@@ -2,18 +2,45 @@
    Maps
 ================================================== */
 
-.md a[href^="#map-"] {
-  background: url('%%maps%%') no-repeat;
+
+.md a[href*="#map-"] {
   border: none;
   display: inline-block;
-  cursor: default;
 }
 
-@each $map in sprite_names($maps-map) {
-  .md a[href^="#map-#{$map}"] {
-    background-position: sprite-position($maps-map, $map);
-    width: image-width(sprite-file($maps-map, $map));
-    height: image-height(sprite-file($maps-map, $map));
-    line-height: image-height(sprite-file($maps-map, $map));
+/* First Set of Maps */
+$maps-1-layout: smart;
+$maps-1-spacing: 3px;
+$maps-1: sprite-map("maps-1/*.png", $layout: smart, $spacing: 3px);
+@debug "CREATE MAP SPRITES: #{$maps-1}";
+@debug "CREATE MAP SPRITES: #{$maps-1}";
+
+@each $map in sprite_names($maps-1) {
+  // empty.png is used to force 'smarter' packing
+  @if $map != "empty" {
+    .md a[href$="#map-#{$map}"] {
+      background: url('%%maps-1%%') sprite-position($maps-1, $map) no-repeat;
+      width: image-width(sprite-file($maps-1, $map));
+      height: image-height(sprite-file($maps-1, $map));
+      line-height: image-height(sprite-file($maps-1, $map));
+    }
+  }
+}
+
+/* Second Set of Maps */
+$maps-2-layout: smart;
+$maps-2-spacing: 3px;
+$maps-2: sprite-map("maps-2/*.png", $layout: smart, $spacing: 3px);
+@debug "CREATE MAP SPRITES: #{$maps-2}";
+
+@each $map in sprite_names($maps-2) {
+  // empty.png is used to force 'smarter' packing
+  @if $map != "empty" {
+    .md a[href$="#map-#{$map}"] {
+      background: url('%%maps-2%%') sprite-position($maps-2, $map) no-repeat;
+      width: image-width(sprite-file($maps-2, $map));
+      height: image-height(sprite-file($maps-2, $map));
+      line-height: image-height(sprite-file($maps-2, $map));
+    }
   }
 }

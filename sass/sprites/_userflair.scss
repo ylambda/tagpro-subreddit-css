@@ -2,8 +2,13 @@
    User Flair
 ================================================== */
 
+$flair-layout: vertical;
+$flair-spacing: 5px;
+$flair-map: sprite-map("flair/*.png", $layout: vertical, $spacing: $flair-spacing);
+@debug "CREATE FLAIR SPRITES: #{$flair-map}";
+
 .flair {
-  background: url('%%flair%%') no-repeat;
+  background: url('%%flair%%') 100px 100px no-repeat;
   border: none;
   line-height: 16px;
 }
