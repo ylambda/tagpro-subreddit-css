@@ -4,8 +4,56 @@
 
 @import "_tilesheet.scss";
 
+/* Animated Blue Speedpad */
+.md a[href^="#tile-speedpad"] {
+    display: inline-block;
+    background: url(%%animated%%) no-repeat;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: speedpad .7s steps(4) infinite;
+    -moz-animation: speedpad .7s steps(4) infinite;
+    -ms-animation: speedpad .7s steps(4) infinite;
+    -o-animation: speedpad .7s steps(4) infinite;
+    animation: speedpad .7s steps(4) infinite;
+}
+
+.md a[href^="#tile-speedpad"]:hover {
+    -webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    -o-animation: none;
+    animation: none;
+    background-position: -160px -81px;
+}
+
+@-webkit-keyframes speedpad {
+    from { background-position: 0 -81px; }
+    to { background-position: -160px -81px; }
+}
+
+@-moz-keyframes speedpad {
+    from { background-position: 0 -81px; }
+    to { background-position: -160px -81px; }
+}
+
+@-ms-keyframes speedpad {
+    from { background-position: 0 -81px; }
+    to { background-position: -160px -81px; }
+}
+
+@-o-keyframes speedpad {
+    from { background-position: 0 -81px; }
+    to { background-position: -160px -81px; }
+}
+
+@keyframes speedpad {
+    from { background-position: 0 -81px; }
+    to { background-position: -160px -81px; }
+}
+
 /* Animated Red Speedpad */
 .md a[href^="#tile-speedpadred"] {
+    display: inline-block;
     background: url(%%animated%%) no-repeat;
     width: 40px;
     height: 40px;
@@ -17,6 +65,10 @@
 }
 
 .md a[href^="#tile-speedpadred"]:hover {
+    -webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    -o-animation: none;
     animation: none;
     background-position: -160px 0;
 }
@@ -48,6 +100,7 @@
 
 /* Animated Blue Speedpad */
 .md a[href^="#tile-speedpadblue"] {
+    display: inline-block;
     background: url(%%animated%%) no-repeat;
     width: 40px;
     height: 40px;
@@ -59,6 +112,10 @@
 }
 
 .md a[href^="#tile-speedpadblue"]:hover {
+    -webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    -o-animation: none;
     animation: none;
     background-position: -160px -41px;
 }
@@ -85,53 +142,13 @@
 
 @keyframes speedpadblue {
     from { background-position: 0 -41px; }
-    to { background-position: -160px -41px:; }
+    to { background-position: -160px -41px; }
 }
 
-/* Animated Blue Speedpad */
-.md a[href^="#tile-speedpad"] {
-    background: url(%%animated%%) no-repeat;
-    width: 40px;
-    height: 40px;
-    -webkit-animation: speedpad .7s steps(4) infinite;
-    -moz-animation: speedpad .7s steps(4) infinite;
-    -ms-animation: speedpad .7s steps(4) infinite;
-    -o-animation: speedpad .7s steps(4) infinite;
-    animation: speedpad .7s steps(4) infinite;
-}
-
-.md a[href^="#tile-speedpad"]:hover {
-    animation: none;
-    background-position: -160px -81px;
-}
-
-@-webkit-keyframes speedpad {
-    from { background-position: 0 -81px; }
-    to { background-position: -160px -81px; }
-}
-
-@-moz-keyframes speedpad {
-    from { background-position: 0 -81px; }
-    to { background-position: -160px -81px; }
-}
-
-@-ms-keyframes speedpad {
-    from { background-position: 0 -81px; }
-    to { background-position: -160px -81px; }
-}
-
-@-o-keyframes speedpad {
-    from { background-position: 0 -81px; }
-    to { background-position: -160px -81px; }
-}
-
-@keyframes speedpad {
-    from { background-position: 0 -81px; }
-    to { background-position: -160px -81px:; }
-}
 
 /* Animated Portal */
 .md a[href^="#tile-portal"] {
+    display: inline-block;
     background: url(%%animated%%) no-repeat;
     width: 40px;
     height: 40px;
@@ -143,6 +160,11 @@
 }
 
 .md a[href^="#tile-portal"]:hover {
+    animation: none;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    -o-animation: none;
     animation: none;
     background-position: -160px -121px;
 }
@@ -169,5 +191,5 @@
 
 @keyframes portal {
     from { background-position: 0 -121px; }
-    to { background-position: -160px -121px:; }
+    to { background-position: -160px -121px; }
 }

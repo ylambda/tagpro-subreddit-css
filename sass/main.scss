@@ -1,6 +1,56 @@
-/*!==================================================
-   Main
-================================================== */
+/*
+
+[About]
+
+    Title:    TagPro Subreddit Stylesheet
+    Authors:  TagProCat, ylambda, Rems
+    Domain:   http://reddit.com/r/tagpro
+    Git:      https://bitbucket.org/ylambda/tagpro-subreddit.git
+    License:  MIT
+
+    Many thanks to TagProCat for designing and creating the
+    initial design for /r/tagpro.
+
+    This project uses sass[1] and compass[2] to build styles and
+    sprites. Contributions are welcome, please test and share
+    examples. pls
+
+    [1]: http://sass-lang.com/
+    [2]: http://compass-style.org/
+
+[Navigation]
+
+    0. Subreddit Settings
+    1. Base Element Styles
+    2. Header
+        2.1   Subreddit Bar
+        2.2   Subreddit Logo
+        2.3   Subreddit Navigation
+        2.4   User Controls
+    3. Sidebar
+        3.1   Sidebar Search
+        3.2   Sidebar Linkinfo
+        3.3   Sidebar Buttons
+        3.4   Sidebar Infobar & Hypebox
+        3.5   Sidebar Usertext
+              3.5.1   Sidebar Usertext Menubar
+              3.5.2   Sidebar Usertext Headers
+              3.5.3   Sidebar Usertext Tables
+              3.5.4   Sidebar Usertext Announcement
+              3.5.5   Sidebar Usertext Banner
+
+        3.6   Sidebar Advertisement
+        3.7   Sidebar Moderator List/Recently Viewed/Moderation Tools
+    4. Content
+        4.1   Content Listing
+        4.2   Upvote/Downvote Arrows & Animations
+        4.3   Trashtalk Threads
+    5. Footer
+    6. Wiki
+    7. Sprites
+    8. RES Specific Tweaks
+
+*/
 
 $misc-spacing: 5px;
 $misc-layout: vertical;

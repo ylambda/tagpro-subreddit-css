@@ -1,29 +1,40 @@
 /*!==================================================
-   Sidebar Infobar
+   3.4 Sidebar Infobar & Hypebox
 ================================================== */
 
-.subscribers, .users-online, .users-online .number:after, .subscribers .number:after {
+.subscribers,
+.users-online,
+.users-online .number:after,
+.subscribers .number:after {
     font-size:12px;
 }
-.subscribers, .users-online {
+
+.subscribers,
+.users-online {
     position: relative; 
     top:0px;
     display:inline-block;
 }
-.subscribers .word, .users-online .word, .users-online:before {
+
+.subscribers .word,
+.users-online .word,
+.users-online:before {
     display: none;
 }
+
 .subscribers .number {
-    display: inline-block; 
-    color:blue;
-    font-weight:bold; /*remove later*/
-    width:200px;
+    display: inline-block;
+    color: blue;
+    font-weight: bold;
+    width: 200px;
 }
+
 .subscribers .number:after  {
-    color:black;
-    font-weight: initial;/*remove later*/
+    color: black;
+    font-weight: initial;
     content: " Some Balls ";
 }
+
 .users-online .number:after {
     content: " Online"
 }

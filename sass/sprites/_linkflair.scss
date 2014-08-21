@@ -2,7 +2,7 @@
    Linkflair
 ================================================== */
 
-.linkflair .linkflairlabel {
+.thing.linkflair .linkflairlabel {
     position: absolute;
     left: 0;
     top: 0;
@@ -20,7 +20,7 @@
             border-radius: 0px;
 }
 
-.linkflair .linkflairlabel:hover {
+.thing.linkflair .linkflairlabel:hover {
     opacity: .9;
     color: #fff;
     font-weight: normal;
@@ -37,50 +37,50 @@
             border-top-right-radius: 50px;
 }
 
-.linkflair-bug .linkflairlabel {
+.thing .linkflair-bug .linkflairlabel {
     border-left: #B42932 solid 5px;
     background-position: 0 -90px;
     background-color: #B42932;
 }
 
-.linkflair-suggestion .linkflairlabel {
+.thing .linkflair-suggestion .linkflairlabel {
     border-left: #37AE65 solid 5px;
     background-position: 0 -567px;
     background-color: #37AE65;
 }
 
-.linkflair-trashtalkthread .linkflairlabel {
+.thing .linkflair-trashtalkthread .linkflairlabel {
     border-left: black solid 5px;
     background-position: 0 -667px;
     background-color: black;
 }
 
-.linkflair-announcement .linkflairlabel {
+.thing .linkflair-announcement .linkflairlabel {
     border-left: #995AB3 solid 5px;
     background-position: 0 10px;
     background-color: #995AB3;
 }
 
-.linkflair-gamethread .linkflairlabel {
+.thing .linkflair-gamethread .linkflairlabel {
     border-left: #E27D33 solid 5px;
     background-position: 0 -290px;
     background-color: #E27D33;
 }
 
-.linkflair-build .linkflairlabel {
+.thing .linkflair-build .linkflairlabel {
     border-left: #EEC338 solid 5px;
     background-position: 0 -190px;
     background-color: #EEC338;
 }
 
-.linkflair-mltp .linkflairlabel {
+.thing .linkflair-mltp .linkflairlabel {
     border-left: #4299D7 solid 5px;
     background-position: 0 -380px;
     background-color: #4299D7;
 }
 
-.linkflair-shared .linkflairlabel,
-.linkflair-tw .linkflairlabel {
+.thing .linkflair-shared .linkflairlabel,
+.thing .linkflair-tw .linkflairlabel {
     border-left: #36495D solid 5px;
     background-position: 0 -467px;
     background-color: #36495D;
