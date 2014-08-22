@@ -48,6 +48,10 @@
     5. Footer
     6. Wiki
     7. Sprites
+        7.1   Linkflair
+        7.2   Userflair
+        7.3   Tiles
+        7.4   Maps
     8. RES Specific Tweaks
 
 */
@@ -58,6 +62,7 @@ $misc: sprite-map("misc/*.png", $layout: vertical, $spacing: 5px);
 @debug "CREATE MISC SPRITES: #{$misc}";
 
 
+@import '_settings';
 @import 'base/_main';
 @import 'header/_main';
 @import 'sidebar/_main';

@@ -1,5 +1,5 @@
 /*!==================================================
-   Maps
+   7.3 Maps
 ================================================== */
 
 
@@ -41,6 +41,24 @@ $maps-2: sprite-map("maps-2/*.png", $layout: smart, $spacing: 3px);
       width: image-width(sprite-file($maps-2, $map));
       height: image-height(sprite-file($maps-2, $map));
       line-height: image-height(sprite-file($maps-2, $map));
+    }
+  }
+}
+
+/* Other Maps */
+$maps-other-layout: smart;
+$maps-other-spacing: 3px;
+$maps-other: sprite-map("maps-other/*.png", $layout: smart, $spacing: 3px);
+@debug "CREATE MAP SPRITES: #{$maps-other}";
+
+@each $map in sprite_names($maps-other) {
+  // empty.png is used to force 'smarter' packing
+  @if $map != "empty" {
+    .md a[href$="#map-#{$map}"] {
+      background: url('%%maps-other%%') sprite-position($maps-other, $map) no-repeat;
+      width: image-width(sprite-file($maps-other, $map));
+      height: image-height(sprite-file($maps-other, $map));
+      line-height: image-height(sprite-file($maps-other, $map));
     }
   }
 }

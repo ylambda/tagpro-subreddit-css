@@ -42,6 +42,10 @@
     overflow: visible !important;
 }
 
+.res-commentBoxes body > .content {
+    padding-right: 320px !important;
+}
+
 /*** Fixes color on send message and give gold buttons when hovering over a name on RES ***/
 #authorInfoToolTip .blueButton {
   float: right;
