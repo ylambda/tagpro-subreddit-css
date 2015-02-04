@@ -25,22 +25,26 @@ body > .side .md table tr:hover {
     background-color: #D4D4D4;
 }
 
+/** Streamers Table **/
 body .side .md table:nth-of-type(1) th {
-    background-color: yellow;
+    background-color: #6441A5;
     border-right: 1px solid yellow;
-    color: black;
+    color: white;
 }
 
+/** MLTP Table **/
 body .side .md table:nth-of-type(2) th {
     background-color: red;
     border-right: 1px solid red;
 }
 
+/** ELTP Table **/
 body .side .md table:nth-of-type(3) th {
     background-color: blue;
     border-right: 1px solid blue;
 }
 
+/** OLTP Table **/
 body .side .md table:nth-of-type(4) th {
     background-color: green;
     border-right: 1px solid green;

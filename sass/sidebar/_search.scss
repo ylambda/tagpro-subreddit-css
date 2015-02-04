@@ -11,7 +11,7 @@
 }
 
 #search input[type=text] {
-    height: 18px;
+    height: 25px;
     margin-bottom: 10px;
 }
 
@@ -35,4 +35,8 @@
     width: 17px;
     padding: 0;
     margin: 0;
+}
+
+#search input[type=submit] {
+    margin-top: 9px;
 }
