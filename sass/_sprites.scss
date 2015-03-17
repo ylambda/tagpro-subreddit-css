@@ -1,0 +1,677 @@
+/*!==================================================
+   7.0 Sprites
+================================================== */
+/* Some Ball Flair when No Flair is Present */
+.side .tagline .userattrs {
+  font-size: 0;
+}
+
+.userattrs:before {
+    content: "Some Ball (Change Your Name in the Sidebar!)";
+    color: #000000;
+    font-weight: bold;
+    font-size: x-small;
+    background: #FFFF00;
+}
+.flair[title]:not([title=""]) + .userattrs:before {
+    content: "";
+    font-size: 0;
+}
+.side .titlebox .userattrs:before {
+    content: "";
+    font-size: 0;
+}
+
+/*!==================================================
+   7.1 Linkflair
+================================================== */
+
+.thing.linkflair .linkflairlabel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(%%linkSprite%%) no-repeat;
+    display: block;
+    height: 76px;
+    border: none;
+    width: 0;
+    padding: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-border-radius: 0px;
+       -moz-border-radius: 0px;
+            border-radius: 0px;
+}
+
+.thing.linkflair .linkflairlabel:hover {
+    opacity: .9;
+    color: #fff;
+    font-weight: normal;
+    line-height: 70px;
+    text-indent: 60px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    width:  230px;
+    height: 79px;
+    max-width: 270px;
+    padding: 0;
+    -webkit-border-top-right-radius: 50px;
+       -moz-border-top-right-radius: 50px;
+            border-top-right-radius: 50px;
+}
+
+.thing .linkflair-bug .linkflairlabel {
+    border-left: #B42932 solid 5px;
+    background-position: 0 -90px;
+    background-color: #B42932;
+}
+
+.thing .linkflair-suggestion .linkflairlabel {
+    border-left: #37AE65 solid 5px;
+    background-position: 0 -567px;
+    background-color: #37AE65;
+}
+
+.thing .linkflair-trashtalkthread .linkflairlabel {
+    border-left: black solid 5px;
+    background-position: 0 -667px;
+    background-color: black;
+}
+
+.thing .linkflair-announcement .linkflairlabel {
+    border-left: #995AB3 solid 5px;
+    background-position: 0 10px;
+    background-color: #995AB3;
+}
+
+.thing .linkflair-gamethread .linkflairlabel {
+    border-left: #E27D33 solid 5px;
+    background-position: 0 -290px;
+    background-color: #E27D33;
+}
+
+.thing .linkflair-build .linkflairlabel {
+    border-left: #EEC338 solid 5px;
+    background-position: 0 -190px;
+    background-color: #EEC338;
+}
+
+.thing .linkflair-mltp .linkflairlabel {
+    border-left: #4299D7 solid 5px;
+    background-position: 0 -380px;
+    background-color: #4299D7;
+}
+
+.thing .linkflair-shared .linkflairlabel,
+.thing .linkflair-tw .linkflairlabel {
+    border-left: #36495D solid 5px;
+    background-position: 0 -467px;
+    background-color: #36495D;
+}
+
+/*!==================================================
+   7.2 User Flair
+================================================== */
+
+$flair-layout: vertical;
+$flair-spacing: 5px;
+$flair-map: sprite-map("flair/*.png", $layout: vertical, $spacing: $flair-spacing);
+@debug "CREATE FLAIR SPRITES: #{$flair-map}";
+
+.flair {
+  background: url('%%flair%%') 100px 100px no-repeat;
+  border: none;
+  line-height: 16px;
+}
+
+@each $flair in sprite_names($flair-map) {
+  .flair-#{$flair} {
+    background-position: sprite-position($flair-map, $flair);
+    width: auto;
+    padding-left: image-width(sprite-file($flair-map, $flair)) + 2px;
+    height: image-height(sprite-file($flair-map, $flair));
+  }
+}
+
+
+.md a[href^="#flair-"] {
+  background: url('%%flair%%') no-repeat;
+  border: none;
+  line-height: 16px;
+  display: inline-block;
+  cursor: default;
+}
+
+@each $flair in sprite_names($flair-map) {
+  .md a[href^="#flair-#{$flair}"] {
+    background-position: sprite-position($flair-map, $flair);
+    width: image-width(sprite-file($flair-map, $flair));
+    height: image-height(sprite-file($flair-map, $flair));
+  }
+}
+
+/*!==================================================
+   7.3 Tiles
+================================================== */
+/* tiles in image */
+
+.md a[href^="#tile-"] {
+  background: url('%%tiles%%') no-repeat;
+  border: none !important;
+  line-height: 16px;
+  display: inline-block;
+  cursor: default;
+}
+
+
+.md a[href^="#tile-spike"] {
+  background-position: -480px -0px;
+  width: 40px;
+  height: 40px;
+}
+
+.md a[href^="#tile-redball"] {
+  background-position: -560px -0px;
+  width: 40px;
+  height: 40px;
+}
+
+.md a[href^="#tile-blueball"] {
+  background-position: -600px -0px;
+  width: 40px;
+  height: 40px;
+}
+
+.md a[href^="#tile-bomb"] {
+  background-position: -480px -40px;
+  width: 40px;
+  height: 40px;
+}
+
+.md a[href^="#tile-yellowflag"] {
+  background-position: -520px -40px;
+  width: 40px;
+  height: 40px;
+}
+
+.md a[href^="#tile-redflag"] {
+  background-position: -560px -40px;
+  width: 40px;
+  height: 40px;
+}
+
+.md a[href^="#tile-blueflag"] {
+  background-position: -600px -40px;
+  width: 40px;
+  height: 40px;
+}
+
+.md a[href^="#tile-bomb-missing"] {
+  background-position: -480px -80px;
+  width: 40px;
+  height: 40px;
+}
+
+.md a[href^="#tile-yellowflag-missing"] {
+  background-position: -520px -80px;
+  width: 40px;
+  height: 40px;
+}
+
+.md a[href^="#tile-redflag-missing"] {
+  background-position: -560px -80px;
+  width: 40px;
+  height: 40px;
+}
+
+.md a[href^="#tile-blueflag-missing"] {
+  background-position: -600px -80px;
+  width: 40px;
+  height: 40px;
+}
+
+.md a[href^="#tile-gate"] {
+  background-position: -480px -120px;
+  width: 40px;
+  height: 40px;
+}
+
+.md a[href^="#tile-greengate"] {
+  background-position: -520px -120px;
+  width: 40px;
+  height: 40px;
+}
+
+.md a[href^="#tile-redgate"] {
+  background-position: -560px -120px;
+  width: 40px;
+  height: 40px;
+}
+
+.md a[href^="#tile-bluegate"] {
+  background-position: -600px -120px;
+  width: 40px;
+  height: 40px;
+}
+
+.md a[href^="#tile-jukejuice"] {
+  background-position: -480px -160px;
+  width: 40px;
+  height: 40px;
+}
+
+.md a[href^="#tile-tile"] {
+  background-position: -520px -160px;
+  width: 40px;
+  height: 40px;
+}
+
+.md a[href^="#tile-redtile"] {
+  background-position: -560px -160px;
+  width: 40px;
+  height: 40px;
+}
+
+.md a[href^="#tile-bluetile"] {
+  background-position: -600px -160px;
+  width: 40px;
+  height: 40px;
+}
+
+.md a[href^="#tile-rollingbomb"] {
+  background-position: -480px -200px;
+  width: 40px;
+  height: 40px;
+}
+
+.md a[href^="#tile-redendzone"] {
+  background-position: -560px -200px;
+  width: 40px;
+  height: 40px;
+}
+
+.md a[href^="#tile-blueendzone"] {
+  background-position: -600px -200px;
+  width: 40px;
+  height: 40px;
+}
+
+.md a[href^="#tile-tagpro"] {
+  background-position: -480px -240px;
+  width: 40px;
+  height: 40px;
+}
+
+.md a[href^="#tile-button"] {
+  background-position: -520px -240px;
+  width: 40px;
+  height: 40px;
+}
+
+.md a[href^="#tile-topspeed"] {
+  background-position: -480px -280px;
+  width: 40px;
+  height: 40px;
+}
+
+.md a[href^="#tile-marsball"] {
+  background-position: -480px -360px;
+  width: 80px;
+  height: 80px;
+}
+
+/* Animated Blue Speedpad */
+.md a[href^="#tile-speedpad"] {
+  display: inline-block;
+  background: url(%%animated%%) no-repeat;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: speedpad 0.7s steps(4) infinite;
+  -moz-animation: speedpad 0.7s steps(4) infinite;
+  -ms-animation: speedpad 0.7s steps(4) infinite;
+  -o-animation: speedpad 0.7s steps(4) infinite;
+  animation: speedpad 0.7s steps(4) infinite;
+}
+
+.md a[href^="#tile-speedpad"]:hover {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  -o-animation: none;
+  animation: none;
+  background-position: -160px -81px;
+}
+
+@-webkit-keyframes speedpad {
+  from {
+    background-position: 0 -81px;
+  }
+
+  to {
+    background-position: -160px -81px;
+  }
+}
+@-moz-keyframes speedpad {
+  from {
+    background-position: 0 -81px;
+  }
+
+  to {
+    background-position: -160px -81px;
+  }
+}
+@-ms-keyframes speedpad {
+  from {
+    background-position: 0 -81px;
+  }
+
+  to {
+    background-position: -160px -81px;
+  }
+}
+@-o-keyframes speedpad {
+  from {
+    background-position: 0 -81px;
+  }
+
+  to {
+    background-position: -160px -81px;
+  }
+}
+@keyframes speedpad {
+  from {
+    background-position: 0 -81px;
+  }
+
+  to {
+    background-position: -160px -81px;
+  }
+}
+/* Animated Red Speedpad */
+.md a[href^="#tile-speedpadred"] {
+  display: inline-block;
+  background: url(%%animated%%) no-repeat;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: speedpadred 0.7s steps(4) infinite;
+  -moz-animation: speedpadred 0.7s steps(4) infinite;
+  -ms-animation: speedpadred 0.7s steps(4) infinite;
+  -o-animation: speedpadred 0.7s steps(4) infinite;
+  animation: speedpadred 0.7s steps(4) infinite;
+}
+
+.md a[href^="#tile-speedpadred"]:hover {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  -o-animation: none;
+  animation: none;
+  background-position: -160px 0;
+}
+
+@-webkit-keyframes speedpadred {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -160px 0;
+  }
+}
+@-moz-keyframes speedpadred {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -160px 0;
+  }
+}
+@-ms-keyframes speedpadred {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -160px 0;
+  }
+}
+@-o-keyframes speedpadred {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -160px 0;
+  }
+}
+@keyframes speedpadred {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -160px 0;
+  }
+}
+/* Animated Blue Speedpad */
+.md a[href^="#tile-speedpadblue"] {
+  display: inline-block;
+  background: url(%%animated%%) no-repeat;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: speedpadblue 0.7s steps(4) infinite;
+  -moz-animation: speedpadblue 0.7s steps(4) infinite;
+  -ms-animation: speedpadblue 0.7s steps(4) infinite;
+  -o-animation: speedpadblue 0.7s steps(4) infinite;
+  animation: speedpadblue 0.7s steps(4) infinite;
+}
+
+.md a[href^="#tile-speedpadblue"]:hover {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  -o-animation: none;
+  animation: none;
+  background-position: -160px -41px;
+}
+
+@-webkit-keyframes speedpadblue {
+  from {
+    background-position: 0 -41px;
+  }
+
+  to {
+    background-position: -160px -41px;
+  }
+}
+@-moz-keyframes speedpadblue {
+  from {
+    background-position: 0 -41px;
+  }
+
+  to {
+    background-position: -160px -41px;
+  }
+}
+@-ms-keyframes speedpadblue {
+  from {
+    background-position: 0 -41px;
+  }
+
+  to {
+    background-position: -160px -41px;
+  }
+}
+@-o-keyframes speedpadblue {
+  from {
+    background-position: 0 -41px;
+  }
+
+  to {
+    background-position: -160px -41px;
+  }
+}
+@keyframes speedpadblue {
+  from {
+    background-position: 0 -41px;
+  }
+
+  to {
+    background-position: -160px -41px;
+  }
+}
+/* Animated Portal */
+.md a[href^="#tile-portal"] {
+  display: inline-block;
+  background: url(%%animated%%) no-repeat;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: portal 0.7s steps(4) infinite;
+  -moz-animation: portal 0.7s steps(4) infinite;
+  -ms-animation: portal 0.7s steps(4) infinite;
+  -o-animation: portal 0.7s steps(4) infinite;
+  animation: portal 0.7s steps(4) infinite;
+}
+
+.md a[href^="#tile-portal"]:hover {
+  animation: none;
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  -o-animation: none;
+  animation: none;
+  background-position: -160px -121px;
+}
+
+@-webkit-keyframes portal {
+  from {
+    background-position: 0 -121px;
+  }
+
+  to {
+    background-position: -160px -121px;
+  }
+}
+@-moz-keyframes portal {
+  from {
+    background-position: 0 -121px;
+  }
+
+  to {
+    background-position: -160px -121px;
+  }
+}
+@-ms-keyframes portal {
+  from {
+    background-position: 0 -121px;
+  }
+
+  to {
+    background-position: -160px -121px;
+  }
+}
+@-o-keyframes portal {
+  from {
+    background-position: 0 -121px;
+  }
+
+  to {
+    background-position: -160px -121px;
+  }
+}
+@keyframes portal {
+  from {
+    background-position: 0 -121px;
+  }
+
+  to {
+    background-position: -160px -121px;
+  }
+}
+
+
+
+/*!==================================================
+   7.4 Maps
+================================================== */
+
+
+.md a[href*="#map-"] {
+  border: none;
+  display: inline-block;
+}
+
+/* First Set of Maps */
+$maps-1-layout: smart;
+$maps-1-spacing: 3px;
+$maps-1: sprite-map("maps-1/*.png", $layout: smart, $spacing: 3px);
+@debug "CREATE MAP SPRITES: #{$maps-1}";
+@debug "CREATE MAP SPRITES: #{$maps-1}";
+
+@each $map in sprite_names($maps-1) {
+  // empty.png is used to force 'smarter' packing
+  @if $map != "empty" {
+    .md a[href$="#map-#{$map}"] {
+      background: url('%%maps-1%%') sprite-position($maps-1, $map) no-repeat;
+      width: image-width(sprite-file($maps-1, $map));
+      height: image-height(sprite-file($maps-1, $map));
+      line-height: image-height(sprite-file($maps-1, $map));
+    }
+  }
+}
+
+/* Second Set of Maps */
+$maps-2-layout: smart;
+$maps-2-spacing: 3px;
+$maps-2: sprite-map("maps-2/*.png", $layout: smart, $spacing: 3px);
+@debug "CREATE MAP SPRITES: #{$maps-2}";
+
+@each $map in sprite_names($maps-2) {
+  // empty.png is used to force 'smarter' packing
+  @if $map != "empty" {
+    .md a[href$="#map-#{$map}"] {
+      background: url('%%maps-2%%') sprite-position($maps-2, $map) no-repeat;
+      width: image-width(sprite-file($maps-2, $map));
+      height: image-height(sprite-file($maps-2, $map));
+      line-height: image-height(sprite-file($maps-2, $map));
+    }
+  }
+}
+
+/* Third Set of Maps */
+$maps-3-layout: smart;
+$maps-3-spacing: 3px;
+$maps-3: sprite-map("maps-3/*.png", $layout: smart, $spacing: 3px);
+@debug "CREATE MAP SPRITES: #{$maps-3}";
+
+@each $map in sprite_names($maps-3) {
+  // empty.png is used to force 'smarter' packing
+  @if $map != "empty" {
+    .md a[href$="#map-#{$map}"] {
+      background: url('%%maps-3%%') sprite-position($maps-3, $map) no-repeat;
+      width: image-width(sprite-file($maps-3, $map));
+      height: image-height(sprite-file($maps-3, $map));
+      line-height: image-height(sprite-file($maps-3, $map));
+    }
+  }
+}
+
+/* Other Maps */
+$maps-other-layout: smart;
+$maps-other-spacing: 3px;
+$maps-other: sprite-map("maps-other/*.png", $layout: smart, $spacing: 3px);
+@debug "CREATE MAP SPRITES: #{$maps-other}";
+
+@each $map in sprite_names($maps-other) {
+  // empty.png is used to force 'smarter' packing
+  @if $map != "empty" {
+    .md a[href$="#map-#{$map}"] {
+      background: url('%%maps-other%%') sprite-position($maps-other, $map) no-repeat;
+      width: image-width(sprite-file($maps-other, $map));
+      height: image-height(sprite-file($maps-other, $map));
+      line-height: image-height(sprite-file($maps-other, $map));
+    }
+  }
+}
