@@ -54,6 +54,7 @@
         7.3   Tiles
         7.4   Maps
     8. RES Specific Tweaks
+        8.1   RES Night Mode
 
 */
 /*!==================================================
@@ -207,11 +208,11 @@ a.title {
   margin-top: 1.125em;
 }
 
-.md h5 { 
+.md h5 {
   font-weight: bold;
 }
 
-.md h6 { 
+.md h6 {
   font-style: italic;
   text-decoration: none;
 }
@@ -237,7 +238,7 @@ a.title {
 }
 
 .md table tr:nth-of-type(odd) td {
-  background-color: rgba(0,0,0,.024);
+  background-color: rgba(0, 0, 0, 0.024);
 }
 
 .md table tr:hover td {
@@ -309,7 +310,7 @@ a.title {
   font-weight: bold;
   font-size: 12px;
 }
- 
+
 .infobar.gold-accent p:first-letter {
   text-transform: uppercase;
 }
@@ -341,13 +342,13 @@ textarea:hover {
    2.0 Header
 ================================================== */
 #header {
-  background: url(%%background%%) bottom no-repeat #000;
+  background: url(%%background%%) bottom no-repeat black;
   border: none;
 }
 
 #header-bottom-left::after {
   content: "";
-  background: rgba(255,255,255,.1);
+  background: rgba(255, 255, 255, 0.1);
   width: 100%;
   height: 100%;
   display: block;
@@ -445,7 +446,8 @@ textarea:hover {
   border-bottom: none;
   background-color: transparent;
   padding: 10px 12px;
-  line-height: 34px; /* 14+10+10 */
+  line-height: 34px;
+  /* 14+10+10 */
   color: #aaa;
   text-transform: uppercase;
   font-weight: normal;
@@ -634,7 +636,7 @@ textarea:hover {
   width: 29px;
   height: 29px;
   margin-left: 0;
-  background: #ddd url(%%misc%%) 0 -161px !important;
+  background: #dddddd url(%%misc%%) 0 -161px !important;
   border: 1px solid #999;
   border-radius: 0 2px 2px 0;
 }
@@ -1068,7 +1070,7 @@ textarea:hover {
 
 .side form .md > ul:nth-of-type(1) li {
   display: block;
-  margin: 0 -9px;
+  width: calc(100% - -12px);
 }
 
 .side form .md > ul:nth-of-type(1) li a {
@@ -1081,20 +1083,24 @@ textarea:hover {
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
-  width: calc(50% - 20px);
+  width: 139px; /* 300/2-9-2*/
   text-align: center;
   height: 32px;
   line-height: 32px;
   margin: 7px 9px;
 }
 
-.side form .md > ul:nth-of-type(1) li a:nth-of-type(1):nth-last-of-type(1) {
-  width: calc(100% - 10px);
+.side form .md > ul:nth-of-type(1) li a:nth-of-type(1) {
+  margin-left: 0;
+}
+
+.side form .md > ul:nth-of-type(1) li a:nth-last-of-type(1) {
+  margin-right: 0;
 }
 
 .side form .md > ul:nth-of-type(1) li:nth-of-type(1) a {
-  width: calc(100% - 102px) !important;
-  margin: 5px 50px 25px;
+  width: 216px !important; /* 300-82-2 */
+  margin: 5px 41px 25px;
   height: 50px;
   line-height: 50px;
   font-weight: bold;
@@ -1163,7 +1169,6 @@ textarea:hover {
    3.5.4 Sidebar Usertext Announcement
 ================================================== */
 /* Adapted from this tutorial: redd.it/mw2ip */
-
 .hot-page div.content {
   padding-top: 50px;
 }
@@ -1186,8 +1191,10 @@ textarea:hover {
   border-bottom-width: 3px;
   text-align: left;
   margin: 15px 0;
-  width: calc(100% - 438px); /* 7+1+1+350+39+40 */
-  min-width: 590px; /* 1028-438 */
+  width: calc(100% - 438px);
+  /* 7+1+1+350+39+40 */
+  min-width: 590px;
+  /* 1028-438 */
   padding: 7px 0px 7px 7px;
   font-size: medium;
   font-weight: bold;
@@ -1383,7 +1390,6 @@ textarea:hover {
 }
 
 /* "Message the moderators" text adapted from solution to redd.it/1w4r3v */
-
 .sidecontentbox a.helplink {
   font-size: 0;
   padding: 0 !important;
@@ -1897,7 +1903,6 @@ div#progressIndicator .RESThrobber {
     opacity: 0.0;
   }
 }
-
 @keyframes tagged {
   0% {
     color: #bb4844;
@@ -1926,7 +1931,6 @@ div#progressIndicator .RESThrobber {
     opacity: 0.0;
   }
 }
-
 .arrow.downmod:focus:after {
   content: "Popped!";
   font-size: 12px;
@@ -1971,7 +1975,6 @@ div#progressIndicator .RESThrobber {
     opacity: 0.0;
   }
 }
-
 @keyframes popped {
   0% {
     color: #72b1e5;
@@ -1996,7 +1999,6 @@ div#progressIndicator .RESThrobber {
     opacity: 0.0;
   }
 }
-
 /* End downvote animation */
 .midcol {
   overflow: initial;
@@ -2288,7 +2290,7 @@ body.post-linkflair-black .arrow.down {
   border: 1px solid #ddd !important;
   border-radius: 2px !important;
   padding: 5px 8px 5px 5px !important;
-  overflow: hidden !important;
+  overflow: visible !important;
 }
 
 .comments-page .content .comment.collapsed {
@@ -2600,6 +2602,22 @@ body > .debuginfo {
 /*!==================================================
    8.0 RES Specific Tweaks
 ================================================== */
+.res-commentBoxes body > .content {
+  margin-right: 389px !important;
+  /* 350+39 */
+}
+
+/*** Fixes color on send message and give gold buttons when hovering over a name on RES ***/
+#authorInfoToolTip .blueButton {
+  float: right;
+  margin-left: 8px;
+  margin-top: 12px;
+  color: white;
+}
+
+/*!==================================================
+   8.1 RES Night Mode
+================================================== */
 .res-nightmode .sidebox.submit.submit-text {
   background: none !important;
   margin-top: -45px;
@@ -2625,18 +2643,64 @@ body > .debuginfo {
   border-color: #9edbf8 !important;
 }
 
-.res-commentBoxes .comment {
-  overflow: visible !important;
+.res-nightmode .md h1, .res-nightmode .md h2, .res-nightmode .md h3, .res-nightmode .md h4, .res-nightmode .md h5, .res-nightmode .md h6 {
+  color: #eee !important;
 }
 
-.res-commentBoxes body > .content {
-  margin-right: 389px !important; /* 350+39 */
+.res-nightmode .titlebox>:not(.usertext):not(.clear) {
+  background-color: #222;
+  border-color: #777;
 }
 
-/*** Fixes color on send message and give gold buttons when hovering over a name on RES ***/
-#authorInfoToolTip .blueButton {
-  float: right;
-  margin-left: 8px;
-  margin-top: 12px;
-  color: white;
+.res-nightmode .tabmenu li a {
+  background-color: transparent;
+}
+
+.res-nightmode ul.tabmenu li.selected a {
+  background-color: #222;
+}
+
+.res-nightmode .listing-page .sitetable > div:nth-of-type(2n+1) {
+  background-color: #222;
+}
+
+.res-nightmode .listing-page #siteTable, .res-nightmode .comments-page #siteTable, .res-nightmode .search-page #siteTable {
+  border-color: #777;
+}
+
+.res-nightmode .hot-page .titlebox .usertext-body .md h4:nth-of-type(1) a {
+  background-color: #222;
+  border-color: #777;
+}
+
+.res-nightmode .link, .res-nightmode .listing-page .sitetable > .thing, .res-nightmode .search-page .sitetable > .thing, .res-nightmode div.nav-buttons {
+  border-color: #777 !important;
+}
+
+.res-nightmode div#progressIndicator {
+  background-color: #222;
+  border-color: #777;
+  opacity: 1;
+}
+
+.res-nightmode div#progressIndicator p {
+  color: #aaa;
+}
+
+.res-nightmode .footer-parent .footer.rounded {
+  border-color: #777;
+  background-color: #222;
+}
+
+.res-nightmode .footer .col {
+  border-color: #777;
+}
+
+.res-nightmode .titlebox .usertext {
+  background-color: #222;
+}
+
+.res-nightmode .side .md blockquote {
+  background-color: #222;
+  border-color: #777;
 }
