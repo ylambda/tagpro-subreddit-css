@@ -1,5 +1,8 @@
 #!/bin/bash
 
+
+#./create_map_sprites file1 [file2 [file3..]] dest/
+
 FILES="${@:1:$#-1}"
 DEST="${@:(-1)}"
 
