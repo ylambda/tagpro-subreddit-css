@@ -1,0 +1,377 @@
+.flair {
+  background: url('%%flair%%') 100px 100px no-repeat;
+  border: none;
+  line-height: 16px;
+}
+
+
+.flair-VI {
+    background-position:0 0;
+    width: 18px;
+    height: 18px;
+    padding-left: 20px;
+}
+
+.flair-V {
+    background-position:-18px 0;
+    width: 16px;
+    height: 18px;
+    padding-left: 18px;
+}
+
+.flair-SubMicrophone {
+    background-position:-34px 0;
+    width: 18px;
+    height: 18px;
+    padding-left: 20px;
+}
+
+.flair-O1 {
+    background-position:0 -18px;
+    width: 18px;
+    height: 18px;
+    padding-left: 20px;
+}
+
+.flair-IV {
+    background-position:-18px -18px;
+    width: 18px;
+    height: 18px;
+    padding-left: 20px;
+}
+
+.flair-III {
+    background-position:-52px 0;
+    width: 18px;
+    height: 18px;
+    padding-left: 20px;
+}
+
+.flair-II {
+    background-position:-52px -18px;
+    width: 18px;
+    height: 18px;
+    padding-left: 20px;
+}
+
+.flair-I {
+    background-position:0 -36px;
+    width: 18px;
+    height: 18px;
+    padding-left: 20px;
+}
+
+.flair-E6 {
+    background-position:-18px -36px;
+    width: 18px;
+    height: 18px;
+    padding-left: 20px;
+}
+
+.flair-E5 {
+    background-position:-36px -18px;
+    width: 16px;
+    height: 18px;
+    padding-left: 18px;
+}
+
+.flair-E4 {
+    background-position:-36px -36px;
+    width: 18px;
+    height: 18px;
+    padding-left: 20px;
+}
+
+.flair-E3 {
+    background-position:-70px 0;
+    width: 18px;
+    height: 18px;
+    padding-left: 20px;
+}
+
+.flair-E2 {
+    background-position:-70px -18px;
+    width: 18px;
+    height: 18px;
+    padding-left: 20px;
+}
+
+.flair-E1 {
+    background-position:-70px -36px;
+    width: 18px;
+    height: 18px;
+    padding-left: 20px;
+}
+
+.flair-World {
+    background-position:-54px -36px;
+    width: 16px;
+    height: 16px;
+    padding-left: 18px;
+}
+
+.flair-Weekly {
+    background-position:0 -54px;
+    width: 12px;
+    height: 16px;
+    padding-left: 14px;
+}
+
+.flair-Unfortunate {
+    background-position:-12px -54px;
+    width: 11px;
+    height: 16px;
+    padding-left: 13px;
+}
+
+.flair-UTurn {
+    background-position:-23px -54px;
+    width: 15px;
+    height: 16px;
+    padding-left: 17px;
+}
+
+.flair-Route {
+    background-position:-38px -54px;
+    width: 13px;
+    height: 16px;
+    padding-left: 15px;
+}
+
+.flair-Pokemon {
+    background-position:-51px -54px;
+    width: 16px;
+    height: 16px;
+    padding-left: 18px;
+}
+
+.flair-Phi {
+    background-position:-67px -54px;
+    width: 16px;
+    height: 16px;
+    padding-left: 18px;
+}
+
+.flair-Peace {
+    background-position:0 -70px;
+    width: 16px;
+    height: 16px;
+    padding-left: 18px;
+}
+
+.flair-Moon {
+    background-position:-16px -70px;
+    width: 16px;
+    height: 16px;
+    padding-left: 18px;
+}
+
+.flair-Monthly {
+    background-position:-32px -70px;
+    width: 16px;
+    height: 14px;
+    padding-left: 18px;
+}
+
+.flair-Microphone {
+    background-position:-88px 0;
+    width: 16px;
+    height: 16px;
+    padding-left: 18px;
+}
+
+.flair-Mario {
+    background-position:-88px -16px;
+    width: 16px;
+    height: 15px;
+    padding-left: 18px;
+}
+
+.flair-Lucky2 {
+    background-position:-88px -31px;
+    width: 16px;
+    height: 16px;
+    padding-left: 18px;
+}
+
+.flair-Lucky {
+    background-position:-88px -47px;
+    width: 16px;
+    height: 14px;
+    padding-left: 18px;
+}
+
+.flair-Love {
+    background-position:-88px -61px;
+    width: 16px;
+    height: 15px;
+    padding-left: 18px;
+}
+
+.flair-Halloween {
+    background-position:0 -86px;
+    width: 16px;
+    height: 16px;
+    padding-left: 18px;
+}
+
+.flair-Freezing {
+    background-position:-16px -86px;
+    width: 15px;
+    height: 16px;
+    padding-left: 17px;
+}
+
+.flair-Fools {
+    background-position:-31px -86px;
+    width: 16px;
+    height: 16px;
+    padding-left: 18px;
+}
+
+.flair-Flux {
+    background-position:-47px -86px;
+    width: 16px;
+    height: 16px;
+    padding-left: 18px;
+}
+
+.flair-Easter {
+    background-position:-63px -86px;
+    width: 16px;
+    height: 16px;
+    padding-left: 18px;
+}
+
+.flair-Donator3 {
+    background-position:-48px -70px;
+    width: 16px;
+    height: 14px;
+    padding-left: 18px;
+}
+
+.flair-Donator2 {
+    background-position:-79px -86px;
+    width: 16px;
+    height: 16px;
+    padding-left: 18px;
+}
+
+.flair-Dolphin {
+    background-position:-104px 0;
+    width: 12px;
+    height: 16px;
+    padding-left: 14px;
+}
+
+.flair-Developer2 {
+    background-position:-116px 0;
+    width: 16px;
+    height: 16px;
+    padding-left: 18px;
+}
+
+.flair-Developer {
+    background-position:-116px -16px;
+    width: 16px;
+    height: 16px;
+    padding-left: 18px;
+}
+
+.flair-Dalmatians {
+    background-position:-116px -32px;
+    width: 16px;
+    height: 14px;
+    padding-left: 18px;
+}
+
+.flair-Contributor {
+    background-position:-116px -46px;
+    width: 14px;
+    height: 16px;
+    padding-left: 16px;
+}
+
+.flair-Bowling {
+    background-position:-116px -62px;
+    width: 16px;
+    height: 16px;
+    padding-left: 18px;
+}
+
+.flair-Boiling {
+    background-position:-116px -78px;
+    width: 10px;
+    height: 16px;
+    padding-left: 12px;
+}
+
+.flair-Birthday2 {
+    background-position:0 -102px;
+    width: 16px;
+    height: 16px;
+    padding-left: 18px;
+}
+
+.flair-Birthday {
+    background-position:-16px -102px;
+    width: 14px;
+    height: 16px;
+    padding-left: 16px;
+}
+
+.flair-Bacon {
+    background-position:-30px -102px;
+    width: 16px;
+    height: 15px;
+    padding-left: 18px;
+}
+
+.flair-Axe {
+    background-position:-46px -102px;
+    width: 16px;
+    height: 15px;
+    padding-left: 18px;
+}
+
+.flair-Alien {
+    background-position:-132px 0;
+    width: 13px;
+    height: 16px;
+    padding-left: 15px;
+}
+
+.flair-ABC {
+    background-position:-64px -70px;
+    width: 16px;
+    height: 14px;
+    padding-left: 18px;
+}
+
+.flair-Pi {
+    background-position:-62px -102px;
+    width: 15px;
+    height: 15px;
+    padding-left: 17px;
+}
+
+.flair-Donator {
+    background-position:-77px -102px;
+    width: 15px;
+    height: 15px;
+    padding-left: 17px;
+}
+
+.flair-Contest {
+    background-position:-92px -102px;
+    width: 15px;
+    height: 15px;
+    padding-left: 17px;
+}
+
+.flair-Daily {
+    background-position:-132px -16px;
+    width: 12px;
+    height: 14px;
+    padding-left: 14px;
+}

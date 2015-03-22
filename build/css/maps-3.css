@@ -1,0 +1,152 @@
+
+.md a[href$="#maps-empty"] {
+  background: url('%%maps-3%%') no-repeat;
+  background-position:0 0;
+  width: 540px;
+  height: 1.px;
+  line-height: 1px;
+}
+
+.md a[href$="#maps-volt"] {
+  background: url('%%maps-3%%') no-repeat;
+  background-position:0 -1px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-twister"] {
+  background: url('%%maps-3%%') no-repeat;
+  background-position:-180px -1px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-shine"] {
+  background: url('%%maps-3%%') no-repeat;
+  background-position:-360px -1px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-rocketballs"] {
+  background: url('%%maps-3%%') no-repeat;
+  background-position:0 -181px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-renegade"] {
+  background: url('%%maps-3%%') no-repeat;
+  background-position:-180px -181px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-pilot"] {
+  background: url('%%maps-3%%') no-repeat;
+  background-position:-360px -181px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-monarch"] {
+  background: url('%%maps-3%%') no-repeat;
+  background-position:-540px 0;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-jagged"] {
+  background: url('%%maps-3%%') no-repeat;
+  background-position:-540px -180px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-iron"] {
+  background: url('%%maps-3%%') no-repeat;
+  background-position:0 -361px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-hyperdrive"] {
+  background: url('%%maps-3%%') no-repeat;
+  background-position:-180px -361px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-hornswoggle"] {
+  background: url('%%maps-3%%') no-repeat;
+  background-position:-360px -361px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-gatekeeper"] {
+  background: url('%%maps-3%%') no-repeat;
+  background-position:-540px -361px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-frontdoor"] {
+  background: url('%%maps-3%%') no-repeat;
+  background-position:-720px 0;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-flame"] {
+  background: url('%%maps-3%%') no-repeat;
+  background-position:-720px -180px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-constriction"] {
+  background: url('%%maps-3%%') no-repeat;
+  background-position:-720px -360px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-cloud"] {
+  background: url('%%maps-3%%') no-repeat;
+  background-position:0 -541px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-backdoor"] {
+  background: url('%%maps-3%%') no-repeat;
+  background-position:-180px -541px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-angry-pig"] {
+  background: url('%%maps-3%%') no-repeat;
+  background-position:-360px -541px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}

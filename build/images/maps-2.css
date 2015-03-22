@@ -1,0 +1,245 @@
+/* glue: 0.11.0 hash: ec5c854bb2 */
+        .sprite-maps-2-empty,
+.sprite-maps-2-yiss-3-2,
+.sprite-maps-2-whirlwind,
+.sprite-maps-2-vee,
+.sprite-maps-2-thinking-with-portals,
+.sprite-maps-2-swoop,
+.sprite-maps-2-spiders,
+.sprite-maps-2-speedway,
+.sprite-maps-2-simplicity,
+.sprite-maps-2-shortcut,
+.sprite-maps-2-rink,
+.sprite-maps-2-reflex-2,
+.sprite-maps-2-pokeball,
+.sprite-maps-2-oval,
+.sprite-maps-2-micro,
+.sprite-maps-2-lold,
+.sprite-maps-2-hyper-reactor,
+.sprite-maps-2-hourglass,
+.sprite-maps-2-gloryhole,
+.sprite-maps-2-foozball,
+.sprite-maps-2-figure-8,
+.sprite-maps-2-dumbbell,
+.sprite-maps-2-clutch,
+.sprite-maps-2-center-flag,
+.sprite-maps-2-bounce,
+.sprite-maps-2-boosts,
+.sprite-maps-2-big-vird,
+.sprite-maps-2-battery,
+.sprite-maps-2-arena {
+            background-image: url('maps-2.png');
+            background-repeat: no-repeat;
+        }
+        
+        .sprite-maps-2-empty {
+            background-position: 0 0;
+            width: 540px;
+            height: 1px;
+        }
+        
+        .sprite-maps-2-yiss-3-2 {
+            background-position: 0 -1px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-whirlwind {
+            background-position: -180px -1px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-vee {
+            background-position: -360px -1px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-thinking-with-portals {
+            background-position: 0 -181px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-swoop {
+            background-position: -180px -181px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-spiders {
+            background-position: -360px -181px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-speedway {
+            background-position: -540px 0;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-simplicity {
+            background-position: -540px -180px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-shortcut {
+            background-position: 0 -361px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-rink {
+            background-position: -180px -361px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-reflex-2 {
+            background-position: -360px -361px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-pokeball {
+            background-position: -540px -361px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-oval {
+            background-position: -720px 0;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-micro {
+            background-position: -720px -180px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-lold {
+            background-position: -720px -360px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-hyper-reactor {
+            background-position: 0 -541px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-hourglass {
+            background-position: -180px -541px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-gloryhole {
+            background-position: -360px -541px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-foozball {
+            background-position: -540px -541px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-figure-8 {
+            background-position: -720px -541px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-dumbbell {
+            background-position: -900px 0;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-clutch {
+            background-position: -900px -180px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-center-flag {
+            background-position: -900px -360px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-bounce {
+            background-position: -900px -540px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-boosts {
+            background-position: 0 -721px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-big-vird {
+            background-position: -180px -721px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-battery {
+            background-position: -360px -721px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-2-arena {
+            background-position: -540px -721px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        @media screen and (-webkit-min-device-pixel-ratio: 1.0), screen and (min--moz-device-pixel-ratio: 1.0), screen and (-o-min-device-pixel-ratio: 100/100), screen and (min-device-pixel-ratio: 1.0), screen and (min-resolution: 1.0dppx) {
+            .sprite-maps-2-empty,
+    .sprite-maps-2-yiss-3-2,
+    .sprite-maps-2-whirlwind,
+    .sprite-maps-2-vee,
+    .sprite-maps-2-thinking-with-portals,
+    .sprite-maps-2-swoop,
+    .sprite-maps-2-spiders,
+    .sprite-maps-2-speedway,
+    .sprite-maps-2-simplicity,
+    .sprite-maps-2-shortcut,
+    .sprite-maps-2-rink,
+    .sprite-maps-2-reflex-2,
+    .sprite-maps-2-pokeball,
+    .sprite-maps-2-oval,
+    .sprite-maps-2-micro,
+    .sprite-maps-2-lold,
+    .sprite-maps-2-hyper-reactor,
+    .sprite-maps-2-hourglass,
+    .sprite-maps-2-gloryhole,
+    .sprite-maps-2-foozball,
+    .sprite-maps-2-figure-8,
+    .sprite-maps-2-dumbbell,
+    .sprite-maps-2-clutch,
+    .sprite-maps-2-center-flag,
+    .sprite-maps-2-bounce,
+    .sprite-maps-2-boosts,
+    .sprite-maps-2-big-vird,
+    .sprite-maps-2-battery,
+    .sprite-maps-2-arena {
+                background-image: url('maps-2.png');
+                -webkit-background-size: 1080px 901px;
+                -moz-background-size: 1080px 901px;
+                background-size: 1080px 901px;
+            }
+        }
+        

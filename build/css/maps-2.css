@@ -1,0 +1,232 @@
+
+.md a[href$="#maps-empty"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:0 0;
+  width: 540px;
+  height: 1.px;
+  line-height: 1px;
+}
+
+.md a[href$="#maps-yiss-3-2"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:0 -1px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-whirlwind"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:-180px -1px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-vee"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:-360px -1px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-thinking-with-portals"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:0 -181px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-swoop"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:-180px -181px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-spiders"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:-360px -181px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-speedway"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:-540px 0;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-simplicity"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:-540px -180px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-shortcut"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:0 -361px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-rink"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:-180px -361px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-reflex-2"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:-360px -361px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-pokeball"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:-540px -361px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-oval"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:-720px 0;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-micro"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:-720px -180px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-lold"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:-720px -360px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-hyper-reactor"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:0 -541px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-hourglass"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:-180px -541px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-gloryhole"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:-360px -541px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-foozball"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:-540px -541px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-figure-8"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:-720px -541px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-dumbbell"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:-900px 0;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-clutch"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:-900px -180px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-center-flag"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:-900px -360px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-bounce"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:-900px -540px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-boosts"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:0 -721px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-big-vird"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:-180px -721px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-battery"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:-360px -721px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}
+
+.md a[href$="#maps-arena"] {
+  background: url('%%maps-2%%') no-repeat;
+  background-position:-540px -721px;
+  width: 180px;
+  height: 180.px;
+  line-height: 180px;
+}

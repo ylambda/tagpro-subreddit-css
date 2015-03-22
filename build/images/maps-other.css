@@ -1,0 +1,93 @@
+/* glue: 0.11.0 hash: 77ee996ca7 */
+        .sprite-maps-other-empty,
+.sprite-maps-other-spikedome,
+.sprite-maps-other-snipers-v3,
+.sprite-maps-other-shortercut-challenge,
+.sprite-maps-other-ofm,
+.sprite-maps-other-mini-ofm,
+.sprite-maps-other-holdup,
+.sprite-maps-other-caravan,
+.sprite-maps-other-bombing-race,
+.sprite-maps-other-2v2 {
+            background-image: url('maps-other.png');
+            background-repeat: no-repeat;
+        }
+        
+        .sprite-maps-other-empty {
+            background-position: 0 0;
+            width: 540px;
+            height: 1px;
+        }
+        
+        .sprite-maps-other-spikedome {
+            background-position: 0 -1px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-other-snipers-v3 {
+            background-position: -180px -1px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-other-shortercut-challenge {
+            background-position: -360px -1px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-other-ofm {
+            background-position: 0 -181px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-other-mini-ofm {
+            background-position: -180px -181px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-other-holdup {
+            background-position: -360px -181px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-other-caravan {
+            background-position: -540px 0;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-other-bombing-race {
+            background-position: -540px -180px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-other-2v2 {
+            background-position: 0 -361px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        @media screen and (-webkit-min-device-pixel-ratio: 1.0), screen and (min--moz-device-pixel-ratio: 1.0), screen and (-o-min-device-pixel-ratio: 100/100), screen and (min-device-pixel-ratio: 1.0), screen and (min-resolution: 1.0dppx) {
+            .sprite-maps-other-empty,
+    .sprite-maps-other-spikedome,
+    .sprite-maps-other-snipers-v3,
+    .sprite-maps-other-shortercut-challenge,
+    .sprite-maps-other-ofm,
+    .sprite-maps-other-mini-ofm,
+    .sprite-maps-other-holdup,
+    .sprite-maps-other-caravan,
+    .sprite-maps-other-bombing-race,
+    .sprite-maps-other-2v2 {
+                background-image: url('maps-other.png');
+                -webkit-background-size: 720px 541px;
+                -moz-background-size: 720px 541px;
+                background-size: 720px 541px;
+            }
+        }
+        

@@ -1,0 +1,237 @@
+/* glue: 0.11.0 hash: a559a828a8 */
+        .sprite-maps-1-empty,
+.sprite-maps-1-maparena,
+.sprite-maps-1-zirconium,
+.sprite-maps-1-wormy,
+.sprite-maps-1-velocity,
+.sprite-maps-1-the-holy-see,
+.sprite-maps-1-super-duper-stamp,
+.sprite-maps-1-star,
+.sprite-maps-1-snes-v2,
+.sprite-maps-1-smirk,
+.sprite-maps-1-ricochet,
+.sprite-maps-1-push-it,
+.sprite-maps-1-hurricane,
+.sprite-maps-1-hockey,
+.sprite-maps-1-grail-of-speed,
+.sprite-maps-1-geokoala,
+.sprite-maps-1-gamepad,
+.sprite-maps-1-diamond-faces,
+.sprite-maps-1-danger-zone,
+.sprite-maps-1-command-center,
+.sprite-maps-1-colors,
+.sprite-maps-1-classico,
+.sprite-maps-1-cfb,
+.sprite-maps-1-boombox,
+.sprite-maps-1-bombing-run,
+.sprite-maps-1-blast-off,
+.sprite-maps-1-45,
+.sprite-maps-1-fortyfive {
+            background-image: url('maps-1.png');
+            background-repeat: no-repeat;
+        }
+        
+        .sprite-maps-1-empty {
+            background-position: 0 0;
+            width: 540px;
+            height: 1px;
+        }
+        
+        .sprite-maps-1-maparena {
+            background-position: 0 -1px;
+            width: 180px;
+            height: 186px;
+        }
+        
+        .sprite-maps-1-zirconium {
+            background-position: -180px -1px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-1-wormy {
+            background-position: -360px -1px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-1-velocity {
+            background-position: 0 -187px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-1-the-holy-see {
+            background-position: -180px -187px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-1-super-duper-stamp {
+            background-position: -360px -187px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-1-star {
+            background-position: -540px 0;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-1-snes-v2 {
+            background-position: -540px -180px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-1-smirk {
+            background-position: 0 -367px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-1-ricochet {
+            background-position: -180px -367px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-1-push-it {
+            background-position: -360px -367px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-1-hurricane {
+            background-position: -540px -367px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-1-hockey {
+            background-position: -720px 0;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-1-grail-of-speed {
+            background-position: -720px -180px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-1-geokoala {
+            background-position: -720px -360px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-1-gamepad {
+            background-position: 0 -547px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-1-diamond-faces {
+            background-position: -180px -547px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-1-danger-zone {
+            background-position: -360px -547px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-1-command-center {
+            background-position: -540px -547px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-1-colors {
+            background-position: -720px -547px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-1-classico {
+            background-position: -900px 0;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-1-cfb {
+            background-position: -900px -180px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-1-boombox {
+            background-position: -900px -360px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-1-bombing-run {
+            background-position: -900px -540px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-1-blast-off {
+            background-position: 0 -727px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-1-45 {
+            background-position: -180px -727px;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .sprite-maps-1-fortyfive {
+            background-position: -360px -727px;
+            width: 90px;
+            height: 90px;
+        }
+        
+        @media screen and (-webkit-min-device-pixel-ratio: 1.0), screen and (min--moz-device-pixel-ratio: 1.0), screen and (-o-min-device-pixel-ratio: 100/100), screen and (min-device-pixel-ratio: 1.0), screen and (min-resolution: 1.0dppx) {
+            .sprite-maps-1-empty,
+    .sprite-maps-1-maparena,
+    .sprite-maps-1-zirconium,
+    .sprite-maps-1-wormy,
+    .sprite-maps-1-velocity,
+    .sprite-maps-1-the-holy-see,
+    .sprite-maps-1-super-duper-stamp,
+    .sprite-maps-1-star,
+    .sprite-maps-1-snes-v2,
+    .sprite-maps-1-smirk,
+    .sprite-maps-1-ricochet,
+    .sprite-maps-1-push-it,
+    .sprite-maps-1-hurricane,
+    .sprite-maps-1-hockey,
+    .sprite-maps-1-grail-of-speed,
+    .sprite-maps-1-geokoala,
+    .sprite-maps-1-gamepad,
+    .sprite-maps-1-diamond-faces,
+    .sprite-maps-1-danger-zone,
+    .sprite-maps-1-command-center,
+    .sprite-maps-1-colors,
+    .sprite-maps-1-classico,
+    .sprite-maps-1-cfb,
+    .sprite-maps-1-boombox,
+    .sprite-maps-1-bombing-run,
+    .sprite-maps-1-blast-off,
+    .sprite-maps-1-45,
+    .sprite-maps-1-fortyfive {
+                background-image: url('maps-1.png');
+                -webkit-background-size: 1080px 907px;
+                -moz-background-size: 1080px 907px;
+                background-size: 1080px 907px;
+            }
+        }
+        
