@@ -1,379 +1,320 @@
-.flair {
-  background: url('%%flair%%') 100px 100px no-repeat;
-  border: none;
-  line-height: 16px;
-}
 
-
-.flair-VI {
+.flair-VI:before {
     background-position:0 0;
     width: 18px;
     height: 18px;
-    padding-left: 20px;
 }
 
-.flair-V {
+.flair-V:before {
     background-position:-18px 0;
     width: 16px;
     height: 18px;
-    padding-left: 18px;
 }
 
-.flair-SubMicrophone {
+.flair-SubMicrophone:before {
     background-position:-34px 0;
     width: 18px;
     height: 18px;
-    padding-left: 20px;
 }
 
-.flair-O1 {
+.flair-O1:before {
     background-position:0 -18px;
     width: 18px;
     height: 18px;
-    padding-left: 20px;
 }
 
-.flair-IV {
+.flair-IV:before {
     background-position:-18px -18px;
     width: 18px;
     height: 18px;
-    padding-left: 20px;
 }
 
-.flair-III {
+.flair-III:before {
     background-position:-52px 0;
     width: 18px;
     height: 18px;
-    padding-left: 20px;
 }
 
-.flair-II {
+.flair-II:before {
     background-position:-52px -18px;
     width: 18px;
     height: 18px;
-    padding-left: 20px;
 }
 
-.flair-I {
+.flair-I:before {
     background-position:0 -36px;
     width: 18px;
     height: 18px;
-    padding-left: 20px;
 }
 
-.flair-E6 {
+.flair-E6:before {
     background-position:-18px -36px;
     width: 18px;
     height: 18px;
-    padding-left: 20px;
 }
 
-.flair-E5 {
+.flair-E5:before {
     background-position:-36px -18px;
     width: 16px;
     height: 18px;
-    padding-left: 18px;
 }
 
-.flair-E4 {
+.flair-E4:before {
     background-position:-36px -36px;
     width: 18px;
     height: 18px;
-    padding-left: 20px;
 }
 
-.flair-E3 {
+.flair-E3:before {
     background-position:-70px 0;
     width: 18px;
     height: 18px;
-    padding-left: 20px;
 }
 
-.flair-E2 {
+.flair-E2:before {
     background-position:-70px -18px;
     width: 18px;
     height: 18px;
-    padding-left: 20px;
 }
 
-.flair-E1 {
+.flair-E1:before {
     background-position:-70px -36px;
     width: 18px;
     height: 18px;
-    padding-left: 20px;
 }
 
-.flair-World {
+.flair-World:before {
     background-position:-54px -36px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Weekly {
+.flair-Weekly:before {
     background-position:0 -54px;
     width: 12px;
     height: 16px;
-    padding-left: 14px;
 }
 
-.flair-Unfortunate {
+.flair-Unfortunate:before {
     background-position:-12px -54px;
     width: 11px;
     height: 16px;
-    padding-left: 13px;
 }
 
-.flair-UTurn {
+.flair-UTurn:before {
     background-position:-23px -54px;
     width: 15px;
     height: 16px;
-    padding-left: 17px;
 }
 
-.flair-Route {
+.flair-Route:before {
     background-position:-38px -54px;
     width: 13px;
     height: 16px;
-    padding-left: 15px;
 }
 
-.flair-Pokemon {
+.flair-Pokemon:before {
     background-position:-51px -54px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Phi {
+.flair-Phi:before {
     background-position:-67px -54px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Peace {
+.flair-Peace:before {
     background-position:0 -70px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Moon {
+.flair-Moon:before {
     background-position:-16px -70px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Monthly {
+.flair-Monthly:before {
     background-position:-32px -70px;
     width: 16px;
     height: 14px;
-    padding-left: 18px;
 }
 
-.flair-Microphone {
+.flair-Microphone:before {
     background-position:-88px 0;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Mario {
+.flair-Mario:before {
     background-position:-88px -16px;
     width: 16px;
     height: 15px;
-    padding-left: 18px;
 }
 
-.flair-Lucky2 {
+.flair-Lucky2:before {
     background-position:-88px -31px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Lucky {
+.flair-Lucky:before {
     background-position:-88px -47px;
     width: 16px;
     height: 14px;
-    padding-left: 18px;
 }
 
-.flair-Love {
+.flair-Love:before {
     background-position:-88px -61px;
     width: 16px;
     height: 15px;
-    padding-left: 18px;
 }
 
-.flair-Halloween {
+.flair-Halloween:before {
     background-position:0 -86px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Freezing {
+.flair-Freezing:before {
     background-position:-16px -86px;
     width: 15px;
     height: 16px;
-    padding-left: 17px;
 }
 
-.flair-Fools {
+.flair-Fools:before {
     background-position:-31px -86px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Flux {
+.flair-Flux:before {
     background-position:-47px -86px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Easter {
+.flair-Easter:before {
     background-position:-63px -86px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Donator3 {
+.flair-Donator3:before {
     background-position:-48px -70px;
     width: 16px;
     height: 14px;
-    padding-left: 18px;
 }
 
-.flair-Donator2 {
+.flair-Donator2:before {
     background-position:-79px -86px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Dolphin {
+.flair-Dolphin:before {
     background-position:-104px 0;
     width: 12px;
     height: 16px;
-    padding-left: 14px;
 }
 
-.flair-Developer2 {
+.flair-Developer2:before {
     background-position:-116px 0;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Developer {
+.flair-Developer:before {
     background-position:-116px -16px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Dalmatians {
+.flair-Dalmatians:before {
     background-position:-116px -32px;
     width: 16px;
     height: 14px;
-    padding-left: 18px;
 }
 
-.flair-Contributor {
+.flair-Contributor:before {
     background-position:-116px -46px;
     width: 14px;
     height: 16px;
-    padding-left: 16px;
 }
 
-.flair-Bowling {
+.flair-Bowling:before {
     background-position:-116px -62px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Boiling {
+.flair-Boiling:before {
     background-position:-116px -78px;
     width: 10px;
     height: 16px;
-    padding-left: 12px;
 }
 
-.flair-Birthday2 {
+.flair-Birthday2:before {
     background-position:0 -102px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Birthday {
+.flair-Birthday:before {
     background-position:-16px -102px;
     width: 14px;
     height: 16px;
-    padding-left: 16px;
 }
 
-.flair-Bacon {
+.flair-Bacon:before {
     background-position:-30px -102px;
     width: 16px;
     height: 15px;
-    padding-left: 18px;
 }
 
-.flair-Axe {
+.flair-Axe:before {
     background-position:-46px -102px;
     width: 16px;
     height: 15px;
-    padding-left: 18px;
 }
 
-.flair-Alien {
+.flair-Alien:before {
     background-position:-132px 0;
     width: 13px;
     height: 16px;
-    padding-left: 15px;
 }
 
-.flair-ABC {
+.flair-ABC:before {
     background-position:-64px -70px;
     width: 16px;
     height: 14px;
-    padding-left: 18px;
 }
 
-.flair-Pi {
+.flair-Pi:before {
     background-position:-62px -102px;
     width: 15px;
     height: 15px;
-    padding-left: 17px;
 }
 
-.flair-Donator {
+.flair-Donator:before {
     background-position:-77px -102px;
     width: 15px;
     height: 15px;
-    padding-left: 17px;
 }
 
-.flair-Contest {
+.flair-Contest:before {
     background-position:-92px -102px;
     width: 15px;
     height: 15px;
-    padding-left: 17px;
 }
 
-.flair-Daily {
+.flair-Daily:before {
     background-position:-132px -16px;
     width: 12px;
     height: 14px;
-    padding-left: 14px;
 }
 
 

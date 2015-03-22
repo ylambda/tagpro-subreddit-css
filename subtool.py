@@ -102,7 +102,7 @@ def main(argv=None):
     if args.command == "push":
 
         kwargs = {
-            "push_stylesheet": args.push_images,
+            "push_stylesheet": args.push_stylesheet,
             "push_images": args.push_images,
             "force": args.push_force
         }

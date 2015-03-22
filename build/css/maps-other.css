@@ -1,15 +1,7 @@
 
-.md a[href$="#maps-empty"] {
-  background: url('%%maps-other%%') no-repeat;
-  background-position:0 0;
-  width: 540px;
-  height: 1.px;
-  line-height: 1px;
-}
-
 .md a[href$="#maps-spikedome"] {
   background: url('%%maps-other%%') no-repeat;
-  background-position:0 -1px;
+  background-position:0 0;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -17,7 +9,7 @@
 
 .md a[href$="#maps-snipers-v3"] {
   background: url('%%maps-other%%') no-repeat;
-  background-position:-180px -1px;
+  background-position:-180px 0;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -25,7 +17,7 @@
 
 .md a[href$="#maps-shortercut-challenge"] {
   background: url('%%maps-other%%') no-repeat;
-  background-position:-360px -1px;
+  background-position:0 -180px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -33,7 +25,7 @@
 
 .md a[href$="#maps-ofm"] {
   background: url('%%maps-other%%') no-repeat;
-  background-position:0 -181px;
+  background-position:-180px -180px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -41,7 +33,7 @@
 
 .md a[href$="#maps-mini-ofm"] {
   background: url('%%maps-other%%') no-repeat;
-  background-position:-180px -181px;
+  background-position:-360px 0;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -49,7 +41,7 @@
 
 .md a[href$="#maps-holdup"] {
   background: url('%%maps-other%%') no-repeat;
-  background-position:-360px -181px;
+  background-position:-360px -180px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -57,7 +49,7 @@
 
 .md a[href$="#maps-caravan"] {
   background: url('%%maps-other%%') no-repeat;
-  background-position:-540px 0;
+  background-position:0 -360px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -65,7 +57,7 @@
 
 .md a[href$="#maps-bombing-race"] {
   background: url('%%maps-other%%') no-repeat;
-  background-position:-540px -180px;
+  background-position:-180px -360px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -73,7 +65,7 @@
 
 .md a[href$="#maps-2v2"] {
   background: url('%%maps-other%%') no-repeat;
-  background-position:0 -361px;
+  background-position:-360px -360px;
   width: 180px;
   height: 180.px;
   line-height: 180px;

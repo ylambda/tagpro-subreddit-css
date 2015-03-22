@@ -2640,497 +2640,453 @@ body > .debuginfo {
 /*!==================================================
    7.0 Sprites
 ================================================== */
-
 /* Some Ball Flair when No Flair is Present */
 .side .tagline .userattrs {
   font-size: 0;
 }
 
 .userattrs:before {
-    content: "Some Ball (Change Your Name in the Sidebar!)";
-    color: #000000;
-    font-weight: bold;
-    font-size: x-small;
-    background: #FFFF00;
+  content: "Some Ball (Change Your Name in the Sidebar!)";
+  color: #000000;
+  font-weight: bold;
+  font-size: x-small;
+  background: #FFFF00;
 }
-.flair[title]:not([title=""]) + .userattrs:before {
-    content: "";
-    font-size: 0;
+
+.flair + .userattrs:before {
+  content: "";
+  font-size: 0;
 }
+
 .side .titlebox .userattrs:before {
-    content: "";
-    font-size: 0;
+  content: "";
+  font-size: 0;
 }
 
 /*!==================================================
    7.1 Linkflair
 ================================================== */
-
 .thing.linkflair .linkflairlabel {
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: url(%%linkSprite%%) no-repeat;
-    display: block;
-    height: 76px;
-    border: none;
-    width: 0;
-    padding: 0;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    -webkit-border-radius: 0px;
-       -moz-border-radius: 0px;
-            border-radius: 0px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(%%linkSprite%%) no-repeat;
+  display: block;
+  height: 76px;
+  border: none;
+  width: 0;
+  padding: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
 }
 
 .thing.linkflair .linkflairlabel:hover {
-    opacity: .9;
-    color: #fff;
-    font-weight: normal;
-    line-height: 70px;
-    text-indent: 60px;
-    font-size: 18px;
-    letter-spacing: 1px;
-    width:  230px;
-    height: 79px;
-    max-width: 270px;
-    padding: 0;
-    -webkit-border-top-right-radius: 50px;
-       -moz-border-top-right-radius: 50px;
-            border-top-right-radius: 50px;
+  opacity: .9;
+  color: #fff;
+  font-weight: normal;
+  line-height: 70px;
+  text-indent: 60px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  width: 230px;
+  height: 79px;
+  max-width: 270px;
+  padding: 0;
+  -webkit-border-top-right-radius: 50px;
+  -moz-border-top-right-radius: 50px;
+  border-top-right-radius: 50px;
 }
 
 .thing .linkflair-bug .linkflairlabel {
-    border-left: #B42932 solid 5px;
-    background-position: 0 -90px;
-    background-color: #B42932;
+  border-left: #B42932 solid 5px;
+  background-position: 0 -90px;
+  background-color: #B42932;
 }
 
 .thing .linkflair-suggestion .linkflairlabel {
-    border-left: #37AE65 solid 5px;
-    background-position: 0 -567px;
-    background-color: #37AE65;
+  border-left: #37AE65 solid 5px;
+  background-position: 0 -567px;
+  background-color: #37AE65;
 }
 
 .thing .linkflair-trashtalkthread .linkflairlabel {
-    border-left: black solid 5px;
-    background-position: 0 -667px;
-    background-color: black;
+  border-left: black solid 5px;
+  background-position: 0 -667px;
+  background-color: black;
 }
 
 .thing .linkflair-announcement .linkflairlabel {
-    border-left: #995AB3 solid 5px;
-    background-position: 0 10px;
-    background-color: #995AB3;
+  border-left: #995AB3 solid 5px;
+  background-position: 0 10px;
+  background-color: #995AB3;
 }
 
 .thing .linkflair-gamethread .linkflairlabel {
-    border-left: #E27D33 solid 5px;
-    background-position: 0 -290px;
-    background-color: #E27D33;
+  border-left: #E27D33 solid 5px;
+  background-position: 0 -290px;
+  background-color: #E27D33;
 }
 
 .thing .linkflair-build .linkflairlabel {
-    border-left: #EEC338 solid 5px;
-    background-position: 0 -190px;
-    background-color: #EEC338;
+  border-left: #EEC338 solid 5px;
+  background-position: 0 -190px;
+  background-color: #EEC338;
 }
 
 .thing .linkflair-mltp .linkflairlabel {
-    border-left: #4299D7 solid 5px;
-    background-position: 0 -380px;
-    background-color: #4299D7;
+  border-left: #4299D7 solid 5px;
+  background-position: 0 -380px;
+  background-color: #4299D7;
 }
 
 .thing .linkflair-shared .linkflairlabel,
 .thing .linkflair-tw .linkflairlabel {
-    border-left: #36495D solid 5px;
-    background-position: 0 -467px;
-    background-color: #36495D;
+  border-left: #36495D solid 5px;
+  background-position: 0 -467px;
+  background-color: #36495D;
 }
 
 /*!==================================================
-   7.2 Userflair
+   7.2 User Flair
 ================================================== */
 
-/* --- BUILD START FLAIR --- */
 .flair {
-  background: url('%%flair%%') 100px 100px no-repeat;
+  background: none;
   border: none;
   line-height: 16px;
+  padding: 0;
 }
 
+.flair:before {
+  content: "";
+  background: url('%%flair%%') 100px 100px no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2px;
+}
 
-.flair-VI {
+/* --- BUILD START FLAIR --- */
+
+.flair-VI:before {
     background-position:0 0;
     width: 18px;
     height: 18px;
-    padding-left: 20px;
 }
 
-.flair-V {
+.flair-V:before {
     background-position:-18px 0;
     width: 16px;
     height: 18px;
-    padding-left: 18px;
 }
 
-.flair-SubMicrophone {
+.flair-SubMicrophone:before {
     background-position:-34px 0;
     width: 18px;
     height: 18px;
-    padding-left: 20px;
 }
 
-.flair-O1 {
+.flair-O1:before {
     background-position:0 -18px;
     width: 18px;
     height: 18px;
-    padding-left: 20px;
 }
 
-.flair-IV {
+.flair-IV:before {
     background-position:-18px -18px;
     width: 18px;
     height: 18px;
-    padding-left: 20px;
 }
 
-.flair-III {
+.flair-III:before {
     background-position:-52px 0;
     width: 18px;
     height: 18px;
-    padding-left: 20px;
 }
 
-.flair-II {
+.flair-II:before {
     background-position:-52px -18px;
     width: 18px;
     height: 18px;
-    padding-left: 20px;
 }
 
-.flair-I {
+.flair-I:before {
     background-position:0 -36px;
     width: 18px;
     height: 18px;
-    padding-left: 20px;
 }
 
-.flair-E6 {
+.flair-E6:before {
     background-position:-18px -36px;
     width: 18px;
     height: 18px;
-    padding-left: 20px;
 }
 
-.flair-E5 {
+.flair-E5:before {
     background-position:-36px -18px;
     width: 16px;
     height: 18px;
-    padding-left: 18px;
 }
 
-.flair-E4 {
+.flair-E4:before {
     background-position:-36px -36px;
     width: 18px;
     height: 18px;
-    padding-left: 20px;
 }
 
-.flair-E3 {
+.flair-E3:before {
     background-position:-70px 0;
     width: 18px;
     height: 18px;
-    padding-left: 20px;
 }
 
-.flair-E2 {
+.flair-E2:before {
     background-position:-70px -18px;
     width: 18px;
     height: 18px;
-    padding-left: 20px;
 }
 
-.flair-E1 {
+.flair-E1:before {
     background-position:-70px -36px;
     width: 18px;
     height: 18px;
-    padding-left: 20px;
 }
 
-.flair-World {
+.flair-World:before {
     background-position:-54px -36px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Weekly {
+.flair-Weekly:before {
     background-position:0 -54px;
     width: 12px;
     height: 16px;
-    padding-left: 14px;
 }
 
-.flair-Unfortunate {
+.flair-Unfortunate:before {
     background-position:-12px -54px;
     width: 11px;
     height: 16px;
-    padding-left: 13px;
 }
 
-.flair-UTurn {
+.flair-UTurn:before {
     background-position:-23px -54px;
     width: 15px;
     height: 16px;
-    padding-left: 17px;
 }
 
-.flair-Route {
+.flair-Route:before {
     background-position:-38px -54px;
     width: 13px;
     height: 16px;
-    padding-left: 15px;
 }
 
-.flair-Pokemon {
+.flair-Pokemon:before {
     background-position:-51px -54px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Phi {
+.flair-Phi:before {
     background-position:-67px -54px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Peace {
+.flair-Peace:before {
     background-position:0 -70px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Moon {
+.flair-Moon:before {
     background-position:-16px -70px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Monthly {
+.flair-Monthly:before {
     background-position:-32px -70px;
     width: 16px;
     height: 14px;
-    padding-left: 18px;
 }
 
-.flair-Microphone {
+.flair-Microphone:before {
     background-position:-88px 0;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Mario {
+.flair-Mario:before {
     background-position:-88px -16px;
     width: 16px;
     height: 15px;
-    padding-left: 18px;
 }
 
-.flair-Lucky2 {
+.flair-Lucky2:before {
     background-position:-88px -31px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Lucky {
+.flair-Lucky:before {
     background-position:-88px -47px;
     width: 16px;
     height: 14px;
-    padding-left: 18px;
 }
 
-.flair-Love {
+.flair-Love:before {
     background-position:-88px -61px;
     width: 16px;
     height: 15px;
-    padding-left: 18px;
 }
 
-.flair-Halloween {
+.flair-Halloween:before {
     background-position:0 -86px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Freezing {
+.flair-Freezing:before {
     background-position:-16px -86px;
     width: 15px;
     height: 16px;
-    padding-left: 17px;
 }
 
-.flair-Fools {
+.flair-Fools:before {
     background-position:-31px -86px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Flux {
+.flair-Flux:before {
     background-position:-47px -86px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Easter {
+.flair-Easter:before {
     background-position:-63px -86px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Donator3 {
+.flair-Donator3:before {
     background-position:-48px -70px;
     width: 16px;
     height: 14px;
-    padding-left: 18px;
 }
 
-.flair-Donator2 {
+.flair-Donator2:before {
     background-position:-79px -86px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Dolphin {
+.flair-Dolphin:before {
     background-position:-104px 0;
     width: 12px;
     height: 16px;
-    padding-left: 14px;
 }
 
-.flair-Developer2 {
+.flair-Developer2:before {
     background-position:-116px 0;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Developer {
+.flair-Developer:before {
     background-position:-116px -16px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Dalmatians {
+.flair-Dalmatians:before {
     background-position:-116px -32px;
     width: 16px;
     height: 14px;
-    padding-left: 18px;
 }
 
-.flair-Contributor {
+.flair-Contributor:before {
     background-position:-116px -46px;
     width: 14px;
     height: 16px;
-    padding-left: 16px;
 }
 
-.flair-Bowling {
+.flair-Bowling:before {
     background-position:-116px -62px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Boiling {
+.flair-Boiling:before {
     background-position:-116px -78px;
     width: 10px;
     height: 16px;
-    padding-left: 12px;
 }
 
-.flair-Birthday2 {
+.flair-Birthday2:before {
     background-position:0 -102px;
     width: 16px;
     height: 16px;
-    padding-left: 18px;
 }
 
-.flair-Birthday {
+.flair-Birthday:before {
     background-position:-16px -102px;
     width: 14px;
     height: 16px;
-    padding-left: 16px;
 }
 
-.flair-Bacon {
+.flair-Bacon:before {
     background-position:-30px -102px;
     width: 16px;
     height: 15px;
-    padding-left: 18px;
 }
 
-.flair-Axe {
+.flair-Axe:before {
     background-position:-46px -102px;
     width: 16px;
     height: 15px;
-    padding-left: 18px;
 }
 
-.flair-Alien {
+.flair-Alien:before {
     background-position:-132px 0;
     width: 13px;
     height: 16px;
-    padding-left: 15px;
 }
 
-.flair-ABC {
+.flair-ABC:before {
     background-position:-64px -70px;
     width: 16px;
     height: 14px;
-    padding-left: 18px;
 }
 
-.flair-Pi {
+.flair-Pi:before {
     background-position:-62px -102px;
     width: 15px;
     height: 15px;
-    padding-left: 17px;
 }
 
-.flair-Donator {
+.flair-Donator:before {
     background-position:-77px -102px;
     width: 15px;
     height: 15px;
-    padding-left: 17px;
 }
 
-.flair-Contest {
+.flair-Contest:before {
     background-position:-92px -102px;
     width: 15px;
     height: 15px;
-    padding-left: 17px;
 }
 
-.flair-Daily {
+.flair-Daily:before {
     background-position:-132px -16px;
     width: 12px;
     height: 14px;
-    padding-left: 14px;
 }
 
 
@@ -3466,15 +3422,14 @@ body > .debuginfo {
 /*!==================================================
    7.3 Tiles
 ================================================== */
-
+/* tiles in image */
 .md a[href^="#tile-"] {
-  background: url('%%tiles%%') no-repeat;
+  background: url("%%tiles%%") no-repeat;
   border: none !important;
   line-height: 16px;
   display: inline-block;
   cursor: default;
 }
-
 
 .md a[href^="#tile-spike"] {
   background-position: -480px -0px;
@@ -3901,12 +3856,9 @@ body > .debuginfo {
     background-position: -160px -121px;
   }
 }
-
-
 /*!==================================================
-   7.4 Map
+   7.4 Maps
 ================================================== */
-
 .md a[href*="#map-"] {
   border: none;
   display: inline-block;
@@ -3914,17 +3866,9 @@ body > .debuginfo {
 
 /* --- BUILD START MAPS-1 --- */
 
-.md a[href$="#map-empty"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:0 0;
-  width: 540px;
-  height: 1.px;
-  line-height: 1px;
-}
-
 .md a[href$="#map-maparena"] {
   background: url('%%maps-1%%') no-repeat;
-  background-position:0 -1px;
+  background-position:0 0;
   width: 180px;
   height: 186.px;
   line-height: 186px;
@@ -3932,7 +3876,7 @@ body > .debuginfo {
 
 .md a[href$="#map-zirconium"] {
   background: url('%%maps-1%%') no-repeat;
-  background-position:-180px -1px;
+  background-position:-180px 0;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -3940,7 +3884,7 @@ body > .debuginfo {
 
 .md a[href$="#map-wormy"] {
   background: url('%%maps-1%%') no-repeat;
-  background-position:-360px -1px;
+  background-position:-360px 0;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -3948,7 +3892,7 @@ body > .debuginfo {
 
 .md a[href$="#map-velocity"] {
   background: url('%%maps-1%%') no-repeat;
-  background-position:0 -187px;
+  background-position:0 -186px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -3956,7 +3900,7 @@ body > .debuginfo {
 
 .md a[href$="#map-the-holy-see"] {
   background: url('%%maps-1%%') no-repeat;
-  background-position:-180px -187px;
+  background-position:-180px -186px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -3964,7 +3908,7 @@ body > .debuginfo {
 
 .md a[href$="#map-super-duper-stamp"] {
   background: url('%%maps-1%%') no-repeat;
-  background-position:-360px -187px;
+  background-position:-360px -186px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -3988,7 +3932,7 @@ body > .debuginfo {
 
 .md a[href$="#map-smirk"] {
   background: url('%%maps-1%%') no-repeat;
-  background-position:0 -367px;
+  background-position:0 -366px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -3996,7 +3940,7 @@ body > .debuginfo {
 
 .md a[href$="#map-ricochet"] {
   background: url('%%maps-1%%') no-repeat;
-  background-position:-180px -367px;
+  background-position:-180px -366px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4004,7 +3948,7 @@ body > .debuginfo {
 
 .md a[href$="#map-push-it"] {
   background: url('%%maps-1%%') no-repeat;
-  background-position:-360px -367px;
+  background-position:-360px -366px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4012,7 +3956,7 @@ body > .debuginfo {
 
 .md a[href$="#map-hurricane"] {
   background: url('%%maps-1%%') no-repeat;
-  background-position:-540px -367px;
+  background-position:-540px -366px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4044,7 +3988,7 @@ body > .debuginfo {
 
 .md a[href$="#map-gamepad"] {
   background: url('%%maps-1%%') no-repeat;
-  background-position:0 -547px;
+  background-position:0 -546px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4052,7 +3996,7 @@ body > .debuginfo {
 
 .md a[href$="#map-diamond-faces"] {
   background: url('%%maps-1%%') no-repeat;
-  background-position:-180px -547px;
+  background-position:-180px -546px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4060,7 +4004,7 @@ body > .debuginfo {
 
 .md a[href$="#map-danger-zone"] {
   background: url('%%maps-1%%') no-repeat;
-  background-position:-360px -547px;
+  background-position:-360px -546px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4068,7 +4012,7 @@ body > .debuginfo {
 
 .md a[href$="#map-command-center"] {
   background: url('%%maps-1%%') no-repeat;
-  background-position:-540px -547px;
+  background-position:-540px -546px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4076,7 +4020,7 @@ body > .debuginfo {
 
 .md a[href$="#map-colors"] {
   background: url('%%maps-1%%') no-repeat;
-  background-position:-720px -547px;
+  background-position:-720px -546px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4116,7 +4060,7 @@ body > .debuginfo {
 
 .md a[href$="#map-blast-off"] {
   background: url('%%maps-1%%') no-repeat;
-  background-position:0 -727px;
+  background-position:0 -726px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4124,7 +4068,7 @@ body > .debuginfo {
 
 .md a[href$="#map-45"] {
   background: url('%%maps-1%%') no-repeat;
-  background-position:-180px -727px;
+  background-position:-180px -726px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4132,7 +4076,7 @@ body > .debuginfo {
 
 .md a[href$="#map-fortyfive"] {
   background: url('%%maps-1%%') no-repeat;
-  background-position:-360px -727px;
+  background-position:-360px -726px;
   width: 90px;
   height: 90.px;
   line-height: 90px;
@@ -4142,17 +4086,9 @@ body > .debuginfo {
 
 /* --- BUILD START MAPS-2 --- */
 
-.md a[href$="#maps-empty"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:0 0;
-  width: 540px;
-  height: 1.px;
-  line-height: 1px;
-}
-
 .md a[href$="#maps-yiss-3-2"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:0 -1px;
+  background-position:0 0;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4160,7 +4096,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-whirlwind"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:-180px -1px;
+  background-position:-180px 0;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4168,7 +4104,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-vee"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:-360px -1px;
+  background-position:0 -180px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4176,7 +4112,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-thinking-with-portals"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:0 -181px;
+  background-position:-180px -180px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4184,7 +4120,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-swoop"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:-180px -181px;
+  background-position:-360px 0;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4192,7 +4128,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-spiders"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:-360px -181px;
+  background-position:-360px -180px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4200,7 +4136,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-speedway"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:-540px 0;
+  background-position:0 -360px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4208,7 +4144,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-simplicity"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:-540px -180px;
+  background-position:-180px -360px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4216,7 +4152,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-shortcut"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:0 -361px;
+  background-position:-360px -360px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4224,7 +4160,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-rink"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:-180px -361px;
+  background-position:-540px 0;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4232,7 +4168,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-reflex-2"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:-360px -361px;
+  background-position:-540px -180px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4240,7 +4176,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-pokeball"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:-540px -361px;
+  background-position:-540px -360px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4248,7 +4184,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-oval"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:-720px 0;
+  background-position:0 -540px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4256,7 +4192,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-micro"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:-720px -180px;
+  background-position:-180px -540px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4264,7 +4200,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-lold"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:-720px -360px;
+  background-position:-360px -540px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4272,7 +4208,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-hyper-reactor"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:0 -541px;
+  background-position:-540px -540px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4280,7 +4216,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-hourglass"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:-180px -541px;
+  background-position:-720px 0;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4288,7 +4224,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-gloryhole"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:-360px -541px;
+  background-position:-720px -180px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4296,7 +4232,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-foozball"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:-540px -541px;
+  background-position:-720px -360px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4304,7 +4240,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-figure-8"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:-720px -541px;
+  background-position:-720px -540px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4312,7 +4248,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-dumbbell"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:-900px 0;
+  background-position:0 -720px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4320,7 +4256,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-clutch"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:-900px -180px;
+  background-position:-180px -720px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4328,7 +4264,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-center-flag"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:-900px -360px;
+  background-position:-360px -720px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4336,7 +4272,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-bounce"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:-900px -540px;
+  background-position:-540px -720px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4344,7 +4280,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-boosts"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:0 -721px;
+  background-position:-720px -720px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4352,7 +4288,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-big-vird"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:-180px -721px;
+  background-position:-900px 0;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4360,7 +4296,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-battery"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:-360px -721px;
+  background-position:-900px -180px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4368,7 +4304,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-arena"] {
   background: url('%%maps-2%%') no-repeat;
-  background-position:-540px -721px;
+  background-position:-900px -360px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4378,17 +4314,9 @@ body > .debuginfo {
 
 /* --- BUILD START MAPS-3 --- */
 
-.md a[href$="#maps-empty"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:0 0;
-  width: 540px;
-  height: 1.px;
-  line-height: 1px;
-}
-
 .md a[href$="#maps-volt"] {
   background: url('%%maps-3%%') no-repeat;
-  background-position:0 -1px;
+  background-position:0 0;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4396,7 +4324,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-twister"] {
   background: url('%%maps-3%%') no-repeat;
-  background-position:-180px -1px;
+  background-position:-180px 0;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4404,7 +4332,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-shine"] {
   background: url('%%maps-3%%') no-repeat;
-  background-position:-360px -1px;
+  background-position:0 -180px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4412,7 +4340,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-rocketballs"] {
   background: url('%%maps-3%%') no-repeat;
-  background-position:0 -181px;
+  background-position:-180px -180px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4420,7 +4348,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-renegade"] {
   background: url('%%maps-3%%') no-repeat;
-  background-position:-180px -181px;
+  background-position:-360px 0;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4428,7 +4356,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-pilot"] {
   background: url('%%maps-3%%') no-repeat;
-  background-position:-360px -181px;
+  background-position:-360px -180px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4436,7 +4364,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-monarch"] {
   background: url('%%maps-3%%') no-repeat;
-  background-position:-540px 0;
+  background-position:0 -360px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4444,7 +4372,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-jagged"] {
   background: url('%%maps-3%%') no-repeat;
-  background-position:-540px -180px;
+  background-position:-180px -360px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4452,7 +4380,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-iron"] {
   background: url('%%maps-3%%') no-repeat;
-  background-position:0 -361px;
+  background-position:-360px -360px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4460,7 +4388,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-hyperdrive"] {
   background: url('%%maps-3%%') no-repeat;
-  background-position:-180px -361px;
+  background-position:-540px 0;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4468,7 +4396,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-hornswoggle"] {
   background: url('%%maps-3%%') no-repeat;
-  background-position:-360px -361px;
+  background-position:-540px -180px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4476,7 +4404,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-gatekeeper"] {
   background: url('%%maps-3%%') no-repeat;
-  background-position:-540px -361px;
+  background-position:-540px -360px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4484,7 +4412,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-frontdoor"] {
   background: url('%%maps-3%%') no-repeat;
-  background-position:-720px 0;
+  background-position:0 -540px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4492,7 +4420,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-flame"] {
   background: url('%%maps-3%%') no-repeat;
-  background-position:-720px -180px;
+  background-position:-180px -540px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4500,7 +4428,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-constriction"] {
   background: url('%%maps-3%%') no-repeat;
-  background-position:-720px -360px;
+  background-position:-360px -540px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4508,7 +4436,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-cloud"] {
   background: url('%%maps-3%%') no-repeat;
-  background-position:0 -541px;
+  background-position:-540px -540px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4516,7 +4444,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-backdoor"] {
   background: url('%%maps-3%%') no-repeat;
-  background-position:-180px -541px;
+  background-position:-720px 0;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4524,7 +4452,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-angry-pig"] {
   background: url('%%maps-3%%') no-repeat;
-  background-position:-360px -541px;
+  background-position:-720px -180px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4534,17 +4462,9 @@ body > .debuginfo {
 
 /* --- BUILD START MAPS-OTHER --- */
 
-.md a[href$="#maps-empty"] {
-  background: url('%%maps-other%%') no-repeat;
-  background-position:0 0;
-  width: 540px;
-  height: 1.px;
-  line-height: 1px;
-}
-
 .md a[href$="#maps-spikedome"] {
   background: url('%%maps-other%%') no-repeat;
-  background-position:0 -1px;
+  background-position:0 0;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4552,7 +4472,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-snipers-v3"] {
   background: url('%%maps-other%%') no-repeat;
-  background-position:-180px -1px;
+  background-position:-180px 0;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4560,7 +4480,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-shortercut-challenge"] {
   background: url('%%maps-other%%') no-repeat;
-  background-position:-360px -1px;
+  background-position:0 -180px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4568,7 +4488,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-ofm"] {
   background: url('%%maps-other%%') no-repeat;
-  background-position:0 -181px;
+  background-position:-180px -180px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4576,7 +4496,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-mini-ofm"] {
   background: url('%%maps-other%%') no-repeat;
-  background-position:-180px -181px;
+  background-position:-360px 0;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4584,7 +4504,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-holdup"] {
   background: url('%%maps-other%%') no-repeat;
-  background-position:-360px -181px;
+  background-position:-360px -180px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4592,7 +4512,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-caravan"] {
   background: url('%%maps-other%%') no-repeat;
-  background-position:-540px 0;
+  background-position:0 -360px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4600,7 +4520,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-bombing-race"] {
   background: url('%%maps-other%%') no-repeat;
-  background-position:-540px -180px;
+  background-position:-180px -360px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4608,7 +4528,7 @@ body > .debuginfo {
 
 .md a[href$="#maps-2v2"] {
   background: url('%%maps-other%%') no-repeat;
-  background-position:0 -361px;
+  background-position:-360px -360px;
   width: 180px;
   height: 180.px;
   line-height: 180px;
@@ -4664,70 +4584,182 @@ body > .debuginfo {
   border-color: #9edbf8 !important;
 }
 
-.res-nightmode .md h1, .res-nightmode .md h2, .res-nightmode .md h3, .res-nightmode .md h4, .res-nightmode .md h5, .res-nightmode .md h6 {
-  color: #eee !important;
+.res-nightmode .md h1,
+.res-nightmode .md h2,
+.res-nightmode .md h3,
+.res-nightmode .md h4,
+.res-nightmode .md h5,
+.res-nightmode .md h6 {
+  color: #888 !important;
 }
 
-.res-nightmode .titlebox > :not(.usertext):not(.clear) {
-  background-color: #222;
-  border-color: #444 !important;
+.res-nightmode .md table tr > * {
+  border-color: #666;
+}
+
+.res-nightmode .md table tr:hover td {
+  background-color: #664847;
+}
+
+.res-nightmode #sr-header-area,
+.res-nightmode #sr-header-area * {
+  background-color: #333 !important;
+}
+
+.res-nightmode #sr-header-area {
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.res-nightmode #sr-header-area * {
+  color: #aaa !important;
+}
+
+.res-nightmode #sr-header-area a:hover,
+.res-nightmode #RESShortcutsEditContainer > :hover {
+  color: #fff !important;
 }
 
 .res-nightmode .tabmenu li a {
   background-color: transparent;
+  color: #aaa;
+}
+
+.res-nightmode .tabmenu li a:hover {
+  color: #fff;
 }
 
 .res-nightmode ul.tabmenu li.selected a {
   background-color: #222;
 }
 
-.res-nightmode .listing-page #siteTable, .res-nightmode .comments-page #siteTable, .res-nightmode .search-page #siteTable {
-  border-color: #444;
+.res-nightmode .user .userkarma {
+  color: inherit;
 }
 
-.res-nightmode .link, .res-nightmode .listing-page .sitetable > .thing, .res-nightmode .search-page .sitetable > .thing, .res-nightmode div.nav-buttons {
-  border-color: #444 !important;
-  background-color: #222;
+.res-nightmode .titlebox {
+  background-color: #333 !important;
+}
+
+.res-nightmode .titlebox > :not(.usertext):not(.clear) {
+  background-color: #333 !important;
+  border-color: #2a2a2a !important;
 }
 
 .res-nightmode .hot-page .titlebox .usertext-body .md h4:nth-of-type(1) a {
-  background-color: #222;
-  border-color: #444;
+  background-color: #333;
+  border-color: #2a2a2a;
 }
 
 .res-nightmode .titlebox .redditname::after {
-  border-color: #444;
+  border-color: #2a2a2a;
+}
+
+.res-nightmode .side .linkinfo {
+  background-color: #333;
+  border-color: #2a2a2a;
 }
 
 .res-nightmode .titlebox .usertext {
   background-color: #222;
 }
 
+.res-nightmode .side * {
+  color: #777;
+}
+
 .res-nightmode .side .md blockquote {
-  background-color: #222;
-  border-color: #444;
+  background-color: #333;
+  border-color: #2a2a2a;
+}
+
+.res-nightmode .side .md blockquote:nth-of-type(1) {
+  background-color: transparent;
+}
+
+.res-nightmode .side .redditname a,
+.res-nightmode .side blockquote h1,
+.res-nightmode .sidecontentbox .title h1 {
+  color: #888 !important;
 }
 
 .res-nightmode .side blockquote h1::after {
-  border-color: #444;
+  border-color: #2a2a2a;
+}
+
+.res-nightmode .side .usertext-body .md blockquote p,
+.res-nightmode .side .usertext-body .md blockquote * {
+  color: #777;
+}
+
+.res-nightmode .side .usertext-body .md blockquote ol,
+.res-nightmode .side .usertext-body .md blockquote ul {
+  background-color: #333;
 }
 
 .res-nightmode .sidecontentbox {
-  background-color: #222 !important;
-  border-color: #444 !important;
+  background-color: #333 !important;
+  border-color: #2a2a2a !important;
 }
 
-.res-nightmode .sidecontentbox .title h1 {
-  color: #fff;
+.res-nightmode .sidecontentbox .content,
+.res-nightmode .sidecontentbox .content * {
+  background-color: transparent;
 }
 
 .res-nightmode .sidecontentbox .content::before {
-  border-color: #444;
+  border-color: #2a2a2a;
+}
+
+.res-nightmode .listing-page #siteTable,
+.res-nightmode .comments-page #siteTable,
+.res-nightmode .search-page #siteTable {
+  border-color: #2a2a2a;
+}
+
+.res-nightmode .link,
+.res-nightmode .listing-page .sitetable > .thing,
+.res-nightmode .search-page .sitetable > .thing,
+.res-nightmode div.nav-buttons {
+  border-color: #2a2a2a !important;
+  background-color: #333 !important;
+}
+
+.res-nightmode .thing .title:visited,
+.res-nightmode .thing.visited .title,
+.res-nightmode .thing .RES-keyNav-activeElement a.title:first-of-type:visited,
+.res-nightmode .thing.visited .RES-keyNav-activeElement a.title:first-of-type {
+  color: #777 !important;
+}
+
+.res-nightmode .thing.stickied .title,
+.res-nightmode .thing.stickied .RES-keyNav-activeElement a.title:first-of-type {
+  color: #00a537 !important;
+}
+
+.res-nightmode .content .RES-keyNav-activeElement .usertext-body,
+.res-nightmode .content .RES-keyNav-activeElement .usertext-body .md,
+.res-nightmode .content .RES-keyNav-activeElement .usertext-body .md p,
+.res-nightmode .content .commentarea .RES-keyNav-activeElement .noncollapsed,
+.res-nightmode .content .RES-keyNav-activeElement .noncollapsed .md,
+.res-nightmode .content .RES-keyNav-activeElement .noncollapsed .md p {
+  background-color: transparent !important;
+  color: #777 !important;
+}
+
+.res-nightmode .expando .error {
+  background-color: transparent;
+  border-color: #666;
+}
+
+.res-nightmode .flair,
+.res-nightmode .linkflairlabel {
+  background-color: transparent;
+  color: #aaa;
 }
 
 .res-nightmode div#progressIndicator {
-  background-color: #222;
-  border-color: #444;
+  background-color: #333;
+  border-color: #2a2a2a;
   opacity: 1;
 }
 
@@ -4735,27 +4767,32 @@ body > .debuginfo {
   color: #aaa;
 }
 
+.res-nightmode .listing-page .content .sitetable > .sitetable {
+  padding-top: 0;
+}
+
 .res-nightmode .footer-parent .footer.rounded {
-  background-color: #222;
-  border-color: #444;
+  background-color: #333;
+  border-color: #2a2a2a;
 }
 
 .res-nightmode .footer .col {
-  border-color: #444;
+  border-color: #2a2a2a;
 }
 
-.res-nightmode .side .linkinfo {
-  background-color: #222;
-  border-color: #444;
+.res-nightmode .commentarea > .panestack-title,
+.res-nightmode .commentarea > .menuarea,
+.res-nightmode .commentarea > .usertext {
+  background-color: #333;
+  border-color: #2a2a2a;
 }
 
-.res-nightmode .commentarea > .panestack-title, .res-nightmode .commentarea > .menuarea, .res-nightmode .commentarea > .usertext {
-  background-color: #222;
-  border-color: #444;
+.res-nightmode .comments-page .commentarea > .sitetable > .comment {
+  border-color: #2a2a2a !important;  
 }
 
 .res-nightmode .comments-page .content .comment {
-  border-color: #444 !important;
+  border-color: #222 !important;
 }
 
 .res-nightmode.res-commentBoxes .comments-page .comment,
@@ -4768,14 +4805,65 @@ body > .debuginfo {
 .res-nightmode.res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment,
 .res-nightmode.res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment,
 .res-nightmode.res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
-  background-color: #222 !important;
+  background-color: #333 !important;
 }
 
-.res-nightmode .md table tr > * {
-  border-color: #444;
+.res-nightmode .side .spacer,
+.res-nightmode .content,
+.res-nightmode .traffic-tables .traffic-table tr,
+.res-nightmode .sitetable .thing .md,
+.res-nightmode .parentComment .md,
+.res-nightmode .post-body.entry-content,
+.res-nightmode .dsq-auth-header,
+.res-nightmode .instructions .preftable th,
+.res-nightmode #BigEditor .markdownEditor a,
+.res-nightmode #BigEditor .markdownEditor .RESMacroDropdownTitle,
+.res-nightmode .tagline,
+.res-nightmode .RES-keyNav-activeElement .tagline,
+.res-nightmode .entry time,
+.res-nightmode .entry .buttons li a,
+.res-nightmode li .redditSingleClick {
+  color: #777;
+  background-color: transparent;
 }
 
-.res-nightmode .flair, .res-nightmode .linkflairlabel {
-  background-color: #222;
-  color: #ddd;
+.res-nightmode .link .entry .buttons li.first a,
+.res-nightmode .comment .entry .buttons a[onclick*="reply"] {
+  color: #aaa;
+}
+
+.res-nightmode a,
+.res-nightmode a:link,
+.res-nightmode .tabmenu li.selected a,
+.res-nightmode .share-button .option,
+.res-nightmode #subscribe a,
+.res-nightmode .share .option,
+.res-nightmode .tagline a,
+.res-nightmode .tagline .head .author,
+.res-nightmode .footer a,
+.res-nightmode .wired a,
+.res-nightmode .side a,
+.res-nightmode .side .usertext-body .md blockquote a,
+.res-nightmode .sidecontentbox a,
+.res-nightmode .subredditbox li a,
+.res-nightmode a[rel="tag"],
+.res-nightmode .dsq-help,
+.res-nightmode #authorInfoToolTip h3 a,
+.res-nightmode .RES-keyNav-activeElement .md,
+.res-nightmode .help-toggle .option,
+.res-nightmode .morecomments a,
+.res-nightmode .reddiquette,
+.res-nightmode .parent .author,
+.res-nightmode .parent .subreddit,
+.res-nightmode .comment .md p a,
+.res-nightmode .RES-keyNav-activeElement .usertext .md a,
+.res-nightmode .RES-keyNav-activeElement .usertext .md a:visited,
+.res-nightmode .RES-keyNav-activeElement .tagline a,
+.res-nightmode .RES-keyNav-activeElement .parent-link {
+  color: #ccc;
+}
+
+.res-nightmode a.title,
+.res-nightmode .RES-keyNav-activeElement a.title:first-of-type {
+  color: #ccc !important;
 }
