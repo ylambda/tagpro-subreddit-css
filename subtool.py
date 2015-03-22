@@ -19,10 +19,6 @@ def main(argv=None):
                         type=unicode,
                         help="Subreddit name")
 
-    fetch.add_argument("destination",
-                        type=unicode,
-                        help="Destination directory")
-
     fetch.add_argument("--images", "-I",
                         dest="fetch_images",
                         action="store_true",
@@ -49,10 +45,6 @@ def main(argv=None):
 
     # PUSH
     push = subparser.add_parser("push", help="Push assets to a subreddit")
-
-    push.add_argument("source",
-                        type=unicode,
-                        help="Directory to push")
 
     push.add_argument("subreddit",
                         type=unicode,
@@ -86,11 +78,16 @@ def main(argv=None):
                         action="store_false",
                         help="Ignore stylesheet")
 
-    push.set_defaults(func=push)
+    push.set_defaults(func=subtool.push)
 
     # Build
     build = subparser.add_parser("build", help="Build sprites and stylesheets")
     build.set_defaults(func=subtool.build)
+
+    # Merge
+    merge = subparser.add_parser("merge", help="Merge built file into design")
+    merge.set_defaults(func=subtool.merge)
+
 
     args = parser.parse_args()
     if args.command == "fetch":
@@ -100,7 +97,7 @@ def main(argv=None):
             "fetch_images": args.fetch_images,
         }
 
-        args.func(args.subreddit, args.destination, **kwargs)
+        args.func(args.subreddit, **kwargs)
 
     if args.command == "push":
 
@@ -110,9 +107,13 @@ def main(argv=None):
             "force": args.push_force
         }
 
-        args.func(args.source, args.subreddit, **kwargs)
+        args.func(args.subreddit, **kwargs)
 
     if args.command == "build":
+
+        args.func()
+
+    if args.command == "merge":
 
         args.func()
 

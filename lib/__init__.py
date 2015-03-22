@@ -1,4 +1,5 @@
 import os
+import re
 import urllib
 import urlparse
 
@@ -8,6 +9,7 @@ from glue.bin import main as glue
 reddit = None
 def reddit_login():
 
+    global reddit
     credentials = {
         "username": os.environ.get("REDDIT_USERNAME"),
         "password": os.environ.get("REDDIT_PASSWORD"),
@@ -84,6 +86,8 @@ def push(subreddit_name,
     if not os.path.isdir(source):
         raise Exception
 
+    if reddit is None:
+        reddit_login()
     subreddit = reddit.get_subreddit(subreddit_name)
     style = subreddit.get_stylesheet()
 
@@ -154,7 +158,10 @@ def build():
             insert_point = stylesheet.find(search_string)
             if insert_point > -1:
                 print "Adding %s to stylesheet" % css_file
-                stylesheet = stylesheet.replace(search_string, f.read())
+                build_style = "/* --- BUILD START %s --- */\n" % css_basename.upper()
+                build_style += f.read()
+                build_style += "/* --- BUILD END %s --- */\n" % css_basename.upper()
+                stylesheet = stylesheet.replace(search_string, build_style)
             f.close()
 
     f = open("build/stylesheet.css", "w")
@@ -162,3 +169,27 @@ def build():
     f.close()
 
     print "Done."
+
+def merge():
+    """
+    Merge built stylesheet into design
+    """
+
+    f = open("build/stylesheet.css", "r")
+    stylesheet = f.read()
+    f.close()
+
+    # Find Built sections and replace with insert lines
+    build_start = r"/\* --- BUILD START ([-\w]+) --- \*/"
+    build_end = "/* --- BUILD END %s --- */\n"
+
+    while re.search(build_start, stylesheet) != None:
+        start_match = re.search(build_start, stylesheet)
+        insert_string = "/* --- INSERT BUILD %s --- /*" % start_match.group(1)
+        end_match = build_end % start_match.group(1)
+        end_match_index = stylesheet.find(end_match) + len(end_match)
+        stylesheet = stylesheet[:start_match.start()] + insert_string + stylesheet[end_match_index:]
+
+    f = open("design/stylesheet.css", "w")
+    f.write(stylesheet)
+    f.close()
