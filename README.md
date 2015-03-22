@@ -8,10 +8,7 @@ the design to a subreddit.
 
 #### Setup
 
-1. Install Python
-2. Install VirtualEnv
-3. Install pip
-4. `pip install -r requirements.tx`
+`pip install -r requirements.txt`
 
 #### Usage
 
