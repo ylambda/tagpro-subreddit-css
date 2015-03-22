@@ -2754,6 +2754,7 @@ body > .debuginfo {
    7.2 Userflair
 ================================================== */
 
+/* --- BUILD START FLAIR --- */
 .flair {
   background: url('%%flair%%') 100px 100px no-repeat;
   border: none;
@@ -3459,6 +3460,7 @@ body > .debuginfo {
     width: 12px;
     height: 14px;
 }
+/* --- BUILD END FLAIR --- */
 
 
 /*!==================================================
@@ -3910,6 +3912,7 @@ body > .debuginfo {
   display: inline-block;
 }
 
+/* --- BUILD START MAPS-1 --- */
 
 .md a[href$="#map-empty"] {
   background: url('%%maps-1%%') no-repeat;
@@ -4134,8 +4137,10 @@ body > .debuginfo {
   height: 90.px;
   line-height: 90px;
 }
+/* --- BUILD END MAPS-1 --- */
 
 
+/* --- BUILD START MAPS-2 --- */
 
 .md a[href$="#maps-empty"] {
   background: url('%%maps-2%%') no-repeat;
@@ -4368,8 +4373,10 @@ body > .debuginfo {
   height: 180.px;
   line-height: 180px;
 }
+/* --- BUILD END MAPS-2 --- */
 
 
+/* --- BUILD START MAPS-3 --- */
 
 .md a[href$="#maps-empty"] {
   background: url('%%maps-3%%') no-repeat;
@@ -4522,8 +4529,10 @@ body > .debuginfo {
   height: 180.px;
   line-height: 180px;
 }
+/* --- BUILD END MAPS-3 --- */
 
 
+/* --- BUILD START MAPS-OTHER --- */
 
 .md a[href$="#maps-empty"] {
   background: url('%%maps-other%%') no-repeat;
@@ -4604,6 +4613,7 @@ body > .debuginfo {
   height: 180.px;
   line-height: 180px;
 }
+/* --- BUILD END MAPS-OTHER --- */
 
 
 /*!==================================================
