@@ -185,7 +185,7 @@ def merge():
 
     while re.search(build_start, stylesheet) != None:
         start_match = re.search(build_start, stylesheet)
-        insert_string = "/* --- INSERT BUILD %s --- /*" % start_match.group(1)
+        insert_string = "/* --- INSERT BUILD %s --- */" % start_match.group(1)
         end_match = build_end % start_match.group(1)
         end_match_index = stylesheet.find(end_match) + len(end_match)
         stylesheet = stylesheet[:start_match.start()] + insert_string + stylesheet[end_match_index:]
