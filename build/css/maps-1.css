@@ -1,216 +1,108 @@
 
 .md a[href$="#map-maparena"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:0 0;
-  width: 180px;
-  height: 186.px;
-  line-height: 186px;
+  background: url('%%maps-1%%') 0 0 no-repeat;
 }
 
 .md a[href$="#map-zirconium"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-180px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+  background: url('%%maps-1%%') -180px 0 no-repeat;
 }
 
 .md a[href$="#map-wormy"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-360px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+  background: url('%%maps-1%%') -360px 0 no-repeat;
 }
 
 .md a[href$="#map-velocity"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:0 -186px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+  background: url('%%maps-1%%') 0 -186px no-repeat;
 }
 
 .md a[href$="#map-the-holy-see"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-180px -186px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+  background: url('%%maps-1%%') -180px -186px no-repeat;
 }
 
 .md a[href$="#map-super-duper-stamp"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-360px -186px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+  background: url('%%maps-1%%') -360px -186px no-repeat;
 }
 
 .md a[href$="#map-star"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-540px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+  background: url('%%maps-1%%') -540px 0 no-repeat;
 }
 
 .md a[href$="#map-snes-v2"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-540px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+  background: url('%%maps-1%%') -540px -180px no-repeat;
 }
 
 .md a[href$="#map-smirk"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:0 -366px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+  background: url('%%maps-1%%') 0 -366px no-repeat;
 }
 
 .md a[href$="#map-ricochet"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-180px -366px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+  background: url('%%maps-1%%') -180px -366px no-repeat;
 }
 
 .md a[href$="#map-push-it"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-360px -366px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+  background: url('%%maps-1%%') -360px -366px no-repeat;
 }
 
 .md a[href$="#map-hurricane"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-540px -366px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+  background: url('%%maps-1%%') -540px -366px no-repeat;
 }
 
 .md a[href$="#map-hockey"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-720px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+  background: url('%%maps-1%%') -720px 0 no-repeat;
 }
 
 .md a[href$="#map-grail-of-speed"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-720px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+  background: url('%%maps-1%%') -720px -180px no-repeat;
 }
 
 .md a[href$="#map-geokoala"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-720px -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+  background: url('%%maps-1%%') -720px -360px no-repeat;
 }
 
 .md a[href$="#map-gamepad"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:0 -546px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+  background: url('%%maps-1%%') 0 -546px no-repeat;
 }
 
 .md a[href$="#map-diamond-faces"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-180px -546px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+  background: url('%%maps-1%%') -180px -546px no-repeat;
 }
 
 .md a[href$="#map-danger-zone"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-360px -546px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+  background: url('%%maps-1%%') -360px -546px no-repeat;
 }
 
 .md a[href$="#map-command-center"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-540px -546px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+  background: url('%%maps-1%%') -540px -546px no-repeat;
 }
 
 .md a[href$="#map-colors"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-720px -546px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+  background: url('%%maps-1%%') -720px -546px no-repeat;
 }
 
 .md a[href$="#map-classico"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-900px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+  background: url('%%maps-1%%') -900px 0 no-repeat;
 }
 
 .md a[href$="#map-cfb"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-900px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+  background: url('%%maps-1%%') -900px -180px no-repeat;
 }
 
 .md a[href$="#map-boombox"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-900px -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+  background: url('%%maps-1%%') -900px -360px no-repeat;
 }
 
 .md a[href$="#map-bombing-run"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-900px -540px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+  background: url('%%maps-1%%') -900px -540px no-repeat;
 }
 
 .md a[href$="#map-blast-off"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:0 -726px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+  background: url('%%maps-1%%') 0 -726px no-repeat;
 }
 
 .md a[href$="#map-45"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-180px -726px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+  background: url('%%maps-1%%') -180px -726px no-repeat;
 }
 
 .md a[href$="#map-fortyfive"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-360px -726px;
-  width: 90px;
-  height: 90.px;
-  line-height: 90px;
+  background: url('%%maps-1%%') -360px -726px no-repeat;
 }

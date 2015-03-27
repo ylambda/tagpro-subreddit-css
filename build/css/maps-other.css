@@ -1,72 +1,36 @@
 
-.md a[href$="#maps-spikedome"] {
-  background: url('%%maps-other%%') no-repeat;
-  background-position:0 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-spikedome"] {
+  background: url('%%maps-other%%') 0 0 no-repeat;
 }
 
-.md a[href$="#maps-snipers-v3"] {
-  background: url('%%maps-other%%') no-repeat;
-  background-position:-180px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-snipers-v3"] {
+  background: url('%%maps-other%%') -180px 0 no-repeat;
 }
 
-.md a[href$="#maps-shortercut-challenge"] {
-  background: url('%%maps-other%%') no-repeat;
-  background-position:0 -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-shortercut-challenge"] {
+  background: url('%%maps-other%%') 0 -180px no-repeat;
 }
 
-.md a[href$="#maps-ofm"] {
-  background: url('%%maps-other%%') no-repeat;
-  background-position:-180px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-ofm"] {
+  background: url('%%maps-other%%') -180px -180px no-repeat;
 }
 
-.md a[href$="#maps-mini-ofm"] {
-  background: url('%%maps-other%%') no-repeat;
-  background-position:-360px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-mini-ofm"] {
+  background: url('%%maps-other%%') -360px 0 no-repeat;
 }
 
-.md a[href$="#maps-holdup"] {
-  background: url('%%maps-other%%') no-repeat;
-  background-position:-360px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-holdup"] {
+  background: url('%%maps-other%%') -360px -180px no-repeat;
 }
 
-.md a[href$="#maps-caravan"] {
-  background: url('%%maps-other%%') no-repeat;
-  background-position:0 -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-caravan"] {
+  background: url('%%maps-other%%') 0 -360px no-repeat;
 }
 
-.md a[href$="#maps-bombing-race"] {
-  background: url('%%maps-other%%') no-repeat;
-  background-position:-180px -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-bombing-race"] {
+  background: url('%%maps-other%%') -180px -360px no-repeat;
 }
 
-.md a[href$="#maps-2v2"] {
-  background: url('%%maps-other%%') no-repeat;
-  background-position:-360px -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-2v2"] {
+  background: url('%%maps-other%%') -360px -360px no-repeat;
 }

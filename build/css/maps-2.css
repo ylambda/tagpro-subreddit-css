@@ -1,224 +1,112 @@
 
-.md a[href$="#maps-yiss-3-2"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:0 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-yiss-3-2"] {
+  background: url('%%maps-2%%') 0 0 no-repeat;
 }
 
-.md a[href$="#maps-whirlwind"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-180px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-whirlwind"] {
+  background: url('%%maps-2%%') -180px 0 no-repeat;
 }
 
-.md a[href$="#maps-vee"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:0 -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-vee"] {
+  background: url('%%maps-2%%') 0 -180px no-repeat;
 }
 
-.md a[href$="#maps-thinking-with-portals"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-180px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-thinking-with-portals"] {
+  background: url('%%maps-2%%') -180px -180px no-repeat;
 }
 
-.md a[href$="#maps-swoop"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-360px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-swoop"] {
+  background: url('%%maps-2%%') -360px 0 no-repeat;
 }
 
-.md a[href$="#maps-spiders"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-360px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-spiders"] {
+  background: url('%%maps-2%%') -360px -180px no-repeat;
 }
 
-.md a[href$="#maps-speedway"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:0 -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-speedway"] {
+  background: url('%%maps-2%%') 0 -360px no-repeat;
 }
 
-.md a[href$="#maps-simplicity"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-180px -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-simplicity"] {
+  background: url('%%maps-2%%') -180px -360px no-repeat;
 }
 
-.md a[href$="#maps-shortcut"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-360px -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-shortcut"] {
+  background: url('%%maps-2%%') -360px -360px no-repeat;
 }
 
-.md a[href$="#maps-rink"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-540px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-rink"] {
+  background: url('%%maps-2%%') -540px 0 no-repeat;
 }
 
-.md a[href$="#maps-reflex-2"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-540px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-reflex-2"] {
+  background: url('%%maps-2%%') -540px -180px no-repeat;
 }
 
-.md a[href$="#maps-pokeball"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-540px -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-pokeball"] {
+  background: url('%%maps-2%%') -540px -360px no-repeat;
 }
 
-.md a[href$="#maps-oval"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:0 -540px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-oval"] {
+  background: url('%%maps-2%%') 0 -540px no-repeat;
 }
 
-.md a[href$="#maps-micro"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-180px -540px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-micro"] {
+  background: url('%%maps-2%%') -180px -540px no-repeat;
 }
 
-.md a[href$="#maps-lold"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-360px -540px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-lold"] {
+  background: url('%%maps-2%%') -360px -540px no-repeat;
 }
 
-.md a[href$="#maps-hyper-reactor"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-540px -540px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-hyper-reactor"] {
+  background: url('%%maps-2%%') -540px -540px no-repeat;
 }
 
-.md a[href$="#maps-hourglass"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-720px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-hourglass"] {
+  background: url('%%maps-2%%') -720px 0 no-repeat;
 }
 
-.md a[href$="#maps-gloryhole"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-720px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-gloryhole"] {
+  background: url('%%maps-2%%') -720px -180px no-repeat;
 }
 
-.md a[href$="#maps-foozball"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-720px -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-foozball"] {
+  background: url('%%maps-2%%') -720px -360px no-repeat;
 }
 
-.md a[href$="#maps-figure-8"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-720px -540px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-figure-8"] {
+  background: url('%%maps-2%%') -720px -540px no-repeat;
 }
 
-.md a[href$="#maps-dumbbell"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:0 -720px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-dumbbell"] {
+  background: url('%%maps-2%%') 0 -720px no-repeat;
 }
 
-.md a[href$="#maps-clutch"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-180px -720px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-clutch"] {
+  background: url('%%maps-2%%') -180px -720px no-repeat;
 }
 
-.md a[href$="#maps-center-flag"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-360px -720px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-center-flag"] {
+  background: url('%%maps-2%%') -360px -720px no-repeat;
 }
 
-.md a[href$="#maps-bounce"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-540px -720px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-bounce"] {
+  background: url('%%maps-2%%') -540px -720px no-repeat;
 }
 
-.md a[href$="#maps-boosts"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-720px -720px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-boosts"] {
+  background: url('%%maps-2%%') -720px -720px no-repeat;
 }
 
-.md a[href$="#maps-big-vird"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-900px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-big-vird"] {
+  background: url('%%maps-2%%') -900px 0 no-repeat;
 }
 
-.md a[href$="#maps-battery"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-900px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-battery"] {
+  background: url('%%maps-2%%') -900px -180px no-repeat;
 }
 
-.md a[href$="#maps-arena"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-900px -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-arena"] {
+  background: url('%%maps-2%%') -900px -360px no-repeat;
 }

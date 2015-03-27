@@ -1,144 +1,72 @@
 
-.md a[href$="#maps-volt"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:0 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-volt"] {
+  background: url('%%maps-3%%') 0 0 no-repeat;
 }
 
-.md a[href$="#maps-twister"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-180px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-twister"] {
+  background: url('%%maps-3%%') -180px 0 no-repeat;
 }
 
-.md a[href$="#maps-shine"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:0 -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-shine"] {
+  background: url('%%maps-3%%') 0 -180px no-repeat;
 }
 
-.md a[href$="#maps-rocketballs"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-180px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-rocketballs"] {
+  background: url('%%maps-3%%') -180px -180px no-repeat;
 }
 
-.md a[href$="#maps-renegade"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-360px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-renegade"] {
+  background: url('%%maps-3%%') -360px 0 no-repeat;
 }
 
-.md a[href$="#maps-pilot"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-360px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-pilot"] {
+  background: url('%%maps-3%%') -360px -180px no-repeat;
 }
 
-.md a[href$="#maps-monarch"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:0 -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-monarch"] {
+  background: url('%%maps-3%%') 0 -360px no-repeat;
 }
 
-.md a[href$="#maps-jagged"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-180px -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-jagged"] {
+  background: url('%%maps-3%%') -180px -360px no-repeat;
 }
 
-.md a[href$="#maps-iron"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-360px -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-iron"] {
+  background: url('%%maps-3%%') -360px -360px no-repeat;
 }
 
-.md a[href$="#maps-hyperdrive"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-540px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-hyperdrive"] {
+  background: url('%%maps-3%%') -540px 0 no-repeat;
 }
 
-.md a[href$="#maps-hornswoggle"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-540px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-hornswoggle"] {
+  background: url('%%maps-3%%') -540px -180px no-repeat;
 }
 
-.md a[href$="#maps-gatekeeper"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-540px -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-gatekeeper"] {
+  background: url('%%maps-3%%') -540px -360px no-repeat;
 }
 
-.md a[href$="#maps-frontdoor"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:0 -540px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-frontdoor"] {
+  background: url('%%maps-3%%') 0 -540px no-repeat;
 }
 
-.md a[href$="#maps-flame"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-180px -540px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-flame"] {
+  background: url('%%maps-3%%') -180px -540px no-repeat;
 }
 
-.md a[href$="#maps-constriction"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-360px -540px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-constriction"] {
+  background: url('%%maps-3%%') -360px -540px no-repeat;
 }
 
-.md a[href$="#maps-cloud"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-540px -540px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-cloud"] {
+  background: url('%%maps-3%%') -540px -540px no-repeat;
 }
 
-.md a[href$="#maps-backdoor"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-720px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-backdoor"] {
+  background: url('%%maps-3%%') -720px 0 no-repeat;
 }
 
-.md a[href$="#maps-angry-pig"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-720px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
+.md a[href$="#map-angry-pig"] {
+  background: url('%%maps-3%%') -720px -180px no-repeat;
 }

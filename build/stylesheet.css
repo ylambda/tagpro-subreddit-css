@@ -249,6 +249,7 @@ a.title {
 .md code,
 .md pre code {
   border: 1px solid #aaa;
+  background-color: transparent;
 }
 
 .md pre code {
@@ -452,7 +453,6 @@ textarea:hover {
   background-color: transparent;
   padding: 10px 12px;
   line-height: 34px;
-  /* 14+10+10 */
   color: #aaa;
   text-transform: uppercase;
   font-weight: normal;
@@ -1105,7 +1105,7 @@ textarea:hover {
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
-  width: 139px; /* 300/2-9-2*/
+  width: 139px;
   text-align: center;
   height: 32px;
   line-height: 32px;
@@ -1121,7 +1121,7 @@ textarea:hover {
 }
 
 .side form .md > ul:nth-of-type(1) li:nth-of-type(1) a {
-  width: 216px !important; /* 300-82-2 */
+  width: 216px !important;
   margin: 5px 41px 25px;
   height: 50px;
   line-height: 50px;
@@ -1214,9 +1214,7 @@ textarea:hover {
   text-align: left;
   margin: 15px 0;
   width: calc(100% - 438px);
-  /* 7+1+1+350+39+40 */
   min-width: 590px;
-  /* 1028-438 */
   padding: 7px 0px 7px 7px;
   font-size: medium;
   font-weight: bold;
@@ -1513,14 +1511,14 @@ textarea:hover {
   margin: 12px 0;
 }
 
-.infobar.welcome,
-.organic-listing {
+.infobar.welcome {
   margin: 10px 0;
   border-bottom-width: 3px;
 }
 
 .organic-listing {
-  border-color: #bfc5cc;
+  margin: 0 0 -11px;
+  border: 1px solid #bfc5cc;
 }
 
 .organic-listing .link.promotedlink {
@@ -1537,11 +1535,19 @@ textarea:hover {
   border-bottom-width: 2px;
 }
 
+.listing-page #siteTable {
+  margin: 0;
+}
+
+.content > .spacer {
+  margin: 10px 0;
+}
+
 .menuarea {
   background-color: #fff;
   border: 1px solid #ccc;
   border-bottom: none;
-  margin: 10px 0 0;
+  margin: 10px 0 -10px;
   padding: 10px 15px;
 }
 
@@ -1598,10 +1604,6 @@ textarea:hover {
 
 .searchpane-toggle-show {
   padding-top: 5px;
-}
-
-.menuarea ~ #siteTable {
-  margin-top: 0;
 }
 
 .searchpane,
@@ -1718,10 +1720,7 @@ li .redditSingleClick:hover {
   background: url(%%misc%%) 0 -238px;
 }
 
-.expando-button.selftext,
-.expando-button.image,
-.expando-button.video,
-.expando-button.video-muted {
+.expando-button {
   background-color: #f0f0f0;
   background-image: url(%%misc%%) !important;
   border: 1px solid #bbb;
@@ -1741,8 +1740,7 @@ li .redditSingleClick:hover {
   background-position: 0 0 !important;
 }
 
-.expando-button.image,
-.expando-button.image.gallery {
+.expando-button.image {
   background-position: 0 -23px !important;
 }
 
@@ -1755,10 +1753,7 @@ li .redditSingleClick:hover {
   background-position: 0 -69px !important;
 }
 
-.expando-button.selftext:hover,
-.expando-button.image:hover,
-.expando-button.video:hover,
-.expando-button.video-muted:hover {
+.expando-button:hover {
   background-color: #ddd;
 }
 
@@ -1820,7 +1815,7 @@ div.nav-buttons .nextprev {
 
 div#progressIndicator {
   width: calc(100% - 22px);
-  margin-top: -13px;
+  margin-top: -3px;
   padding: 15px 10px;
   background-color: #fff;
   border: 1px solid #ccc;
@@ -2769,327 +2764,6 @@ body > .debuginfo {
   margin-right: 2px;
 }
 
-/* --- BUILD START FLAIR --- */
-
-.flair-VI:before {
-    background-position:0 0;
-    width: 18px;
-    height: 18px;
-}
-
-.flair-V:before {
-    background-position:-18px 0;
-    width: 16px;
-    height: 18px;
-}
-
-.flair-SubMicrophone:before {
-    background-position:-34px 0;
-    width: 18px;
-    height: 18px;
-}
-
-.flair-O1:before {
-    background-position:0 -18px;
-    width: 18px;
-    height: 18px;
-}
-
-.flair-IV:before {
-    background-position:-18px -18px;
-    width: 18px;
-    height: 18px;
-}
-
-.flair-III:before {
-    background-position:-52px 0;
-    width: 18px;
-    height: 18px;
-}
-
-.flair-II:before {
-    background-position:-52px -18px;
-    width: 18px;
-    height: 18px;
-}
-
-.flair-I:before {
-    background-position:0 -36px;
-    width: 18px;
-    height: 18px;
-}
-
-.flair-E6:before {
-    background-position:-18px -36px;
-    width: 18px;
-    height: 18px;
-}
-
-.flair-E5:before {
-    background-position:-36px -18px;
-    width: 16px;
-    height: 18px;
-}
-
-.flair-E4:before {
-    background-position:-36px -36px;
-    width: 18px;
-    height: 18px;
-}
-
-.flair-E3:before {
-    background-position:-70px 0;
-    width: 18px;
-    height: 18px;
-}
-
-.flair-E2:before {
-    background-position:-70px -18px;
-    width: 18px;
-    height: 18px;
-}
-
-.flair-E1:before {
-    background-position:-70px -36px;
-    width: 18px;
-    height: 18px;
-}
-
-.flair-World:before {
-    background-position:-54px -36px;
-    width: 16px;
-    height: 16px;
-}
-
-.flair-Weekly:before {
-    background-position:0 -54px;
-    width: 12px;
-    height: 16px;
-}
-
-.flair-Unfortunate:before {
-    background-position:-12px -54px;
-    width: 11px;
-    height: 16px;
-}
-
-.flair-UTurn:before {
-    background-position:-23px -54px;
-    width: 15px;
-    height: 16px;
-}
-
-.flair-Route:before {
-    background-position:-38px -54px;
-    width: 13px;
-    height: 16px;
-}
-
-.flair-Pokemon:before {
-    background-position:-51px -54px;
-    width: 16px;
-    height: 16px;
-}
-
-.flair-Phi:before {
-    background-position:-67px -54px;
-    width: 16px;
-    height: 16px;
-}
-
-.flair-Peace:before {
-    background-position:0 -70px;
-    width: 16px;
-    height: 16px;
-}
-
-.flair-Moon:before {
-    background-position:-16px -70px;
-    width: 16px;
-    height: 16px;
-}
-
-.flair-Monthly:before {
-    background-position:-32px -70px;
-    width: 16px;
-    height: 14px;
-}
-
-.flair-Microphone:before {
-    background-position:-88px 0;
-    width: 16px;
-    height: 16px;
-}
-
-.flair-Mario:before {
-    background-position:-88px -16px;
-    width: 16px;
-    height: 15px;
-}
-
-.flair-Lucky2:before {
-    background-position:-88px -31px;
-    width: 16px;
-    height: 16px;
-}
-
-.flair-Lucky:before {
-    background-position:-88px -47px;
-    width: 16px;
-    height: 14px;
-}
-
-.flair-Love:before {
-    background-position:-88px -61px;
-    width: 16px;
-    height: 15px;
-}
-
-.flair-Halloween:before {
-    background-position:0 -86px;
-    width: 16px;
-    height: 16px;
-}
-
-.flair-Freezing:before {
-    background-position:-16px -86px;
-    width: 15px;
-    height: 16px;
-}
-
-.flair-Fools:before {
-    background-position:-31px -86px;
-    width: 16px;
-    height: 16px;
-}
-
-.flair-Flux:before {
-    background-position:-47px -86px;
-    width: 16px;
-    height: 16px;
-}
-
-.flair-Easter:before {
-    background-position:-63px -86px;
-    width: 16px;
-    height: 16px;
-}
-
-.flair-Donator3:before {
-    background-position:-48px -70px;
-    width: 16px;
-    height: 14px;
-}
-
-.flair-Donator2:before {
-    background-position:-79px -86px;
-    width: 16px;
-    height: 16px;
-}
-
-.flair-Dolphin:before {
-    background-position:-104px 0;
-    width: 12px;
-    height: 16px;
-}
-
-.flair-Developer2:before {
-    background-position:-116px 0;
-    width: 16px;
-    height: 16px;
-}
-
-.flair-Developer:before {
-    background-position:-116px -16px;
-    width: 16px;
-    height: 16px;
-}
-
-.flair-Dalmatians:before {
-    background-position:-116px -32px;
-    width: 16px;
-    height: 14px;
-}
-
-.flair-Contributor:before {
-    background-position:-116px -46px;
-    width: 14px;
-    height: 16px;
-}
-
-.flair-Bowling:before {
-    background-position:-116px -62px;
-    width: 16px;
-    height: 16px;
-}
-
-.flair-Boiling:before {
-    background-position:-116px -78px;
-    width: 10px;
-    height: 16px;
-}
-
-.flair-Birthday2:before {
-    background-position:0 -102px;
-    width: 16px;
-    height: 16px;
-}
-
-.flair-Birthday:before {
-    background-position:-16px -102px;
-    width: 14px;
-    height: 16px;
-}
-
-.flair-Bacon:before {
-    background-position:-30px -102px;
-    width: 16px;
-    height: 15px;
-}
-
-.flair-Axe:before {
-    background-position:-46px -102px;
-    width: 16px;
-    height: 15px;
-}
-
-.flair-Alien:before {
-    background-position:-132px 0;
-    width: 13px;
-    height: 16px;
-}
-
-.flair-ABC:before {
-    background-position:-64px -70px;
-    width: 16px;
-    height: 14px;
-}
-
-.flair-Pi:before {
-    background-position:-62px -102px;
-    width: 15px;
-    height: 15px;
-}
-
-.flair-Donator:before {
-    background-position:-77px -102px;
-    width: 15px;
-    height: 15px;
-}
-
-.flair-Contest:before {
-    background-position:-92px -102px;
-    width: 15px;
-    height: 15px;
-}
-
-.flair-Daily:before {
-    background-position:-132px -16px;
-    width: 12px;
-    height: 14px;
-}
-
-
 .md a[href^="#flair-"] {
   background: url('%%flair%%') no-repeat;
   border: none;
@@ -3098,325 +2772,8 @@ body > .debuginfo {
   cursor: default;
 }
 
-
-.md a[href^="#flair-VI"] {
-    background-position:0 0;
-    width: 18px;
-    height: 18px;
-}
-
-.md a[href^="#flair-V"] {
-    background-position:-18px 0;
-    width: 16px;
-    height: 18px;
-}
-
-.md a[href^="#flair-SubMicrophone"] {
-    background-position:-34px 0;
-    width: 18px;
-    height: 18px;
-}
-
-.md a[href^="#flair-O1"] {
-    background-position:0 -18px;
-    width: 18px;
-    height: 18px;
-}
-
-.md a[href^="#flair-IV"] {
-    background-position:-18px -18px;
-    width: 18px;
-    height: 18px;
-}
-
-.md a[href^="#flair-III"] {
-    background-position:-52px 0;
-    width: 18px;
-    height: 18px;
-}
-
-.md a[href^="#flair-II"] {
-    background-position:-52px -18px;
-    width: 18px;
-    height: 18px;
-}
-
-.md a[href^="#flair-I"] {
-    background-position:0 -36px;
-    width: 18px;
-    height: 18px;
-}
-
-.md a[href^="#flair-E6"] {
-    background-position:-18px -36px;
-    width: 18px;
-    height: 18px;
-}
-
-.md a[href^="#flair-E5"] {
-    background-position:-36px -18px;
-    width: 16px;
-    height: 18px;
-}
-
-.md a[href^="#flair-E4"] {
-    background-position:-36px -36px;
-    width: 18px;
-    height: 18px;
-}
-
-.md a[href^="#flair-E3"] {
-    background-position:-70px 0;
-    width: 18px;
-    height: 18px;
-}
-
-.md a[href^="#flair-E2"] {
-    background-position:-70px -18px;
-    width: 18px;
-    height: 18px;
-}
-
-.md a[href^="#flair-E1"] {
-    background-position:-70px -36px;
-    width: 18px;
-    height: 18px;
-}
-
-.md a[href^="#flair-World"] {
-    background-position:-54px -36px;
-    width: 16px;
-    height: 16px;
-}
-
-.md a[href^="#flair-Weekly"] {
-    background-position:0 -54px;
-    width: 12px;
-    height: 16px;
-}
-
-.md a[href^="#flair-Unfortunate"] {
-    background-position:-12px -54px;
-    width: 11px;
-    height: 16px;
-}
-
-.md a[href^="#flair-UTurn"] {
-    background-position:-23px -54px;
-    width: 15px;
-    height: 16px;
-}
-
-.md a[href^="#flair-Route"] {
-    background-position:-38px -54px;
-    width: 13px;
-    height: 16px;
-}
-
-.md a[href^="#flair-Pokemon"] {
-    background-position:-51px -54px;
-    width: 16px;
-    height: 16px;
-}
-
-.md a[href^="#flair-Phi"] {
-    background-position:-67px -54px;
-    width: 16px;
-    height: 16px;
-}
-
-.md a[href^="#flair-Peace"] {
-    background-position:0 -70px;
-    width: 16px;
-    height: 16px;
-}
-
-.md a[href^="#flair-Moon"] {
-    background-position:-16px -70px;
-    width: 16px;
-    height: 16px;
-}
-
-.md a[href^="#flair-Monthly"] {
-    background-position:-32px -70px;
-    width: 16px;
-    height: 14px;
-}
-
-.md a[href^="#flair-Microphone"] {
-    background-position:-88px 0;
-    width: 16px;
-    height: 16px;
-}
-
-.md a[href^="#flair-Mario"] {
-    background-position:-88px -16px;
-    width: 16px;
-    height: 15px;
-}
-
-.md a[href^="#flair-Lucky2"] {
-    background-position:-88px -31px;
-    width: 16px;
-    height: 16px;
-}
-
-.md a[href^="#flair-Lucky"] {
-    background-position:-88px -47px;
-    width: 16px;
-    height: 14px;
-}
-
-.md a[href^="#flair-Love"] {
-    background-position:-88px -61px;
-    width: 16px;
-    height: 15px;
-}
-
-.md a[href^="#flair-Halloween"] {
-    background-position:0 -86px;
-    width: 16px;
-    height: 16px;
-}
-
-.md a[href^="#flair-Freezing"] {
-    background-position:-16px -86px;
-    width: 15px;
-    height: 16px;
-}
-
-.md a[href^="#flair-Fools"] {
-    background-position:-31px -86px;
-    width: 16px;
-    height: 16px;
-}
-
-.md a[href^="#flair-Flux"] {
-    background-position:-47px -86px;
-    width: 16px;
-    height: 16px;
-}
-
-.md a[href^="#flair-Easter"] {
-    background-position:-63px -86px;
-    width: 16px;
-    height: 16px;
-}
-
-.md a[href^="#flair-Donator3"] {
-    background-position:-48px -70px;
-    width: 16px;
-    height: 14px;
-}
-
-.md a[href^="#flair-Donator2"] {
-    background-position:-79px -86px;
-    width: 16px;
-    height: 16px;
-}
-
-.md a[href^="#flair-Dolphin"] {
-    background-position:-104px 0;
-    width: 12px;
-    height: 16px;
-}
-
-.md a[href^="#flair-Developer2"] {
-    background-position:-116px 0;
-    width: 16px;
-    height: 16px;
-}
-
-.md a[href^="#flair-Developer"] {
-    background-position:-116px -16px;
-    width: 16px;
-    height: 16px;
-}
-
-.md a[href^="#flair-Dalmatians"] {
-    background-position:-116px -32px;
-    width: 16px;
-    height: 14px;
-}
-
-.md a[href^="#flair-Contributor"] {
-    background-position:-116px -46px;
-    width: 14px;
-    height: 16px;
-}
-
-.md a[href^="#flair-Bowling"] {
-    background-position:-116px -62px;
-    width: 16px;
-    height: 16px;
-}
-
-.md a[href^="#flair-Boiling"] {
-    background-position:-116px -78px;
-    width: 10px;
-    height: 16px;
-}
-
-.md a[href^="#flair-Birthday2"] {
-    background-position:0 -102px;
-    width: 16px;
-    height: 16px;
-}
-
-.md a[href^="#flair-Birthday"] {
-    background-position:-16px -102px;
-    width: 14px;
-    height: 16px;
-}
-
-.md a[href^="#flair-Bacon"] {
-    background-position:-30px -102px;
-    width: 16px;
-    height: 15px;
-}
-
-.md a[href^="#flair-Axe"] {
-    background-position:-46px -102px;
-    width: 16px;
-    height: 15px;
-}
-
-.md a[href^="#flair-Alien"] {
-    background-position:-132px 0;
-    width: 13px;
-    height: 16px;
-}
-
-.md a[href^="#flair-ABC"] {
-    background-position:-64px -70px;
-    width: 16px;
-    height: 14px;
-}
-
-.md a[href^="#flair-Pi"] {
-    background-position:-62px -102px;
-    width: 15px;
-    height: 15px;
-}
-
-.md a[href^="#flair-Donator"] {
-    background-position:-77px -102px;
-    width: 15px;
-    height: 15px;
-}
-
-.md a[href^="#flair-Contest"] {
-    background-position:-92px -102px;
-    width: 15px;
-    height: 15px;
-}
-
-.md a[href^="#flair-Daily"] {
-    background-position:-132px -16px;
-    width: 12px;
-    height: 14px;
-}
-/* --- BUILD END FLAIR --- */
+/* --- BUILD START FLAIR --- */
+.flair-VI:before,.md a[href^="#flair-VI"]{background-position:0 0;width:18px;height:18px}.flair-V:before,.md a[href^="#flair-V"]{background-position:-18px 0;width:16px;height:18px}.flair-SubMicrophone:before,.md a[href^="#flair-SubMicrophone"]{background-position:-34px 0;width:18px;height:18px}.flair-O1:before,.md a[href^="#flair-O1"]{background-position:0 -18px;width:18px;height:18px}.flair-IV:before,.md a[href^="#flair-IV"]{background-position:-18px -18px;width:18px;height:18px}.flair-III:before,.md a[href^="#flair-III"]{background-position:-52px 0;width:18px;height:18px}.flair-II:before,.md a[href^="#flair-II"]{background-position:-52px -18px;width:18px;height:18px}.flair-I:before,.md a[href^="#flair-I"]{background-position:0 -36px;width:18px;height:18px}.flair-E6:before,.md a[href^="#flair-E6"]{background-position:-18px -36px;width:18px;height:18px}.flair-E5:before,.md a[href^="#flair-E5"]{background-position:-36px -18px;width:16px;height:18px}.flair-E4:before,.md a[href^="#flair-E4"]{background-position:-36px -36px;width:18px;height:18px}.flair-E3:before,.md a[href^="#flair-E3"]{background-position:-70px 0;width:18px;height:18px}.flair-E2:before,.md a[href^="#flair-E2"]{background-position:-70px -18px;width:18px;height:18px}.flair-E1:before,.md a[href^="#flair-E1"]{background-position:-70px -36px;width:18px;height:18px}.flair-World:before,.md a[href^="#flair-World"]{background-position:-54px -36px;width:16px;height:16px}.flair-Weekly:before,.md a[href^="#flair-Weekly"]{background-position:0 -54px;width:12px;height:16px}.flair-Unfortunate:before,.md a[href^="#flair-Unfortunate"]{background-position:-12px -54px;width:11px;height:16px}.flair-UTurn:before,.md a[href^="#flair-UTurn"]{background-position:-23px -54px;width:15px;height:16px}.flair-Route:before,.md a[href^="#flair-Route"]{background-position:-38px -54px;width:13px;height:16px}.flair-Pokemon:before,.md a[href^="#flair-Pokemon"]{background-position:-51px -54px;width:16px;height:16px}.flair-Phi:before,.md a[href^="#flair-Phi"]{background-position:-67px -54px;width:16px;height:16px}.flair-Peace:before,.md a[href^="#flair-Peace"]{background-position:0 -70px;width:16px;height:16px}.flair-Moon:before,.md a[href^="#flair-Moon"]{background-position:-16px -70px;width:16px;height:16px}.flair-Monthly:before,.md a[href^="#flair-Monthly"]{background-position:-32px -70px;width:16px;height:16px}.flair-Microphone:before,.md a[href^="#flair-Microphone"]{background-position:-48px -70px;width:16px;height:16px}.flair-Mario:before,.md a[href^="#flair-Mario"]{background-position:-64px -70px;width:16px;height:16px}.flair-Lucky2:before,.md a[href^="#flair-Lucky2"]{background-position:-88px 0;width:16px;height:16px}.flair-Lucky:before,.md a[href^="#flair-Lucky"]{background-position:-88px -16px;width:16px;height:14px}.flair-Love:before,.md a[href^="#flair-Love"]{background-position:-88px -30px;width:16px;height:15px}.flair-Halloween:before,.md a[href^="#flair-Halloween"]{background-position:-88px -45px;width:16px;height:16px}.flair-Freezing:before,.md a[href^="#flair-Freezing"]{background-position:-88px -61px;width:15px;height:16px}.flair-Fools:before,.md a[href^="#flair-Fools"]{background-position:0 -86px;width:16px;height:16px}.flair-Flux:before,.md a[href^="#flair-Flux"]{background-position:-16px -86px;width:16px;height:16px}.flair-Easter:before,.md a[href^="#flair-Easter"]{background-position:-32px -86px;width:16px;height:16px}.flair-Donator3:before,.md a[href^="#flair-Donator3"]{background-position:-48px -86px;width:16px;height:14px}.flair-Donator2:before,.md a[href^="#flair-Donator2"]{background-position:-104px 0;width:16px;height:16px}.flair-Dolphin:before,.md a[href^="#flair-Dolphin"]{background-position:-104px -16px;width:12px;height:16px}.flair-Developer2:before,.md a[href^="#flair-Developer2"]{background-position:-104px -32px;width:16px;height:16px}.flair-Developer:before,.md a[href^="#flair-Developer"]{background-position:-104px -48px;width:16px;height:16px}.flair-Dalmatians:before,.md a[href^="#flair-Dalmatians"]{background-position:-104px -64px;width:16px;height:14px}.flair-Daily:before,.md a[href^="#flair-Daily"]{background-position:-104px -78px;width:12px;height:16px}.flair-Contributor:before,.md a[href^="#flair-Contributor"]{background-position:0 -102px;width:15px;height:16px}.flair-Bowling:before,.md a[href^="#flair-Bowling"]{background-position:-15px -102px;width:16px;height:16px}.flair-Boiling:before,.md a[href^="#flair-Boiling"]{background-position:-31px -102px;width:10px;height:16px}.flair-Birthday2:before,.md a[href^="#flair-Birthday2"]{background-position:-41px -102px;width:16px;height:16px}.flair-Birthday:before,.md a[href^="#flair-Birthday"]{background-position:-57px -102px;width:14px;height:16px}.flair-Bacon:before,.md a[href^="#flair-Bacon"]{background-position:-71px -102px;width:16px;height:15px}.flair-Axe:before,.md a[href^="#flair-Axe"]{background-position:-120px 0;width:16px;height:16px}.flair-Alien:before,.md a[href^="#flair-Alien"]{background-position:-120px -16px;width:13px;height:16px}.flair-ABC:before,.md a[href^="#flair-ABC"]{background-position:-120px -32px;width:16px;height:14px}.flair-Pi:before,.md a[href^="#flair-Pi"]{background-position:-120px -46px;width:15px;height:15px}.flair-Donator:before,.md a[href^="#flair-Donator"]{background-position:-120px -61px;width:15px;height:15px}.flair-Contest:before,.md a[href^="#flair-Contest"]{background-position:-120px -76px;width:15px;height:15px}/* --- BUILD END FLAIR --- */
 
 
 /*!==================================================
@@ -3429,156 +2786,108 @@ body > .debuginfo {
   line-height: 16px;
   display: inline-block;
   cursor: default;
+  width: 40px;
+  height: 40px;
 }
 
 .md a[href^="#tile-spike"] {
   background-position: -480px -0px;
-  width: 40px;
-  height: 40px;
 }
 
 .md a[href^="#tile-redball"] {
   background-position: -560px -0px;
-  width: 40px;
-  height: 40px;
 }
 
 .md a[href^="#tile-blueball"] {
   background-position: -600px -0px;
-  width: 40px;
-  height: 40px;
 }
 
 .md a[href^="#tile-bomb"] {
   background-position: -480px -40px;
-  width: 40px;
-  height: 40px;
 }
 
 .md a[href^="#tile-yellowflag"] {
   background-position: -520px -40px;
-  width: 40px;
-  height: 40px;
 }
 
 .md a[href^="#tile-redflag"] {
   background-position: -560px -40px;
-  width: 40px;
-  height: 40px;
 }
 
 .md a[href^="#tile-blueflag"] {
   background-position: -600px -40px;
-  width: 40px;
-  height: 40px;
 }
 
 .md a[href^="#tile-bomb-missing"] {
   background-position: -480px -80px;
-  width: 40px;
-  height: 40px;
 }
 
 .md a[href^="#tile-yellowflag-missing"] {
   background-position: -520px -80px;
-  width: 40px;
-  height: 40px;
 }
 
 .md a[href^="#tile-redflag-missing"] {
   background-position: -560px -80px;
-  width: 40px;
-  height: 40px;
 }
 
 .md a[href^="#tile-blueflag-missing"] {
   background-position: -600px -80px;
-  width: 40px;
-  height: 40px;
 }
 
 .md a[href^="#tile-gate"] {
   background-position: -480px -120px;
-  width: 40px;
-  height: 40px;
 }
 
 .md a[href^="#tile-greengate"] {
   background-position: -520px -120px;
-  width: 40px;
-  height: 40px;
 }
 
 .md a[href^="#tile-redgate"] {
   background-position: -560px -120px;
-  width: 40px;
-  height: 40px;
 }
 
 .md a[href^="#tile-bluegate"] {
   background-position: -600px -120px;
-  width: 40px;
-  height: 40px;
 }
 
 .md a[href^="#tile-jukejuice"] {
   background-position: -480px -160px;
-  width: 40px;
-  height: 40px;
 }
 
 .md a[href^="#tile-tile"] {
   background-position: -520px -160px;
-  width: 40px;
-  height: 40px;
 }
 
 .md a[href^="#tile-redtile"] {
   background-position: -560px -160px;
-  width: 40px;
-  height: 40px;
 }
 
 .md a[href^="#tile-bluetile"] {
   background-position: -600px -160px;
-  width: 40px;
-  height: 40px;
 }
 
 .md a[href^="#tile-rollingbomb"] {
   background-position: -480px -200px;
-  width: 40px;
-  height: 40px;
 }
 
 .md a[href^="#tile-redendzone"] {
   background-position: -560px -200px;
-  width: 40px;
-  height: 40px;
 }
 
 .md a[href^="#tile-blueendzone"] {
   background-position: -600px -200px;
-  width: 40px;
-  height: 40px;
 }
 
 .md a[href^="#tile-tagpro"] {
   background-position: -480px -240px;
-  width: 40px;
-  height: 40px;
 }
 
 .md a[href^="#tile-button"] {
   background-position: -520px -240px;
-  width: 40px;
-  height: 40px;
 }
 
 .md a[href^="#tile-topspeed"] {
   background-position: -480px -280px;
-  width: 40px;
-  height: 40px;
 }
 
 .md a[href^="#tile-marsball"] {
@@ -3591,8 +2900,6 @@ body > .debuginfo {
 .md a[href^="#tile-speedpad"] {
   display: inline-block;
   background: url(%%animated%%) no-repeat;
-  width: 40px;
-  height: 40px;
   -webkit-animation: speedpad 0.7s steps(4) infinite;
   -moz-animation: speedpad 0.7s steps(4) infinite;
   -ms-animation: speedpad 0.7s steps(4) infinite;
@@ -3658,8 +2965,6 @@ body > .debuginfo {
 .md a[href^="#tile-speedpadred"] {
   display: inline-block;
   background: url(%%animated%%) no-repeat;
-  width: 40px;
-  height: 40px;
   -webkit-animation: speedpadred 0.7s steps(4) infinite;
   -moz-animation: speedpadred 0.7s steps(4) infinite;
   -ms-animation: speedpadred 0.7s steps(4) infinite;
@@ -3725,8 +3030,6 @@ body > .debuginfo {
 .md a[href^="#tile-speedpadblue"] {
   display: inline-block;
   background: url(%%animated%%) no-repeat;
-  width: 40px;
-  height: 40px;
   -webkit-animation: speedpadblue 0.7s steps(4) infinite;
   -moz-animation: speedpadblue 0.7s steps(4) infinite;
   -ms-animation: speedpadblue 0.7s steps(4) infinite;
@@ -3792,8 +3095,6 @@ body > .debuginfo {
 .md a[href^="#tile-portal"] {
   display: inline-block;
   background: url(%%animated%%) no-repeat;
-  width: 40px;
-  height: 40px;
   -webkit-animation: portal 0.7s steps(4) infinite;
   -moz-animation: portal 0.7s steps(4) infinite;
   -ms-animation: portal 0.7s steps(4) infinite;
@@ -3862,678 +3163,25 @@ body > .debuginfo {
 .md a[href*="#map-"] {
   border: none;
   display: inline-block;
+  height: 180px;
+  width: 180px;
+  line-height: 180px;
 }
 
 /* --- BUILD START MAPS-1 --- */
-
-.md a[href$="#map-maparena"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:0 0;
-  width: 180px;
-  height: 186.px;
-  line-height: 186px;
-}
-
-.md a[href$="#map-zirconium"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-180px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#map-wormy"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-360px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#map-velocity"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:0 -186px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#map-the-holy-see"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-180px -186px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#map-super-duper-stamp"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-360px -186px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#map-star"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-540px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#map-snes-v2"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-540px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#map-smirk"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:0 -366px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#map-ricochet"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-180px -366px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#map-push-it"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-360px -366px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#map-hurricane"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-540px -366px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#map-hockey"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-720px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#map-grail-of-speed"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-720px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#map-geokoala"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-720px -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#map-gamepad"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:0 -546px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#map-diamond-faces"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-180px -546px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#map-danger-zone"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-360px -546px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#map-command-center"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-540px -546px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#map-colors"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-720px -546px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#map-classico"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-900px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#map-cfb"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-900px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#map-boombox"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-900px -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#map-bombing-run"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-900px -540px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#map-blast-off"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:0 -726px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#map-45"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-180px -726px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#map-fortyfive"] {
-  background: url('%%maps-1%%') no-repeat;
-  background-position:-360px -726px;
-  width: 90px;
-  height: 90.px;
-  line-height: 90px;
-}
-/* --- BUILD END MAPS-1 --- */
+.md a[href$="#map-maparena"]{background:url('%%maps-1%%') 0 0 no-repeat}.md a[href$="#map-zirconium"]{background:url('%%maps-1%%') -180px 0 no-repeat}.md a[href$="#map-wormy"]{background:url('%%maps-1%%') -360px 0 no-repeat}.md a[href$="#map-velocity"]{background:url('%%maps-1%%') 0 -186px no-repeat}.md a[href$="#map-the-holy-see"]{background:url('%%maps-1%%') -180px -186px no-repeat}.md a[href$="#map-super-duper-stamp"]{background:url('%%maps-1%%') -360px -186px no-repeat}.md a[href$="#map-star"]{background:url('%%maps-1%%') -540px 0 no-repeat}.md a[href$="#map-snes-v2"]{background:url('%%maps-1%%') -540px -180px no-repeat}.md a[href$="#map-smirk"]{background:url('%%maps-1%%') 0 -366px no-repeat}.md a[href$="#map-ricochet"]{background:url('%%maps-1%%') -180px -366px no-repeat}.md a[href$="#map-push-it"]{background:url('%%maps-1%%') -360px -366px no-repeat}.md a[href$="#map-hurricane"]{background:url('%%maps-1%%') -540px -366px no-repeat}.md a[href$="#map-hockey"]{background:url('%%maps-1%%') -720px 0 no-repeat}.md a[href$="#map-grail-of-speed"]{background:url('%%maps-1%%') -720px -180px no-repeat}.md a[href$="#map-geokoala"]{background:url('%%maps-1%%') -720px -360px no-repeat}.md a[href$="#map-gamepad"]{background:url('%%maps-1%%') 0 -546px no-repeat}.md a[href$="#map-diamond-faces"]{background:url('%%maps-1%%') -180px -546px no-repeat}.md a[href$="#map-danger-zone"]{background:url('%%maps-1%%') -360px -546px no-repeat}.md a[href$="#map-command-center"]{background:url('%%maps-1%%') -540px -546px no-repeat}.md a[href$="#map-colors"]{background:url('%%maps-1%%') -720px -546px no-repeat}.md a[href$="#map-classico"]{background:url('%%maps-1%%') -900px 0 no-repeat}.md a[href$="#map-cfb"]{background:url('%%maps-1%%') -900px -180px no-repeat}.md a[href$="#map-boombox"]{background:url('%%maps-1%%') -900px -360px no-repeat}.md a[href$="#map-bombing-run"]{background:url('%%maps-1%%') -900px -540px no-repeat}.md a[href$="#map-blast-off"]{background:url('%%maps-1%%') 0 -726px no-repeat}.md a[href$="#map-45"]{background:url('%%maps-1%%') -180px -726px no-repeat}.md a[href$="#map-fortyfive"]{background:url('%%maps-1%%') -360px -726px no-repeat}/* --- BUILD END MAPS-1 --- */
 
 
 /* --- BUILD START MAPS-2 --- */
-
-.md a[href$="#maps-yiss-3-2"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:0 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-whirlwind"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-180px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-vee"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:0 -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-thinking-with-portals"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-180px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-swoop"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-360px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-spiders"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-360px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-speedway"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:0 -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-simplicity"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-180px -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-shortcut"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-360px -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-rink"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-540px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-reflex-2"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-540px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-pokeball"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-540px -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-oval"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:0 -540px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-micro"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-180px -540px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-lold"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-360px -540px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-hyper-reactor"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-540px -540px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-hourglass"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-720px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-gloryhole"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-720px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-foozball"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-720px -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-figure-8"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-720px -540px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-dumbbell"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:0 -720px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-clutch"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-180px -720px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-center-flag"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-360px -720px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-bounce"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-540px -720px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-boosts"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-720px -720px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-big-vird"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-900px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-battery"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-900px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-arena"] {
-  background: url('%%maps-2%%') no-repeat;
-  background-position:-900px -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-/* --- BUILD END MAPS-2 --- */
+.md a[href$="#map-yiss-3-2"]{background:url('%%maps-2%%') 0 0 no-repeat}.md a[href$="#map-whirlwind"]{background:url('%%maps-2%%') -180px 0 no-repeat}.md a[href$="#map-vee"]{background:url('%%maps-2%%') 0 -180px no-repeat}.md a[href$="#map-thinking-with-portals"]{background:url('%%maps-2%%') -180px -180px no-repeat}.md a[href$="#map-swoop"]{background:url('%%maps-2%%') -360px 0 no-repeat}.md a[href$="#map-spiders"]{background:url('%%maps-2%%') -360px -180px no-repeat}.md a[href$="#map-speedway"]{background:url('%%maps-2%%') 0 -360px no-repeat}.md a[href$="#map-simplicity"]{background:url('%%maps-2%%') -180px -360px no-repeat}.md a[href$="#map-shortcut"]{background:url('%%maps-2%%') -360px -360px no-repeat}.md a[href$="#map-rink"]{background:url('%%maps-2%%') -540px 0 no-repeat}.md a[href$="#map-reflex-2"]{background:url('%%maps-2%%') -540px -180px no-repeat}.md a[href$="#map-pokeball"]{background:url('%%maps-2%%') -540px -360px no-repeat}.md a[href$="#map-oval"]{background:url('%%maps-2%%') 0 -540px no-repeat}.md a[href$="#map-micro"]{background:url('%%maps-2%%') -180px -540px no-repeat}.md a[href$="#map-lold"]{background:url('%%maps-2%%') -360px -540px no-repeat}.md a[href$="#map-hyper-reactor"]{background:url('%%maps-2%%') -540px -540px no-repeat}.md a[href$="#map-hourglass"]{background:url('%%maps-2%%') -720px 0 no-repeat}.md a[href$="#map-gloryhole"]{background:url('%%maps-2%%') -720px -180px no-repeat}.md a[href$="#map-foozball"]{background:url('%%maps-2%%') -720px -360px no-repeat}.md a[href$="#map-figure-8"]{background:url('%%maps-2%%') -720px -540px no-repeat}.md a[href$="#map-dumbbell"]{background:url('%%maps-2%%') 0 -720px no-repeat}.md a[href$="#map-clutch"]{background:url('%%maps-2%%') -180px -720px no-repeat}.md a[href$="#map-center-flag"]{background:url('%%maps-2%%') -360px -720px no-repeat}.md a[href$="#map-bounce"]{background:url('%%maps-2%%') -540px -720px no-repeat}.md a[href$="#map-boosts"]{background:url('%%maps-2%%') -720px -720px no-repeat}.md a[href$="#map-big-vird"]{background:url('%%maps-2%%') -900px 0 no-repeat}.md a[href$="#map-battery"]{background:url('%%maps-2%%') -900px -180px no-repeat}.md a[href$="#map-arena"]{background:url('%%maps-2%%') -900px -360px no-repeat}/* --- BUILD END MAPS-2 --- */
 
 
 /* --- BUILD START MAPS-3 --- */
-
-.md a[href$="#maps-volt"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:0 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-twister"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-180px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-shine"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:0 -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-rocketballs"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-180px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-renegade"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-360px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-pilot"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-360px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-monarch"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:0 -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-jagged"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-180px -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-iron"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-360px -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-hyperdrive"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-540px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-hornswoggle"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-540px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-gatekeeper"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-540px -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-frontdoor"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:0 -540px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-flame"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-180px -540px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-constriction"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-360px -540px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-cloud"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-540px -540px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-backdoor"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-720px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-angry-pig"] {
-  background: url('%%maps-3%%') no-repeat;
-  background-position:-720px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-/* --- BUILD END MAPS-3 --- */
+.md a[href$="#map-volt"]{background:url('%%maps-3%%') 0 0 no-repeat}.md a[href$="#map-twister"]{background:url('%%maps-3%%') -180px 0 no-repeat}.md a[href$="#map-shine"]{background:url('%%maps-3%%') 0 -180px no-repeat}.md a[href$="#map-rocketballs"]{background:url('%%maps-3%%') -180px -180px no-repeat}.md a[href$="#map-renegade"]{background:url('%%maps-3%%') -360px 0 no-repeat}.md a[href$="#map-pilot"]{background:url('%%maps-3%%') -360px -180px no-repeat}.md a[href$="#map-monarch"]{background:url('%%maps-3%%') 0 -360px no-repeat}.md a[href$="#map-jagged"]{background:url('%%maps-3%%') -180px -360px no-repeat}.md a[href$="#map-iron"]{background:url('%%maps-3%%') -360px -360px no-repeat}.md a[href$="#map-hyperdrive"]{background:url('%%maps-3%%') -540px 0 no-repeat}.md a[href$="#map-hornswoggle"]{background:url('%%maps-3%%') -540px -180px no-repeat}.md a[href$="#map-gatekeeper"]{background:url('%%maps-3%%') -540px -360px no-repeat}.md a[href$="#map-frontdoor"]{background:url('%%maps-3%%') 0 -540px no-repeat}.md a[href$="#map-flame"]{background:url('%%maps-3%%') -180px -540px no-repeat}.md a[href$="#map-constriction"]{background:url('%%maps-3%%') -360px -540px no-repeat}.md a[href$="#map-cloud"]{background:url('%%maps-3%%') -540px -540px no-repeat}.md a[href$="#map-backdoor"]{background:url('%%maps-3%%') -720px 0 no-repeat}.md a[href$="#map-angry-pig"]{background:url('%%maps-3%%') -720px -180px no-repeat}/* --- BUILD END MAPS-3 --- */
 
 
 /* --- BUILD START MAPS-OTHER --- */
-
-.md a[href$="#maps-spikedome"] {
-  background: url('%%maps-other%%') no-repeat;
-  background-position:0 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-snipers-v3"] {
-  background: url('%%maps-other%%') no-repeat;
-  background-position:-180px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-shortercut-challenge"] {
-  background: url('%%maps-other%%') no-repeat;
-  background-position:0 -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-ofm"] {
-  background: url('%%maps-other%%') no-repeat;
-  background-position:-180px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-mini-ofm"] {
-  background: url('%%maps-other%%') no-repeat;
-  background-position:-360px 0;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-holdup"] {
-  background: url('%%maps-other%%') no-repeat;
-  background-position:-360px -180px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-caravan"] {
-  background: url('%%maps-other%%') no-repeat;
-  background-position:0 -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-bombing-race"] {
-  background: url('%%maps-other%%') no-repeat;
-  background-position:-180px -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-
-.md a[href$="#maps-2v2"] {
-  background: url('%%maps-other%%') no-repeat;
-  background-position:-360px -360px;
-  width: 180px;
-  height: 180.px;
-  line-height: 180px;
-}
-/* --- BUILD END MAPS-OTHER --- */
+.md a[href$="#map-spikedome"]{background:url('%%maps-other%%') 0 0 no-repeat}.md a[href$="#map-snipers-v3"]{background:url('%%maps-other%%') -180px 0 no-repeat}.md a[href$="#map-shortercut-challenge"]{background:url('%%maps-other%%') 0 -180px no-repeat}.md a[href$="#map-ofm"]{background:url('%%maps-other%%') -180px -180px no-repeat}.md a[href$="#map-mini-ofm"]{background:url('%%maps-other%%') -360px 0 no-repeat}.md a[href$="#map-holdup"]{background:url('%%maps-other%%') -360px -180px no-repeat}.md a[href$="#map-caravan"]{background:url('%%maps-other%%') 0 -360px no-repeat}.md a[href$="#map-bombing-race"]{background:url('%%maps-other%%') -180px -360px no-repeat}.md a[href$="#map-2v2"]{background:url('%%maps-other%%') -360px -360px no-repeat}/* --- BUILD END MAPS-OTHER --- */
 
 
 /*!==================================================
@@ -4545,7 +3193,6 @@ body > .debuginfo {
 
 .res-commentBoxes body > .content {
   margin-right: 389px !important;
-  /* 350+39 */
 }
 
 /*** Fixes color on send message and give gold buttons when hovering over a name on RES ***/
@@ -4589,7 +3236,10 @@ body > .debuginfo {
 .res-nightmode .md h3,
 .res-nightmode .md h4,
 .res-nightmode .md h5,
-.res-nightmode .md h6 {
+.res-nightmode .md h6,
+.res-nightmode .side .redditname a,
+.res-nightmode .side blockquote h1,
+.res-nightmode .sidecontentbox .title h1 {
   color: #888 !important;
 }
 
@@ -4597,12 +3247,58 @@ body > .debuginfo {
   border-color: #666;
 }
 
+.res-nightmode .md table tr td {
+  background-color: transparent;
+}
+
 .res-nightmode .md table tr:hover td {
   background-color: #664847;
 }
 
+.res-nightmode .md table th {
+  color: #999;
+}
+
+.res-nightmode .md code,
+.res-nightmode .md pre code::after {
+  border-color: #777;
+}
+
+.res-nightmode code {
+  color: #aaa;
+}
+
+.res-nightmode .md hr,
+.res-nightmode .usertext-edit textarea hr {
+  background-color: #2a2a2a;
+}
+
+.res-nightmode input,
+.res-nightmode textarea,
+.res-nightmode .markdownEditor .edit-btn:not(.btn-macro) {
+  background-color: #3b3b3b !important;
+  border-color: #666 !important;
+}
+
+.res-nightmode input:hover,
+.res-nightmode textarea:hover,
+.res-nightmode .markdownEditor .edit-btn:not(.btn-macro):hover {
+  border-color: #888 !important;
+}
+
 .res-nightmode #sr-header-area,
-.res-nightmode #sr-header-area * {
+.res-nightmode #sr-header-area *,
+.res-nightmode .titlebox,
+.res-nightmode.res-commentBoxes .comments-page .comment,
+.res-nightmode.res-commentBoxes .comments-page .comment .comment,
+.res-nightmode.res-commentBoxes .comments-page .comment .comment .comment,
+.res-nightmode.res-commentBoxes .comments-page .comment .comment .comment .comment,
+.res-nightmode.res-commentBoxes .comments-page .comment .comment .comment .comment .comment,
+.res-nightmode.res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment,
+.res-nightmode.res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment,
+.res-nightmode.res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment,
+.res-nightmode.res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.res-nightmode.res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
   background-color: #333 !important;
 }
 
@@ -4630,65 +3326,74 @@ body > .debuginfo {
 
 .res-nightmode ul.tabmenu li.selected a {
   background-color: #222;
+  color: #e54c47;
 }
 
 .res-nightmode .user .userkarma {
   color: inherit;
 }
 
-.res-nightmode .titlebox {
-  background-color: #333 !important;
+.res-nightmode #search input {
+  border-color: #555 !important;
 }
 
-.res-nightmode .titlebox > :not(.usertext):not(.clear) {
+.res-nightmode #search input[type=text] {
+  background-color: #3b3b3b !important;
+}
+
+.res-nightmode #search input[type=submit] {
+  background-color: #555 !important;
+}
+
+.res-nightmode .titlebox .redditname::after,
+.res-nightmode .side blockquote h1::after,
+.res-nightmode .sidecontentbox .content::before,
+.res-nightmode .footer .col,
+.res-nightmode .listing-page #siteTable,
+.res-nightmode .comments-page #siteTable,
+.res-nightmode .search-page #siteTable {
+  border-color: #2a2a2a;
+}
+
+.res-nightmode .hot-page .titlebox .usertext-body .md h4:nth-of-type(1) a,
+.res-nightmode .side .linkinfo,
+.res-nightmode .side .md blockquote,
+.res-nightmode .menuarea,
+.res-nightmode .infobar.gold-accent,
+.res-nightmode .footer-parent .footer.rounded,
+.res-nightmode .commentarea > .panestack-title,
+.res-nightmode .commentarea > .menuarea,
+.res-nightmode .commentarea > .usertext,
+.res-nightmode .wiki-page .wiki-page-content {
+  background-color: #333;
+  border-color: #2a2a2a;
+}
+
+.res-nightmode .titlebox > :not(.usertext):not(.clear),
+.res-nightmode .sidecontentbox,
+.res-nightmode .link,
+.res-nightmode .listing-page .sitetable > .thing,
+.res-nightmode .search-page .sitetable > .thing,
+.res-nightmode div.nav-buttons {
   background-color: #333 !important;
   border-color: #2a2a2a !important;
-}
-
-.res-nightmode .hot-page .titlebox .usertext-body .md h4:nth-of-type(1) a {
-  background-color: #333;
-  border-color: #2a2a2a;
-}
-
-.res-nightmode .titlebox .redditname::after {
-  border-color: #2a2a2a;
-}
-
-.res-nightmode .side .linkinfo {
-  background-color: #333;
-  border-color: #2a2a2a;
 }
 
 .res-nightmode .titlebox .usertext {
   background-color: #222;
 }
 
-.res-nightmode .side * {
-  color: #777;
-}
-
-.res-nightmode .side .md blockquote {
-  background-color: #333;
-  border-color: #2a2a2a;
-}
-
-.res-nightmode .side .md blockquote:nth-of-type(1) {
-  background-color: transparent;
-}
-
-.res-nightmode .side .redditname a,
-.res-nightmode .side blockquote h1,
-.res-nightmode .sidecontentbox .title h1 {
-  color: #888 !important;
-}
-
-.res-nightmode .side blockquote h1::after {
-  border-color: #2a2a2a;
-}
-
+.res-nightmode .side *,
 .res-nightmode .side .usertext-body .md blockquote p,
-.res-nightmode .side .usertext-body .md blockquote * {
+.res-nightmode .side .usertext-body .md blockquote *,
+.res-nightmode .infobar.gold-accent p {
   color: #777;
+}
+
+.res-nightmode .side .md blockquote:nth-of-type(1),
+.res-nightmode .sidecontentbox .content,
+.res-nightmode .sidecontentbox .content * {
+  background-color: transparent;
 }
 
 .res-nightmode .side .usertext-body .md blockquote ol,
@@ -4696,32 +3401,10 @@ body > .debuginfo {
   background-color: #333;
 }
 
-.res-nightmode .sidecontentbox {
-  background-color: #333 !important;
-  border-color: #2a2a2a !important;
-}
-
-.res-nightmode .sidecontentbox .content,
-.res-nightmode .sidecontentbox .content * {
-  background-color: transparent;
-}
-
-.res-nightmode .sidecontentbox .content::before {
+.res-nightmode .gold-accent.comment-visits-box {
+  background-color: #333;
   border-color: #2a2a2a;
-}
-
-.res-nightmode .listing-page #siteTable,
-.res-nightmode .comments-page #siteTable,
-.res-nightmode .search-page #siteTable {
-  border-color: #2a2a2a;
-}
-
-.res-nightmode .link,
-.res-nightmode .listing-page .sitetable > .thing,
-.res-nightmode .search-page .sitetable > .thing,
-.res-nightmode div.nav-buttons {
-  border-color: #2a2a2a !important;
-  background-color: #333 !important;
+  color: #777;
 }
 
 .res-nightmode .thing .title:visited,
@@ -4744,6 +3427,11 @@ body > .debuginfo {
 .res-nightmode .content .RES-keyNav-activeElement .noncollapsed .md p {
   background-color: transparent !important;
   color: #777 !important;
+}
+
+.res-nightmode .thing .expando-button {
+  background-image: url(%%misc%%) !important;
+  border-color: #888;
 }
 
 .res-nightmode .expando .error {
@@ -4771,20 +3459,13 @@ body > .debuginfo {
   padding-top: 0;
 }
 
-.res-nightmode .footer-parent .footer.rounded {
-  background-color: #333;
-  border-color: #2a2a2a;
+.res-nightmode #REScommentSubToggle {
+  border: none;
+  background-color: #449de5;
 }
 
-.res-nightmode .footer .col {
-  border-color: #2a2a2a;
-}
-
-.res-nightmode .commentarea > .panestack-title,
-.res-nightmode .commentarea > .menuarea,
-.res-nightmode .commentarea > .usertext {
-  background-color: #333;
-  border-color: #2a2a2a;
+.res-nightmode #REScommentSubToggle:hover {
+  background-color: #3d8bcc;
 }
 
 .res-nightmode .comments-page .commentarea > .sitetable > .comment {
@@ -4795,17 +3476,35 @@ body > .debuginfo {
   border-color: #222 !important;
 }
 
-.res-nightmode.res-commentBoxes .comments-page .comment,
-.res-nightmode.res-commentBoxes .comments-page .comment .comment,
-.res-nightmode.res-commentBoxes .comments-page .comment .comment .comment,
-.res-nightmode.res-commentBoxes .comments-page .comment .comment .comment .comment,
-.res-nightmode.res-commentBoxes .comments-page .comment .comment .comment .comment .comment,
-.res-nightmode.res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment,
-.res-nightmode.res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment,
-.res-nightmode.res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment,
-.res-nightmode.res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment,
-.res-nightmode.res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
-  background-color: #333 !important;
+.res-nightmode .wiki-page .pageactions .wikiaction {
+  color: #aaa;
+}
+
+.res-nightmode .wiki-page .pageactions .wikiaction:hover {
+  color: #fff;
+}
+
+.res-nightmode .wiki-page .pageactions .wikiaction-current {
+  background-color: transparent;
+}
+
+.res-nightmode .wiki-page .wiki-page-content .md {
+  border-color: #2a2a2a;
+  color: #777;
+}
+
+.res-nightmode .wiki-page .wiki-page-content .md.wiki > .toc ul {
+  background-color: transparent;
+  border-color: #222;
+}
+
+.res-nightmode .content .wiki-page-content .md.wiki p {
+  color: #777;
+}
+
+.res-nightmode .link .entry .buttons li.first a,
+.res-nightmode .comment .entry .buttons a[onclick*="reply"] {
+  color: #aaa;
 }
 
 .res-nightmode .side .spacer,
@@ -4823,18 +3522,14 @@ body > .debuginfo {
 .res-nightmode .entry time,
 .res-nightmode .entry .buttons li a,
 .res-nightmode li .redditSingleClick {
-  color: #777;
   background-color: transparent;
-}
-
-.res-nightmode .link .entry .buttons li.first a,
-.res-nightmode .comment .entry .buttons a[onclick*="reply"] {
-  color: #aaa;
+  color: #777;
 }
 
 .res-nightmode a,
 .res-nightmode a:link,
 .res-nightmode .tabmenu li.selected a,
+.res-nightmode .dropdown.lightdrop .selected,
 .res-nightmode .share-button .option,
 .res-nightmode #subscribe a,
 .res-nightmode .share .option,
