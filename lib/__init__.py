@@ -5,6 +5,7 @@ import urlparse
 
 import praw
 from glue.bin import main as glue
+from csscompressor import compress
 
 reddit = None
 def reddit_login():
@@ -156,10 +157,11 @@ def build():
             css_basename = os.path.splitext(os.path.basename(css_file))[0]
             search_string = "/* --- INSERT BUILD %s --- */" % css_basename.upper()
             insert_point = stylesheet.find(search_string)
+
             if insert_point > -1:
                 print "Adding %s to stylesheet" % css_file
                 build_style = "/* --- BUILD START %s --- */\n" % css_basename.upper()
-                build_style += f.read()
+                build_style += compress(f.read())
                 build_style += "/* --- BUILD END %s --- */\n" % css_basename.upper()
                 stylesheet = stylesheet.replace(search_string, build_style)
             f.close()

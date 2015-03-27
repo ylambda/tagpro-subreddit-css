@@ -2,6 +2,7 @@ Jinja2==2.7.3
 MarkupSafe==0.23
 Pillow==2.7.0
 argparse==1.2.1
+csscompressor==0.9.3
 glue==0.11.0
 praw==2.1.20
 requests==2.6.0
