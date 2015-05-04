@@ -216,114 +216,135 @@
     height: 16px;
 }
 
+.flair-Fools2:before,
+.md a[href^="#flair-Fools2"] {
+    background-position:0 -86px;
+    width: 15px;
+    height: 16px;
+}
+
 .flair-Fools:before,
 .md a[href^="#flair-Fools"] {
-    background-position:0 -86px;
+    background-position:-15px -86px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Flux:before,
 .md a[href^="#flair-Flux"] {
-    background-position:-16px -86px;
+    background-position:-31px -86px;
+    width: 16px;
+    height: 16px;
+}
+
+.flair-Easter3:before,
+.md a[href^="#flair-Easter3"] {
+    background-position:-47px -86px;
+    width: 16px;
+    height: 16px;
+}
+
+.flair-Easter2:before,
+.md a[href^="#flair-Easter2"] {
+    background-position:-63px -86px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Easter:before,
 .md a[href^="#flair-Easter"] {
-    background-position:-32px -86px;
+    background-position:-79px -86px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Donator3:before,
 .md a[href^="#flair-Donator3"] {
-    background-position:-48px -86px;
+    background-position:-104px 0;
     width: 16px;
     height: 14px;
 }
 
 .flair-Donator2:before,
 .md a[href^="#flair-Donator2"] {
-    background-position:-104px 0;
+    background-position:-104px -14px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Dolphin:before,
 .md a[href^="#flair-Dolphin"] {
-    background-position:-104px -16px;
+    background-position:-104px -30px;
     width: 12px;
     height: 16px;
 }
 
 .flair-Developer2:before,
 .md a[href^="#flair-Developer2"] {
-    background-position:-104px -32px;
+    background-position:-104px -46px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Developer:before,
 .md a[href^="#flair-Developer"] {
-    background-position:-104px -48px;
+    background-position:-104px -62px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Dalmatians:before,
 .md a[href^="#flair-Dalmatians"] {
-    background-position:-104px -64px;
+    background-position:-104px -78px;
     width: 16px;
     height: 14px;
 }
 
 .flair-Daily:before,
 .md a[href^="#flair-Daily"] {
-    background-position:-104px -78px;
+    background-position:0 -102px;
     width: 12px;
     height: 16px;
 }
 
 .flair-Contributor:before,
 .md a[href^="#flair-Contributor"] {
-    background-position:0 -102px;
+    background-position:-12px -102px;
     width: 15px;
     height: 16px;
 }
 
 .flair-Bowling:before,
 .md a[href^="#flair-Bowling"] {
-    background-position:-15px -102px;
+    background-position:-27px -102px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Boiling:before,
 .md a[href^="#flair-Boiling"] {
-    background-position:-31px -102px;
+    background-position:-43px -102px;
     width: 10px;
     height: 16px;
 }
 
 .flair-Birthday2:before,
 .md a[href^="#flair-Birthday2"] {
-    background-position:-41px -102px;
+    background-position:-53px -102px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Birthday:before,
 .md a[href^="#flair-Birthday"] {
-    background-position:-57px -102px;
+    background-position:-69px -102px;
     width: 14px;
     height: 16px;
 }
 
 .flair-Bacon:before,
 .md a[href^="#flair-Bacon"] {
-    background-position:-71px -102px;
+    background-position:-83px -102px;
     width: 16px;
     height: 15px;
 }
@@ -349,23 +370,44 @@
     height: 14px;
 }
 
+.flair-75WinRate:before,
+.md a[href^="#flair-75WinRate"] {
+    background-position:-120px -46px;
+    width: 16px;
+    height: 16px;
+}
+
+.flair-65WinRate:before,
+.md a[href^="#flair-65WinRate"] {
+    background-position:-120px -62px;
+    width: 15px;
+    height: 16px;
+}
+
 .flair-Pi:before,
 .md a[href^="#flair-Pi"] {
-    background-position:-120px -46px;
+    background-position:-120px -78px;
     width: 15px;
     height: 15px;
 }
 
 .flair-Donator:before,
 .md a[href^="#flair-Donator"] {
-    background-position:-120px -61px;
+    background-position:-120px -93px;
     width: 15px;
     height: 15px;
 }
 
 .flair-Contest:before,
 .md a[href^="#flair-Contest"] {
-    background-position:-120px -76px;
+    background-position:-99px -102px;
     width: 15px;
+    height: 15px;
+}
+
+.flair-55WinRate:before,
+.md a[href^="#flair-55WinRate"] {
+    background-position:0 -118px;
+    width: 11px;
     height: 15px;
 }
