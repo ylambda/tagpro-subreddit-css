@@ -1,5 +1,5 @@
 {% for image in images %}
 .md a[href$="#map-{{image.filename|replace(".png","")|replace(".jpg", "")}}"] {
-  background: url('%%maps-other%%') {{ image.x ~ ('px' if image.x) }} {{ image.y ~ ('px' if image.y) }} no-repeat;
+  background: url(%%maps-other%%) {{ image.x ~ ('px' if image.x) }} {{ image.y ~ ('px' if image.y) }};
 }
 {% endfor %}
