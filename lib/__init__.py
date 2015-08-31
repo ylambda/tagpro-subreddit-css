@@ -162,7 +162,7 @@ def build():
                 print "Adding %s to stylesheet" % css_file
                 build_style = "/* --- BUILD START %s --- */\n" % css_basename.upper()
                 build_style += compress(f.read())
-                build_style += "/* --- BUILD END %s --- */\n" % css_basename.upper()
+                build_style += "\n/* --- BUILD END %s --- */\n" % css_basename.upper()
                 stylesheet = stylesheet.replace(search_string, build_style)
             f.close()
 
@@ -183,7 +183,7 @@ def merge():
 
     # Find Built sections and replace with insert lines
     build_start = r"/\* --- BUILD START ([-\w]+) --- \*/"
-    build_end = "/* --- BUILD END %s --- */\n"
+    build_end = "\n/* --- BUILD END %s --- */\n"
 
     while re.search(build_start, stylesheet) != None:
         start_match = re.search(build_start, stylesheet)
