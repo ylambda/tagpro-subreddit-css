@@ -10,10 +10,10 @@ if [[ ! -d $DEST ]]; then
     echo "Destination must be a directory"
     echo "$DEST"
     exit 1
-fi;
+fi
 
-WIDTH=180;
-HEIGHT=180;
+WIDTH=180
+HEIGHT=180
 FFMPEG="/home/ylambda/bin/ffmpeg"
 
 # Scale the map preview
@@ -31,14 +31,14 @@ FILTER_PAD="pad=$PAD_WIDTH:$PAD_HEIGHT:$PAD_X:$PAD_Y"
 FILTER="$FILTER_SCALE, $FILTER_PAD"
 
 for i in $FILES; do
-   if [[ ! -f "$i" ]]; then
-     echo "$i is not a regular file. skipping"
-     continue;
-   fi;
+    if [[ ! -f "$i" ]]; then
+        echo "$i is not a regular file. skipping"
+        continue
+    fi
 
-   filename=`basename $i`;
-   extension="${filename##*.}";
-   filename="${filename%.*}";
+   filename=`basename $i`
+   extension="${filename##*.}"
+   filename="${filename%.*}"
 
-   $FFMPEG -i "$i" -filter:v "$FILTER" "$DEST/$filename.png" -y;
-done;
+   $FFMPEG -i "$i" -filter:v "$FILTER" "$DEST/$filename.png" -y
+done
