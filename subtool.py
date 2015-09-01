@@ -59,7 +59,7 @@ def main(argv=None):
                         dest="push_images",
                         action="store_false",
                         default=False,
-                        help="Ignore iamges")
+                        help="Ignore images")
 
     push.add_argument("--force",
                         dest="push_force",

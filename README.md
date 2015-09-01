@@ -1,9 +1,11 @@
 # tagpro-subreddit-css
-A repository for building and deploying the tagpro
+
+A repository for building and deploying the TagPro
 subreddit design.
 
 ## Overview
-This project uses Python 2.7 to fetch, build and push
+
+This project uses Python 2.7 to fetch, build, and push
 the design to a subreddit.
 
 #### Setup
@@ -20,13 +22,13 @@ For general help:
 
 ##### Fetch
 
-To fetch the latest style from the subreddit use the `fetch`
+To fetch the latest style from the subreddit, use the `fetch`
 sub-command.
 
 `./subtool fetch`
 
-#### Push
+##### Push
 
-To push changes to the subreddit use the `push` sub-command.
+To push changes to the subreddit, use the `push` sub-command.
 
 `./subtool push`
