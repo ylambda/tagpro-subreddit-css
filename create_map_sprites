@@ -14,7 +14,6 @@ fi
 
 WIDTH=180
 HEIGHT=180
-FFMPEG="/home/ylambda/bin/ffmpeg"
 
 # Scale the map preview
 SCALE_WIDTH="iw*min($WIDTH/iw\,$HEIGHT/ih)"
@@ -36,9 +35,9 @@ for i in $FILES; do
         continue
     fi
 
-   filename=`basename $i`
-   extension="${filename##*.}"
-   filename="${filename%.*}"
+    filename=`basename $i`
+    extension="${filename##*.}"
+    filename="${filename%.*}"
 
-   $FFMPEG -i "$i" -filter:v "$FILTER" "$DEST/$filename.png" -y
+    $FFMPEG -i "$i" -filter:v "$FILTER" "$DEST/$filename.png" -y
 done
