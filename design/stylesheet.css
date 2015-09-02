@@ -2815,9 +2815,7 @@ body > .debuginfo {
     }
 }
 
-
 /* --- INSERT BUILD FLAIR --- */
-
 /*!==================================================
    7.3 Tiles
 ================================================== */
@@ -3211,13 +3209,9 @@ body > .debuginfo {
 }
 
 /* --- INSERT BUILD MAPS-1 --- */
-
 /* --- INSERT BUILD MAPS-2 --- */
-
 /* --- INSERT BUILD MAPS-3 --- */
-
 /* --- INSERT BUILD MAPS-OTHER --- */
-
 /*!==================================================
    8.0 RES Specific Tweaks
 ================================================== */
@@ -3503,7 +3497,7 @@ body > .debuginfo {
 }
 
 .res-nightmode .comments-page .commentarea > .sitetable > .comment {
-  border-color: #2a2a2a !important;  
+  border-color: #2a2a2a !important;
 }
 
 .res-nightmode .comments-page .content .comment {

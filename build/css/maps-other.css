@@ -1,36 +1,36 @@
 
 .md a[href$="#map-spikedome"] {
-  background: url('%%maps-other%%') 0 0 no-repeat;
+  background: url(%%maps-other%%) 0 0;
 }
 
 .md a[href$="#map-snipers-v3"] {
-  background: url('%%maps-other%%') -180px 0 no-repeat;
+  background: url(%%maps-other%%) -180px 0;
 }
 
 .md a[href$="#map-shortercut-challenge"] {
-  background: url('%%maps-other%%') 0 -180px no-repeat;
+  background: url(%%maps-other%%) 0 -180px;
 }
 
 .md a[href$="#map-ofm"] {
-  background: url('%%maps-other%%') -180px -180px no-repeat;
+  background: url(%%maps-other%%) -180px -180px;
 }
 
 .md a[href$="#map-mini-ofm"] {
-  background: url('%%maps-other%%') -360px 0 no-repeat;
+  background: url(%%maps-other%%) -360px 0;
 }
 
 .md a[href$="#map-holdup"] {
-  background: url('%%maps-other%%') -360px -180px no-repeat;
+  background: url(%%maps-other%%) -360px -180px;
 }
 
 .md a[href$="#map-caravan"] {
-  background: url('%%maps-other%%') 0 -360px no-repeat;
+  background: url(%%maps-other%%) 0 -360px;
 }
 
 .md a[href$="#map-bombing-race"] {
-  background: url('%%maps-other%%') -180px -360px no-repeat;
+  background: url(%%maps-other%%) -180px -360px;
 }
 
 .md a[href$="#map-2v2"] {
-  background: url('%%maps-other%%') -360px -360px no-repeat;
+  background: url(%%maps-other%%) -360px -360px;
 }
