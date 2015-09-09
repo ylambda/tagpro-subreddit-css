@@ -356,22 +356,22 @@
     height: 16px;
 }
 
-.flair-Donator4::before,
-.md a[href="#flair-Donator4"] {
+.flair-Donor4::before,
+.md a[href="#flair-Donor4"] {
     background-position:-134px -16px;
     width: 16px;
     height: 16px;
 }
 
-.flair-Donator3::before,
-.md a[href="#flair-Donator3"] {
+.flair-Donor3::before,
+.md a[href="#flair-Donor3"] {
     background-position:-134px -32px;
     width: 16px;
     height: 14px;
 }
 
-.flair-Donator2::before,
-.md a[href="#flair-Donator2"] {
+.flair-Donor2::before,
+.md a[href="#flair-Donor2"] {
     background-position:-134px -46px;
     width: 16px;
     height: 16px;
@@ -510,8 +510,8 @@
     height: 15px;
 }
 
-.flair-Donator::before,
-.md a[href="#flair-Donator"] {
+.flair-Donor::before,
+.md a[href="#flair-Donor"] {
     background-position:-94px -122px;
     width: 15px;
     height: 15px;
