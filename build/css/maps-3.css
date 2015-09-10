@@ -1,72 +1,116 @@
 
+.md a[href$="#map-wombo-combo"] {
+  background: url(%%maps-3%%) 0 0;
+}
+
 .md a[href$="#map-volt"] {
-  background: url('%%maps-3%%') 0 0 no-repeat;
+  background: url(%%maps-3%%) -180px 0;
+}
+
+.md a[href$="#map-ultradrive"] {
+  background: url(%%maps-3%%) 0 -180px;
 }
 
 .md a[href$="#map-twister"] {
-  background: url('%%maps-3%%') -180px 0 no-repeat;
+  background: url(%%maps-3%%) -180px -180px;
+}
+
+.md a[href$="#map-transilio"] {
+  background: url(%%maps-3%%) -360px 0;
 }
 
 .md a[href$="#map-shine"] {
-  background: url('%%maps-3%%') 0 -180px no-repeat;
+  background: url(%%maps-3%%) -360px -180px;
+}
+
+.md a[href$="#map-rush"] {
+  background: url(%%maps-3%%) 0 -360px;
 }
 
 .md a[href$="#map-rocketballs"] {
-  background: url('%%maps-3%%') -180px -180px no-repeat;
+  background: url(%%maps-3%%) -180px -360px;
 }
 
 .md a[href$="#map-renegade"] {
-  background: url('%%maps-3%%') -360px 0 no-repeat;
+  background: url(%%maps-3%%) -360px -360px;
+}
+
+.md a[href$="#map-platypus"] {
+  background: url(%%maps-3%%) -540px 0;
 }
 
 .md a[href$="#map-pilot"] {
-  background: url('%%maps-3%%') -360px -180px no-repeat;
+  background: url(%%maps-3%%) -540px -180px;
 }
 
 .md a[href$="#map-monarch"] {
-  background: url('%%maps-3%%') 0 -360px no-repeat;
+  background: url(%%maps-3%%) -540px -360px;
+}
+
+.md a[href$="#map-kite"] {
+  background: url(%%maps-3%%) 0 -540px;
 }
 
 .md a[href$="#map-jagged"] {
-  background: url('%%maps-3%%') -180px -360px no-repeat;
+  background: url(%%maps-3%%) -180px -540px;
 }
 
 .md a[href$="#map-iron"] {
-  background: url('%%maps-3%%') -360px -360px no-repeat;
+  background: url(%%maps-3%%) -360px -540px;
 }
 
 .md a[href$="#map-hyperdrive"] {
-  background: url('%%maps-3%%') -540px 0 no-repeat;
+  background: url(%%maps-3%%) -540px -540px;
+}
+
+.md a[href$="#map-hub"] {
+  background: url(%%maps-3%%) -720px 0;
 }
 
 .md a[href$="#map-hornswoggle"] {
-  background: url('%%maps-3%%') -540px -180px no-repeat;
+  background: url(%%maps-3%%) -720px -180px;
 }
 
 .md a[href$="#map-gatekeeper"] {
-  background: url('%%maps-3%%') -540px -360px no-repeat;
+  background: url(%%maps-3%%) -720px -360px;
 }
 
 .md a[href$="#map-frontdoor"] {
-  background: url('%%maps-3%%') 0 -540px no-repeat;
+  background: url(%%maps-3%%) -720px -540px;
 }
 
 .md a[href$="#map-flame"] {
-  background: url('%%maps-3%%') -180px -540px no-repeat;
+  background: url(%%maps-3%%) 0 -720px;
+}
+
+.md a[href$="#map-emerald"] {
+  background: url(%%maps-3%%) -180px -720px;
+}
+
+.md a[href$="#map-dz4"] {
+  background: url(%%maps-3%%) -360px -720px;
+}
+
+.md a[href$="#map-draft"] {
+  background: url(%%maps-3%%) -540px -720px;
 }
 
 .md a[href$="#map-constriction"] {
-  background: url('%%maps-3%%') -360px -540px no-repeat;
+  background: url(%%maps-3%%) -720px -720px;
 }
 
 .md a[href$="#map-cloud"] {
-  background: url('%%maps-3%%') -540px -540px no-repeat;
+  background: url(%%maps-3%%) -900px 0;
+}
+
+.md a[href$="#map-bulldog"] {
+  background: url(%%maps-3%%) -900px -180px;
 }
 
 .md a[href$="#map-backdoor"] {
-  background: url('%%maps-3%%') -720px 0 no-repeat;
+  background: url(%%maps-3%%) -900px -360px;
 }
 
 .md a[href$="#map-angry-pig"] {
-  background: url('%%maps-3%%') -720px -180px no-repeat;
+  background: url(%%maps-3%%) -900px -540px;
 }
