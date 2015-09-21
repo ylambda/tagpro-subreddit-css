@@ -83,34 +83,38 @@
   background: url(%%maps-3%%) 0 -720px;
 }
 
-.md a[href$="#map-emerald"] {
+.md a[href$="#map-fiend"] {
   background: url(%%maps-3%%) -180px -720px;
 }
 
-.md a[href$="#map-dz4"] {
+.md a[href$="#map-emerald"] {
   background: url(%%maps-3%%) -360px -720px;
 }
 
-.md a[href$="#map-draft"] {
+.md a[href$="#map-dz4"] {
   background: url(%%maps-3%%) -540px -720px;
 }
 
-.md a[href$="#map-constriction"] {
+.md a[href$="#map-draft"] {
   background: url(%%maps-3%%) -720px -720px;
 }
 
-.md a[href$="#map-cloud"] {
+.md a[href$="#map-constriction"] {
   background: url(%%maps-3%%) -900px 0;
 }
 
-.md a[href$="#map-bulldog"] {
+.md a[href$="#map-cloud"] {
   background: url(%%maps-3%%) -900px -180px;
 }
 
-.md a[href$="#map-backdoor"] {
+.md a[href$="#map-bulldog"] {
   background: url(%%maps-3%%) -900px -360px;
 }
 
-.md a[href$="#map-angry-pig"] {
+.md a[href$="#map-backdoor"] {
   background: url(%%maps-3%%) -900px -540px;
+}
+
+.md a[href$="#map-angry-pig"] {
+  background: url(%%maps-3%%) -900px -720px;
 }
