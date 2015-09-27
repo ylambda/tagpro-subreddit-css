@@ -1,532 +1,406 @@
 
-.flair-O7::before,
-.md a[href="#flair-O7"] {
-    background-position:0 0;
-    width: 27px;
-    height: 18px;
+.flair[class*="--O"]::before,
+.md a[href^="#flair--O"] {
+    background-position: 0 0;
+    width: 20px;
+    height: 20px;
 }
 
-.flair-O6::before,
-.md a[href="#flair-O6"] {
-    background-position:-27px 0;
-    width: 27px;
-    height: 18px;
+.flair[class*="--M"]::before,
+.md a[href^="#flair--M"] {
+    background-position: -20px 0;
+    width: 20px;
+    height: 20px;
 }
 
-.flair-M7::before,
-.md a[href="#flair-M7"] {
-    background-position:0 -18px;
-    width: 27px;
-    height: 18px;
-}
-
-.flair-E7::before,
-.md a[href="#flair-E7"] {
-    background-position:-27px -18px;
-    width: 27px;
-    height: 18px;
+.flair[class*="--E"]::before,
+.md a[href^="#flair--E"] {
+    background-position: 0 -20px;
+    width: 20px;
+    height: 20px;
 }
 
 .flair-SubMicrophone::before,
 .md a[href="#flair-SubMicrophone"] {
-    background-position:0 -36px;
-    width: 18px;
-    height: 18px;
-}
-
-.flair-O5::before,
-.md a[href="#flair-O5"] {
-    background-position:-18px -36px;
-    width: 16px;
-    height: 18px;
-}
-
-.flair-O4::before,
-.md a[href="#flair-O4"] {
-    background-position:-34px -36px;
-    width: 18px;
-    height: 18px;
-}
-
-.flair-O3::before,
-.md a[href="#flair-O3"] {
-    background-position:-54px 0;
-    width: 18px;
-    height: 18px;
-}
-
-.flair-O2::before,
-.md a[href="#flair-O2"] {
-    background-position:-54px -18px;
-    width: 18px;
-    height: 18px;
-}
-
-.flair-O1::before,
-.md a[href="#flair-O1"] {
-    background-position:-54px -36px;
-    width: 18px;
-    height: 18px;
-}
-
-.flair-M6::before,
-.md a[href="#flair-M6"] {
-    background-position:0 -54px;
-    width: 18px;
-    height: 18px;
-}
-
-.flair-M5::before,
-.md a[href="#flair-M5"] {
-    background-position:-18px -54px;
-    width: 16px;
-    height: 18px;
-}
-
-.flair-M4::before,
-.md a[href="#flair-M4"] {
-    background-position:-34px -54px;
-    width: 18px;
-    height: 18px;
-}
-
-.flair-M3::before,
-.md a[href="#flair-M3"] {
-    background-position:-52px -54px;
-    width: 18px;
-    height: 18px;
-}
-
-.flair-M2::before,
-.md a[href="#flair-M2"] {
-    background-position:-72px 0;
-    width: 18px;
-    height: 18px;
-}
-
-.flair-M1::before,
-.md a[href="#flair-M1"] {
-    background-position:-72px -18px;
-    width: 18px;
-    height: 18px;
-}
-
-.flair-E6::before,
-.md a[href="#flair-E6"] {
-    background-position:-72px -36px;
-    width: 18px;
-    height: 18px;
-}
-
-.flair-E5::before,
-.md a[href="#flair-E5"] {
-    background-position:-72px -54px;
-    width: 16px;
-    height: 18px;
-}
-
-.flair-E4::before,
-.md a[href="#flair-E4"] {
-    background-position:0 -72px;
-    width: 18px;
-    height: 18px;
-}
-
-.flair-E3::before,
-.md a[href="#flair-E3"] {
-    background-position:-18px -72px;
-    width: 18px;
-    height: 18px;
-}
-
-.flair-E2::before,
-.md a[href="#flair-E2"] {
-    background-position:-36px -72px;
-    width: 18px;
-    height: 18px;
-}
-
-.flair-E1::before,
-.md a[href="#flair-E1"] {
-    background-position:-54px -72px;
+    background-position: -20px -20px;
     width: 18px;
     height: 18px;
 }
 
 .flair-World::before,
 .md a[href="#flair-World"] {
-    background-position:-72px -72px;
+    background-position: -40px 0;
     width: 16px;
     height: 16px;
 }
 
 .flair-Weekly::before,
 .md a[href="#flair-Weekly"] {
-    background-position:-90px 0;
+    background-position: -40px -16px;
     width: 12px;
     height: 16px;
 }
 
 .flair-Uranium::before,
 .md a[href="#flair-Uranium"] {
-    background-position:-102px 0;
+    background-position: 0 -40px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Unfortunate::before,
 .md a[href="#flair-Unfortunate"] {
-    background-position:-102px -16px;
+    background-position: -16px -40px;
     width: 11px;
     height: 16px;
 }
 
 .flair-UTurn::before,
 .md a[href="#flair-UTurn"] {
-    background-position:-102px -32px;
+    background-position: -27px -40px;
     width: 15px;
     height: 16px;
 }
 
 .flair-Route::before,
 .md a[href="#flair-Route"] {
-    background-position:-102px -48px;
+    background-position: -42px -40px;
     width: 13px;
     height: 16px;
 }
 
 .flair-Pokemon::before,
 .md a[href="#flair-Pokemon"] {
-    background-position:-102px -64px;
+    background-position: -56px 0;
     width: 16px;
     height: 16px;
 }
 
 .flair-Plane::before,
 .md a[href="#flair-Plane"] {
-    background-position:0 -90px;
+    background-position: -56px -16px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Phi::before,
 .md a[href="#flair-Phi"] {
-    background-position:-16px -90px;
+    background-position: -56px -32px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Penguin::before,
 .md a[href="#flair-Penguin"] {
-    background-position:-32px -90px;
+    background-position: 0 -56px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Peace::before,
 .md a[href="#flair-Peace"] {
-    background-position:-48px -90px;
+    background-position: -16px -56px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Moon::before,
 .md a[href="#flair-Moon"] {
-    background-position:-64px -90px;
+    background-position: -32px -56px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Monthly::before,
 .md a[href="#flair-Monthly"] {
-    background-position:-80px -90px;
+    background-position: -48px -56px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Moderator::before,
 .md a[href="#flair-Moderator"] {
-    background-position:-96px -90px;
+    background-position: -72px 0;
     width: 16px;
     height: 16px;
 }
 
 .flair-Microphone::before,
 .md a[href="#flair-Microphone"] {
-    background-position:-118px 0;
+    background-position: -72px -16px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Mario::before,
 .md a[href="#flair-Mario"] {
-    background-position:-118px -16px;
+    background-position: -72px -32px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Magma::before,
 .md a[href="#flair-Magma"] {
-    background-position:-118px -32px;
+    background-position: -72px -48px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Lucky2::before,
 .md a[href="#flair-Lucky2"] {
-    background-position:-118px -48px;
+    background-position: 0 -72px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Lucky::before,
 .md a[href="#flair-Lucky"] {
-    background-position:-118px -64px;
+    background-position: -16px -72px;
     width: 16px;
     height: 14px;
 }
 
 .flair-Love::before,
 .md a[href="#flair-Love"] {
-    background-position:-118px -78px;
+    background-position: -88px 0;
     width: 16px;
     height: 15px;
 }
 
 .flair-Lgbt::before,
 .md a[href="#flair-Lgbt"] {
-    background-position:0 -106px;
+    background-position: -88px -15px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Halloween::before,
 .md a[href="#flair-Halloween"] {
-    background-position:-16px -106px;
+    background-position: -88px -31px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Freezing::before,
 .md a[href="#flair-Freezing"] {
-    background-position:-32px -106px;
+    background-position: -88px -47px;
     width: 15px;
     height: 16px;
 }
 
 .flair-Fools2::before,
 .md a[href="#flair-Fools2"] {
-    background-position:-47px -106px;
+    background-position: -88px -63px;
     width: 15px;
     height: 16px;
 }
 
 .flair-Fools::before,
 .md a[href="#flair-Fools"] {
-    background-position:-62px -106px;
+    background-position: 0 -88px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Flux::before,
 .md a[href="#flair-Flux"] {
-    background-position:-78px -106px;
+    background-position: -16px -88px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Easter3::before,
 .md a[href="#flair-Easter3"] {
-    background-position:-94px -106px;
+    background-position: -32px -88px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Easter2::before,
 .md a[href="#flair-Easter2"] {
-    background-position:-110px -106px;
+    background-position: -48px -88px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Easter::before,
 .md a[href="#flair-Easter"] {
-    background-position:-134px 0;
+    background-position: -64px -88px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Donor4::before,
 .md a[href="#flair-Donor4"] {
-    background-position:-134px -16px;
+    background-position: -80px -88px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Donor3::before,
 .md a[href="#flair-Donor3"] {
-    background-position:-134px -32px;
+    background-position: -32px -72px;
     width: 16px;
     height: 14px;
 }
 
 .flair-Donor2::before,
 .md a[href="#flair-Donor2"] {
-    background-position:-134px -46px;
+    background-position: -104px 0;
     width: 16px;
     height: 16px;
 }
 
 .flair-Dolphin::before,
 .md a[href="#flair-Dolphin"] {
-    background-position:-134px -62px;
+    background-position: -104px -16px;
     width: 12px;
     height: 16px;
 }
 
 .flair-Developer::before,
 .md a[href="#flair-Developer"] {
-    background-position:-134px -78px;
+    background-position: -104px -32px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Dalmatians::before,
 .md a[href="#flair-Dalmatians"] {
-    background-position:-134px -94px;
+    background-position: -104px -48px;
     width: 16px;
     height: 14px;
 }
 
 .flair-Daily::before,
 .md a[href="#flair-Daily"] {
-    background-position:-90px -16px;
+    background-position: -104px -62px;
     width: 12px;
     height: 16px;
 }
 
 .flair-Contributor::before,
 .md a[href="#flair-Contributor"] {
-    background-position:0 -122px;
+    background-position: -104px -78px;
     width: 15px;
     height: 16px;
 }
 
 .flair-Boxing::before,
 .md a[href="#flair-Boxing"] {
-    background-position:-15px -122px;
+    background-position: 0 -104px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Bowling::before,
 .md a[href="#flair-Bowling"] {
-    background-position:-31px -122px;
+    background-position: -16px -104px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Boiling2::before,
 .md a[href="#flair-Boiling2"] {
-    background-position:-47px -122px;
+    background-position: -32px -104px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Boiling::before,
 .md a[href="#flair-Boiling"] {
-    background-position:-90px -32px;
+    background-position: -48px -104px;
     width: 10px;
     height: 16px;
 }
 
 .flair-Bitcoin::before,
 .md a[href="#flair-Bitcoin"] {
-    background-position:-63px -122px;
+    background-position: -58px -104px;
     width: 16px;
     height: 15px;
 }
 
 .flair-Birthday2::before,
 .md a[href="#flair-Birthday2"] {
-    background-position:-150px 0;
+    background-position: -120px 0;
     width: 16px;
     height: 16px;
 }
 
 .flair-Birthday::before,
 .md a[href="#flair-Birthday"] {
-    background-position:-150px -16px;
+    background-position: -120px -16px;
     width: 14px;
     height: 16px;
 }
 
 .flair-Bacon::before,
 .md a[href="#flair-Bacon"] {
-    background-position:-150px -32px;
+    background-position: -120px -32px;
     width: 16px;
     height: 15px;
 }
 
 .flair-Axe::before,
 .md a[href="#flair-Axe"] {
-    background-position:-150px -47px;
+    background-position: -120px -47px;
     width: 16px;
     height: 16px;
 }
 
 .flair-Alien::before,
 .md a[href="#flair-Alien"] {
-    background-position:-150px -63px;
+    background-position: -120px -63px;
     width: 13px;
     height: 16px;
 }
 
 .flair-ABC::before,
 .md a[href="#flair-ABC"] {
-    background-position:-150px -79px;
+    background-position: -120px -79px;
     width: 16px;
     height: 14px;
 }
 
 .flair-75WinRate::before,
 .md a[href="#flair-75WinRate"] {
-    background-position:-150px -93px;
+    background-position: -120px -93px;
     width: 16px;
     height: 16px;
 }
 
 .flair-65WinRate::before,
 .md a[href="#flair-65WinRate"] {
-    background-position:-150px -109px;
+    background-position: 0 -120px;
     width: 15px;
     height: 16px;
 }
 
 .flair-Pi::before,
 .md a[href="#flair-Pi"] {
-    background-position:-79px -122px;
+    background-position: -74px -104px;
     width: 15px;
     height: 15px;
 }
 
 .flair-Donor::before,
 .md a[href="#flair-Donor"] {
-    background-position:-94px -122px;
+    background-position: -89px -104px;
     width: 15px;
     height: 15px;
 }
 
 .flair-Contest::before,
 .md a[href="#flair-Contest"] {
-    background-position:-109px -122px;
+    background-position: -104px -104px;
     width: 15px;
     height: 15px;
 }
 
 .flair-55WinRate::before,
 .md a[href="#flair-55WinRate"] {
-    background-position:-90px -48px;
+    background-position: -15px -120px;
     width: 11px;
     height: 15px;
 }
