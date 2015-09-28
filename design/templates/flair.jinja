@@ -7,7 +7,11 @@
 .md a[href="#{{image.label}}"] {
 {%- endif %}
     background-position: {{ image.x ~ ('px' if image.x) }} {{ image.y ~ ('px' if image.y) }};
+    {%- if image.width != 16 %}
     width: {{image.width}}px;
+    {%- endif %}
+    {%- if image.height != 16 %}
     height: {{image.height}}px;
+    {%- endif %}
 }
 {% endfor %}

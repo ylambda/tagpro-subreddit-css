@@ -2756,12 +2756,14 @@ body > .debuginfo {
   padding: 0;
 }
 
-.flair:before {
+.flair[class*="-"]:before {
   content: "";
   background: url('%%flair%%') 100px 100px no-repeat;
   display: inline-block;
   vertical-align: middle;
   margin-right: 2px;
+  width: 16px;
+  height: 16px;
 }
 
 .md a[href^="#flair-"] {
