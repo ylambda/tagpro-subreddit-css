@@ -16,7 +16,7 @@ def reddit_login():
         "password": os.environ.get("REDDIT_PASSWORD"),
     }
 
-    r = praw.Reddit("Subreddit stylesheet tool by /u/ylambda, run by %s" % credentials["username"])
+    r = praw.Reddit("Subreddit stylesheet tool by /u/ylambda, run by /u/%s" % credentials["username"])
     r.login(**credentials)
     reddit = r
 
