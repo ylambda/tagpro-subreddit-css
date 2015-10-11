@@ -3442,7 +3442,7 @@ ul.tabmenu.formtab {
 /* --- BUILD END MAPS-3 --- */
 
 /* --- BUILD START MAPS-4 --- */
-.md a[href$="#map-wombo-combo"]{background:url(%%maps-4%%) 0 0}.md a[href$="#map-rush"]{background:url(%%maps-4%%) -180px 0}.md a[href$="#map-fiend"]{background:url(%%maps-4%%) 0 -180px}.md a[href$="#map-dz4"]{background:url(%%maps-4%%) -180px -180px}
+.md a[href$="#map-wombo-combo"]{background:url(%%maps-4%%) 0 0}.md a[href$="#map-sediment"]{background:url(%%maps-4%%) -180px 0}.md a[href$="#map-rush"]{background:url(%%maps-4%%) 0 -180px}.md a[href$="#map-fiend"]{background:url(%%maps-4%%) -180px -180px}.md a[href$="#map-dz4"]{background:url(%%maps-4%%) -360px 0}.md a[href$="#map-citadel"]{background:url(%%maps-4%%) -360px -180px}
 /* --- BUILD END MAPS-4 --- */
 
 /* --- BUILD START MAPS-OTHER --- */
