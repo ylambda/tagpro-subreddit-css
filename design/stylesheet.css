@@ -73,12 +73,12 @@
       name of your new image.
 
    3. If you like, you can add a link to your image.
-      To do so, find the first six links in the sidebar
-      at /r/tagpro/about/edit. Find the appropriate
-      order of your image in the stylesheet and change
-      the respective link's URL. If you wish to link to
-      a reddit post, please use a shorthand URL, like
-      this:
+      First, find your image's number in the
+      stylesheet's image order. In the first six links
+      in the sidebar at /r/tagpro/about/edit, find the
+      link with that number and change its URL. If you
+      wish to link to a Reddit post, please use a
+      shorthand link, like this:
       [](/2dwu30)
 
    4. You can also add a tooltip to your image! A
@@ -148,7 +148,7 @@ body {
   min-width: 1028px;
 }
 
-body > * {
+#header ~ * {
   overflow: hidden;
 }
 
@@ -178,33 +178,36 @@ a:hover,
 
 .reddit-infobar {
   margin: 10px 0;
-  padding: 10px 15px;
+  padding: 15px;
   border-bottom-width: 3px;
   border-color: #f5de86;
 }
 
+.reddit-infobar .md {
+  display: inline-block;
+}
+
 .reddit-infobar.with-icon {
-  padding-left: 51px;
+  padding: 7px 10px;
 }
 
 .reddit-infobar.with-icon::before {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px 0 0;
   width: 31px;
   height: 31px;
   border-radius: 50%;
   background-size: 14px;
-  margin: 7px 10px;
-}
-
-.reddit-infobar .md.md p {
-  margin: 5px 0;
 }
 
 .reddit-infobar.gold-accent {
   background: #fffdd8;
   border: 1px solid #e5d6a0;
+  border-bottom-width: 3px;
   border-radius: 0;
-  margin: 0 0 -11px;
-  padding: 15px;
+  margin: 10px 0 -13px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -272,6 +275,7 @@ textarea:hover {
 .md.md h6 {
   margin: 1.25em 0 .375em;
   font-weight: normal;
+  font-style: normal;
   color: #222;
 }
 
@@ -322,45 +326,39 @@ textarea:hover {
 }
 
 .md.md th {
-  color: #919191;
+  color: #878787;
 }
 
 /* Code blocks modified from /r/netsec */
 .md.md.md code,
 .md pre code {
   border: 1px solid #ccc;
-  background: none;
+  background: #fcfcfc;
 }
 
 .md pre code {
   position: relative;
   padding: 6px 12px 6px 48px !important;
   line-height: 1.4em;
-  font-family: Consolas, monospace;
+  font-family: monospace;
 }
 
 .md pre code::before {
   content: "1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 ";
   color: #aaa;
-  height: calc(100% - 12px);
-  width: 25px;
+  height: 100%;
+  width: 40px;
+  box-sizing: border-box;
   position: absolute;
-  z-index: 1;
-  left: 4px;
+  top: 0;
+  left: 0;
   white-space: pre-wrap;
   direction: rtl;
   overflow: hidden;
   line-height: 1.4em;
-}
-
-.md pre code::after {
-  content: "";
-  height: 100%;
-  width: 40px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0,0,0,.06);
+  background: #f1f1f1;
+  border: solid #f1f1f1;
+  border-width: 6px 11px 6px 4px;
 }
 
 .md.md pre {
@@ -381,6 +379,14 @@ textarea:hover {
 
 .md a[href^="#"]:active {
   pointer-events: none;
+}
+
+.md a[href$="#red"] {
+  color: #f2423c;
+}
+
+.md a[href$="#blue"] {
+  color: #3ca0f2;
 }
 
 .md a[href="#s"] {
@@ -543,18 +549,18 @@ button:active,
   border-color: #ddd;
 }
 
-#header#header .drop-choices a.choice {
+#header #sr-header-area .drop-choices a.choice {
   background: #fff;
   padding: 4px 24px 4px 12px;
   border-bottom: 1px solid #ddd;
   color: #888;
 }
 
-#header#header .drop-choices a.choice:hover {
+#header #sr-header-area .drop-choices a.choice:hover {
   background: #f6f6f6;
 }
 
-#header#header .drop-choices a.bottom-option {
+#header #sr-header-area .drop-choices a.bottom-option {
   border: none;
 }
 
@@ -1657,7 +1663,7 @@ button:active,
 
 .sidecontentbox .helplink ~ .content li {
   line-height: 16px;
-  margin-top: 2px;
+  margin-top: -1px;
 }
 
 /*!==================================================
@@ -1677,7 +1683,8 @@ body > .content {
 .listing-page #noresults {
   width: 100%;
   box-sizing: border-box;
-  border-bottom: 1px solid #ccc;
+  border: 1px solid #ccc;
+  border-bottom-width: 3px;
 }
 
 .comments-page #noresults {
@@ -1700,16 +1707,16 @@ body > .content {
   content: "There's nothing here. Try another tab?";
 }
 
+.comments-page #noresults::after {
+  content: "No one's commented yet. Be the first!";
+}
+
 .search-result-group .info::after {
   font-size: 13px;
   content: "There's nothing here. Try another search?";
 }
 
-.comments-page #noresults::after {
-  content: "No one's commented yet. Be the first!";
-}
-
-/* Konami code */
+/* RES Konami code animation */
 #baconBit {
   background: url(%%luckyHead%%);
   height: 85px;
@@ -1726,20 +1733,22 @@ body > .content {
 }
 
 .organic-listing {
-  margin: 0 0 -11px;
+  margin: 0 0 -13px;
   border: 1px solid #bfc5cc;
+  border-bottom-width: 3px;
 }
 
 .organic-listing .promotedlink {
   border: none !important;
 }
 
-.listing-page #siteTable,
-.comments-page #siteTable {
+.sitetable.sitetable.sitetable.sitetable.sitetable {
+  padding: 0;
+}
+
+#siteTable {
   margin: 10px 0;
   background: #fff;
-  border: 1px solid #ccc;
-  border-bottom-width: 2px;
 }
 
 .content > .spacer {
@@ -1749,8 +1758,8 @@ body > .content {
 .menuarea {
   background: #fff;
   border: 1px solid #ccc;
-  border-bottom: none;
-  margin: 10px 0 -10px;
+  border-bottom-width: 3px;
+  margin: 10px 0 -13px;
   padding: 10px 15px;
 }
 
@@ -1830,17 +1839,16 @@ body > .content {
   color: #007ee5;
 }
 
-.link,
-.listing-page .sitetable > .thing,
+#siteTable .thing,
 .search-result,
 div.nav-buttons {
   display: block;
   position: relative;
-  margin: 0 !important;
+  margin: 0 0 -3px !important;
   padding: 10px 15px !important;
   background: #fff;
-  border: solid #ccc !important;
-  border-width: 0 0 1px !important;
+  border: 1px solid #ccc !important;
+  border-bottom-width: 3px !important;
   border-radius: 0 !important;
 }
 
@@ -1907,6 +1915,10 @@ a.voteWeight {
   margin-right: 4px;
 }
 
+.author.author {
+  margin-right: .5em;
+}
+
 .thing.thing .tagline .author.submitter,
 .thing.thing .tagline .author.moderator,
 .thing.thing .tagline .author.admin,
@@ -1918,7 +1930,7 @@ a.voteWeight {
   font-weight: bold;
 }
 
-.tagline .userattrs {
+.author ~ .userattrs {
   font-size: 0;
 }
 
@@ -1990,16 +2002,24 @@ a.voteWeight {
 .userattrs a:first-of-type {
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
+  margin-left: 5px;
 }
 
 .userattrs a:last-of-type {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
-  margin-right: 2px;
 }
 
 .userattrs a + a {
   margin-left: 1px;
+}
+
+.userattrs ~ .score {
+  margin-left: 2px;
+}
+
+.userattrs:empty ~ .score {
+  margin-left: 5px;
 }
 
 .domain {
@@ -2040,6 +2060,7 @@ li .redditSingleClick:hover {
   border: 1px solid #bbb;
   border-radius: 2px;
   cursor: pointer;
+  font-size: 0;
 }
 
 .expando-button:first-of-type {
@@ -2163,6 +2184,7 @@ div.nav-buttons .nextprev {
 }
 
 div#progressIndicator {
+  position: relative;
   margin: -13px 0 10px;
   width: 100%;
   height: 90px;
@@ -2187,12 +2209,14 @@ div#progressIndicator .RESThrobber {
 }
 
 div#NERFail {
-  border: none;
-  border-bottom: 1px solid #ccc;
+  position: relative;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-bottom-width: 3px;
   border-radius: 0;
+  box-sizing: border-box;
   width: 100%;
-  margin-top: 10px;
-  padding: 20px 0 15px;
+  padding: 20px;
 }
 
 div#NERFail .nextprev a {
@@ -2209,6 +2233,10 @@ div#NERFail .nextprev a + a {
   margin: 0;
 }
 
+#NREFloat {
+  z-index: 9;
+}
+
 /*!==================================================
    4.1.1 Upvote/Downvote Arrows & Animations
 ================================================== */
@@ -2219,23 +2247,19 @@ div#NERFail .nextprev a + a {
   height: 16px;
 }
 
-.midcol .arrow.up,
-.midcol .arrow.up:hover {
+.midcol .arrow.arrow.up {
   background-position: -32px -123px !important;
 }
 
-.midcol .arrow.down,
-.midcol .arrow.down:hover {
+.midcol .arrow.arrow.down {
   background-position: -16px -123px !important;
 }
 
-.midcol .arrow.upmod,
-.midcol .arrow.upmod:hover {
+.midcol .arrow.arrow.upmod {
   background-position: 0 -123px !important;
 }
 
-.midcol .arrow.downmod,
-.midcol .arrow.downmod:hover {
+.midcol .arrow.arrow.downmod {
   background-position: -110px -80px !important;
 }
 
@@ -2463,7 +2487,7 @@ div#NERFail .nextprev a + a {
   margin: 0 0 10px 8px !important;
   border: 1px solid #ddd !important;
   border-radius: 2px !important;
-  padding: 5px 8px 5px 5px !important;
+  padding: 5px 8px !important;
   overflow: visible !important;
 }
 
@@ -2496,12 +2520,21 @@ div#NERFail .nextprev a + a {
   padding: 7px 5px !important;
 }
 
+.comment.collapsed .midcol {
+  visibility: visible;
+}
+
+.comment.collapsed .up,
+.comment.collapsed .down {
+  display: none;
+}
+
 .comment .child {
   border-left: none;
 }
 
-.comments-page .comment.comment.new-comment {
-  border-color: #cddaf3 !important;
+.comment .morechildren {
+  margin-left: 7px;
 }
 
 .new-comment .usertext-body {
@@ -2509,14 +2542,6 @@ div#NERFail .nextprev a + a {
   border: none;
   margin: 0 0 5px;
   padding: 0;
-}
-
-.comments-page .comment.comment.gilded {
-  border-color: #e5d6a0 !important;
-}
-
-.comments-page .comment.comment.spam {
-  border-color: #f2cac9 !important;
 }
 
 .comments-page .comment.spam > .child {
@@ -2539,44 +2564,14 @@ div#NERFail .nextprev a + a {
   background: #f7f7f7 !important;
 }
 
-.comment.new-comment,
-.comment .comment .comment.new-comment,
-.comment .comment .comment .comment .comment.new-comment,
-.comment .comment .comment .comment .comment .comment .comment.new-comment,
-.comment .comment .comment .comment .comment .comment .comment .comment .comment.new-comment {
-  background: #eff5ff !important;
-}
-
-.comment .comment.new-comment,
-.comment .comment .comment .comment.new-comment,
-.comment .comment .comment .comment .comment .comment.new-comment,
-.comment .comment .comment .comment .comment .comment .comment .comment.new-comment,
-.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment.new-comment {
-  background: #e5efff !important;
-}
-
-.comment.gilded,
-.comment .comment .comment.gilded,
-.comment .comment .comment .comment .comment.gilded,
-.comment .comment .comment .comment .comment .comment .comment.gilded,
-.comment .comment .comment .comment .comment .comment .comment .comment .comment.gilded {
-  background: #fffdd8 !important;
-}
-
-.comment .comment.gilded,
-.comment .comment .comment .comment.gilded,
-.comment .comment .comment .comment .comment .comment.gilded,
-.comment .comment .comment .comment .comment .comment .comment .comment.gilded,
-.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment.gilded {
-  background: #fffdc6 !important;
-}
-
+#siteTable .thing.spam,
 .comment.spam,
 .comment .comment .comment.spam,
 .comment .comment .comment .comment .comment.spam,
 .comment .comment .comment .comment .comment .comment .comment.spam,
 .comment .comment .comment .comment .comment .comment .comment .comment .comment.spam {
   background: #ffebea !important;
+  border-color: #f2cac9 !important;
 }
 
 .comment .comment.spam,
@@ -2585,6 +2580,14 @@ div#NERFail .nextprev a + a {
 .comment .comment .comment .comment .comment .comment .comment .comment.spam,
 .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment.spam {
   background: #ffdedd !important;
+}
+
+.comments-page .comment.new-comment {
+  box-shadow: 3px 0 #c9e5fc inset;
+}
+
+.comments-page .comment.gilded {
+  box-shadow: 3px 0 #f9efa2 inset;
 }
 
 /*!==================================================
@@ -2712,18 +2715,18 @@ ul.tabmenu.formtab {
   display: none;
 }
 
-.c-btn-primary,
-.c-btn-primary:focus {
+.search-submit-button,
+.search-submit-button:focus {
   box-shadow: 0 3px #357ab2;
 }
 
-.c-btn-primary:active {
+.search-submit-button:active {
   box-shadow: none;
   margin-top: 0;
   top: 3px;
 }
 
-.c-btn-primary .search-icon {
+.search-submit-button .search-icon {
   background-size: 18px;
   background-repeat: no-repeat;
   transform: translateX(1px);
@@ -2736,16 +2739,15 @@ ul.tabmenu.formtab {
 .combined-search-page .search-result-group {
   max-width: none;
   padding: 0;
-  border: 1px solid #ccc;
-  border-bottom-width: 2px;
   background: #fff;
-  margin: 10px 0;
+  margin: 10px 0 13px;
 }
 
 .combined-search-page .search-result-group .search-result-group-header {
-  margin: 0;
+  margin: 0 0 -3px;
   padding: 10px 20px;
-  border-bottom: 1px solid #ccc;
+  border: 1px solid #ccc;
+  border-bottom-width: 3px;
   color: #777;
 }
 
@@ -2764,8 +2766,7 @@ ul.tabmenu.formtab {
   line-height: 14px;
 }
 
-.combined-search-page .search-result-subreddit .search-subscribe-button .active,
-.combined-search-page .search-result-subreddit .search-subscribe-button .active:focus {
+.combined-search-page .search-result-subreddit .search-subscribe-button .active.active {
   transition: none;
   width: 80px;
   margin: 0 3px 5px 0;
@@ -2781,7 +2782,9 @@ ul.tabmenu.formtab {
   padding-left: 20px !important;
 }
 
-.search-comments:hover {
+.search-comments:hover,
+.search-author .author:hover,
+.search-subreddit-link:hover {
   text-decoration: underline;
 }
 
@@ -2933,6 +2936,7 @@ ul.tabmenu.formtab {
    4.5.3 History
 ================================================== */
 .wiki-page #siteTable {
+  margin: 0;
   padding: 15px;
   border-bottom: 1px solid #ccc;
 }
@@ -3040,7 +3044,6 @@ ul.tabmenu.formtab {
   font-size: x-small;
   font-weight: bold;
   background: #ff0;
-  margin-right: 2px;
 }
 
 .flair + .userattrs::before,
@@ -3130,6 +3133,7 @@ ul.tabmenu.formtab {
 .flair {
   height: 15px;
   position: relative;
+  margin-right: 0;
 }
 
 .link .tagline {
@@ -3149,12 +3153,12 @@ ul.tabmenu.formtab {
   width: 16px;
   height: 16px;
   line-height: 16px;
+  vertical-align: middle;
+  margin: -99px 4px -97px 0;
 }
 
 .flair[class*="-"]::before {
   content: "";
-  vertical-align: middle;
-  margin: -99px 4px -97px 0;
 }
 
 .flair:empty::before {
@@ -3475,8 +3479,7 @@ ul.tabmenu.formtab {
 .res-nightmode .side .md > ul:nth-of-type(2) li:first-child,
 .res-nightmode .side .md h1::before,
 .res-nightmode .sidecontentbox,
-.res-nightmode .listing-page #siteTable,
-.res-nightmode .comments-page #siteTable,
+.res-nightmode #siteTable,
 .res-nightmode .menuarea,
 .res-nightmode div#progressIndicator,
 .res-nightmode .commentarea > .panestack-title,
@@ -3700,16 +3703,14 @@ ul.tabmenu.formtab {
 }
 
 .res-nightmode .linkinfo .shortlink input,
-.res-nightmode .link,
-.res-nightmode .listing-page .sitetable > .thing,
+.res-nightmode #siteTable .thing,
 .res-nightmode .search-result,
 .res-nightmode div.nav-buttons {
   background: #333 !important;
   border-color: #2a2a2a !important;
 }
 
-.res-nightmode .sitetable .arrow,
-.res-nightmode .sitetable .arrow:hover {
+.res-nightmode .sitetable .arrow.arrow {
   background-image: url(%%icons%%) !important;
   width: 16px !important;
   height: 16px !important;
@@ -3721,7 +3722,7 @@ ul.tabmenu.formtab {
   color: #777 !important;
 }
 
-.res-nightmode .link .expando-button {
+.res-nightmode .thing .expando-button {
   background-color: initial !important;
   background-image: url(%%icons%%) !important;
   border-color: #888;
@@ -3778,7 +3779,7 @@ ul.tabmenu.formtab {
   border-color: #2a2a2a !important;
 }
 
-.res.res-nightmode .res.res-nightmode.comments-page .side ~ .content #siteTable + .commentarea .sitetable.nestedlisting .thing.comment {
+.res-nightmode .comments-page .content .comment.comment.comment.comment.comment.comment.comment.comment.comment.comment {
   background: #333 !important;
 }
 

@@ -51,38 +51,42 @@
   background-position: -90px -80px;
 }
 
-.vote4 {
+.vote5 {
   background-position: -123px -50px;
 }
 
-.vote3 {
+.vote4 {
   background-position: -110px -80px;
 }
 
-.vote2 {
+.vote3 {
   background-position: 0 -123px;
 }
 
-.vote1 {
+.vote2 {
   background-position: -16px -123px;
 }
 
-.gallery4 {
+.vote1 {
   background-position: -32px -123px;
 }
 
-.gallery3 {
+.gallery4 {
   background-position: -48px -123px;
 }
 
-.gallery2 {
+.gallery3 {
   background-position: -64px -123px;
 }
 
-.gallery1 {
+.gallery2 {
   background-position: -80px -123px;
 }
 
-.mail-envelope {
+.gallery1 {
   background-position: -96px -123px;
+}
+
+.mail-envelope {
+  background-position: -112px -123px;
 }
