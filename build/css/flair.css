@@ -20,8 +20,8 @@
     height: 20px;
 }
 
-.flair-SubMicrophone::before,
-.md a[href="#flair-SubMicrophone"] {
+.flair-Streamer::before,
+.md a[href="#flair-Streamer"] {
     background-position: -20px -20px;
     width: 18px;
     height: 18px;
