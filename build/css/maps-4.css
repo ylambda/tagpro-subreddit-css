@@ -15,38 +15,42 @@
   background: url(%%maps-4%%) -180px -180px;
 }
 
-.md a[href$="#map-saigon"] {
+.md a[href$="#map-scorpio"] {
   background: url(%%maps-4%%) -360px 0;
 }
 
-.md a[href$="#map-rush"] {
+.md a[href$="#map-saigon"] {
   background: url(%%maps-4%%) -360px -180px;
 }
 
-.md a[href$="#map-hub"] {
+.md a[href$="#map-rush"] {
   background: url(%%maps-4%%) 0 -360px;
 }
 
-.md a[href$="#map-hexane"] {
+.md a[href$="#map-hub"] {
   background: url(%%maps-4%%) -180px -360px;
 }
 
-.md a[href$="#map-graphite"] {
+.md a[href$="#map-hexane"] {
   background: url(%%maps-4%%) -360px -360px;
 }
 
-.md a[href$="#map-fiend"] {
+.md a[href$="#map-graphite"] {
   background: url(%%maps-4%%) -540px 0;
 }
 
-.md a[href$="#map-dz4"] {
+.md a[href$="#map-fiend"] {
   background: url(%%maps-4%%) -540px -180px;
 }
 
-.md a[href$="#map-citadel"] {
+.md a[href$="#map-dz4"] {
   background: url(%%maps-4%%) -540px -360px;
 }
 
-.md a[href$="#map-birch"] {
+.md a[href$="#map-citadel"] {
   background: url(%%maps-4%%) 0 -540px;
+}
+
+.md a[href$="#map-birch"] {
+  background: url(%%maps-4%%) -180px -540px;
 }
