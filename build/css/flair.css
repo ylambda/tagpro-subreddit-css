@@ -131,6 +131,12 @@
     background-position: 0 -72px;
 }
 
+.flair-Lucky3::before,
+.md a[href="#flair-Lucky3"] {
+    background-position: -56px -16px;
+    width: 10px;
+}
+
 .flair-Lucky2::before,
 .md a[href="#flair-Lucky2"] {
     background-position: -16px -72px;
@@ -240,7 +246,7 @@
 
 .flair-Daily::before,
 .md a[href="#flair-Daily"] {
-    background-position: -56px -16px;
+    background-position: -56px -32px;
     width: 12px;
 }
 
@@ -267,13 +273,13 @@
 
 .flair-Boiling::before,
 .md a[href="#flair-Boiling"] {
-    background-position: -56px -32px;
+    background-position: -63px -104px;
     width: 10px;
 }
 
 .flair-Bitcoin::before,
 .md a[href="#flair-Bitcoin"] {
-    background-position: -63px -104px;
+    background-position: -73px -104px;
     height: 15px;
 }
 
@@ -329,28 +335,28 @@
 
 .flair-Pi::before,
 .md a[href="#flair-Pi"] {
-    background-position: -79px -104px;
+    background-position: -89px -104px;
     width: 15px;
     height: 15px;
 }
 
 .flair-Donor::before,
 .md a[href="#flair-Donor"] {
-    background-position: -94px -104px;
+    background-position: -104px -104px;
     width: 15px;
     height: 15px;
 }
 
 .flair-Contest::before,
 .md a[href="#flair-Contest"] {
-    background-position: -109px -104px;
+    background-position: -31px -120px;
     width: 15px;
     height: 15px;
 }
 
 .flair-55WinRate::before,
 .md a[href="#flair-55WinRate"] {
-    background-position: -31px -120px;
+    background-position: -119px -104px;
     width: 11px;
     height: 15px;
 }
