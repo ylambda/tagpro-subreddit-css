@@ -107,6 +107,10 @@
   background: url(%%maps-4%%) -900px -180px;
 }
 
-.md a[href$="#map-atomic"] {
+.md a[href$="#map-axis"] {
   background: url(%%maps-4%%) -900px -360px;
+}
+
+.md a[href$="#map-atomic"] {
+  background: url(%%maps-4%%) -900px -540px;
 }
