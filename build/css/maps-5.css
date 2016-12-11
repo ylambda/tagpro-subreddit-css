@@ -1,0 +1,12 @@
+
+.md a[href$="#map-jardim"] {
+  background: url(%%maps-5%%) 0 0;
+}
+
+.md a[href$="#map-gumbo"] {
+  background: url(%%maps-5%%) -180px 0;
+}
+
+.md a[href$="#map-choke"] {
+  background: url(%%maps-5%%) 0 -180px;
+}
