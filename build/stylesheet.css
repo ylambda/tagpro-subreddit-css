@@ -3451,7 +3451,7 @@ ul.tabmenu.formtab {
 /* --- BUILD END MAPS-4 --- */
 
 /* --- BUILD START MAPS-5 --- */
-.md a[href$="#map-jardim"]{background:url(%%maps-5%%) 0 0}.md a[href$="#map-gumbo"]{background:url(%%maps-5%%) -180px 0}.md a[href$="#map-choke"]{background:url(%%maps-5%%) 0 -180px}
+.md a[href$="#map-jardim"]{background:url(%%maps-5%%) 0 0}.md a[href$="#map-gumbo"]{background:url(%%maps-5%%) -180px 0}.md a[href$="#map-convoy"]{background:url(%%maps-5%%) 0 -180px}.md a[href$="#map-choke"]{background:url(%%maps-5%%) -180px -180px}.md a[href$="#map-baffle"]{background:url(%%maps-5%%) -360px 0}
 /* --- BUILD END MAPS-5 --- */
 
 /* --- BUILD START MAPS-OTHER --- */

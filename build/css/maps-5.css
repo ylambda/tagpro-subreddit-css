@@ -7,6 +7,14 @@
   background: url(%%maps-5%%) -180px 0;
 }
 
-.md a[href$="#map-choke"] {
+.md a[href$="#map-convoy"] {
   background: url(%%maps-5%%) 0 -180px;
+}
+
+.md a[href$="#map-choke"] {
+  background: url(%%maps-5%%) -180px -180px;
+}
+
+.md a[href$="#map-baffle"] {
+  background: url(%%maps-5%%) -360px 0;
 }
