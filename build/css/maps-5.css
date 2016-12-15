@@ -3,62 +3,70 @@
   background: url(%%maps-5%%) 0 0;
 }
 
-.md a[href$="#map-tehuitzingo"] {
+.md a[href$="#map-trebuchet"] {
   background: url(%%maps-5%%) -180px 0;
 }
 
-.md a[href$="#map-september"] {
+.md a[href$="#map-tehuitzingo"] {
   background: url(%%maps-5%%) 0 -180px;
 }
 
-.md a[href$="#map-qio"] {
+.md a[href$="#map-september"] {
   background: url(%%maps-5%%) -180px -180px;
 }
 
-.md a[href$="#map-nirvana"] {
+.md a[href$="#map-qio"] {
   background: url(%%maps-5%%) -360px 0;
 }
 
-.md a[href$="#map-neptune"] {
+.md a[href$="#map-pariah"] {
   background: url(%%maps-5%%) -360px -180px;
 }
 
-.md a[href$="#map-market"] {
+.md a[href$="#map-nirvana"] {
   background: url(%%maps-5%%) 0 -360px;
 }
 
-.md a[href$="#map-long-island"] {
+.md a[href$="#map-neptune"] {
   background: url(%%maps-5%%) -180px -360px;
 }
 
-.md a[href$="#map-jardim"] {
+.md a[href$="#map-market"] {
   background: url(%%maps-5%%) -360px -360px;
 }
 
-.md a[href$="#map-gumbo"] {
+.md a[href$="#map-long-island"] {
   background: url(%%maps-5%%) -540px 0;
 }
 
-.md a[href$="#map-convoy"] {
+.md a[href$="#map-jardim"] {
   background: url(%%maps-5%%) -540px -180px;
 }
 
-.md a[href$="#map-choke"] {
+.md a[href$="#map-gumbo"] {
   background: url(%%maps-5%%) -540px -360px;
 }
 
-.md a[href$="#map-cedar"] {
+.md a[href$="#map-convoy"] {
   background: url(%%maps-5%%) 0 -540px;
 }
 
-.md a[href$="#map-cactus"] {
+.md a[href$="#map-choke"] {
   background: url(%%maps-5%%) -180px -540px;
 }
 
-.md a[href$="#map-blobfish"] {
+.md a[href$="#map-cedar"] {
   background: url(%%maps-5%%) -360px -540px;
 }
 
-.md a[href$="#map-baffle"] {
+.md a[href$="#map-cactus"] {
   background: url(%%maps-5%%) -540px -540px;
+}
+
+.md a[href$="#map-blobfish"] {
+  background: url(%%maps-5%%) -720px 0;
+}
+
+.md a[href$="#map-baffle"] {
+  background: url(%%maps-5%%) -720px -180px;
 }
