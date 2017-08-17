@@ -59,54 +59,58 @@
   background: url(%%maps-5%%) -360px -540px;
 }
 
-.md a[href$="#map-gamesphere"] {
+.md a[href$="#map-goldie"] {
   background: url(%%maps-5%%) -540px -540px;
 }
 
-.md a[href$="#map-floral-mappe"] {
+.md a[href$="#map-gamesphere"] {
   background: url(%%maps-5%%) -720px 0;
 }
 
-.md a[href$="#map-el-moustachio"] {
+.md a[href$="#map-floral-mappe"] {
   background: url(%%maps-5%%) -720px -180px;
 }
 
-.md a[href$="#map-cosmic"] {
+.md a[href$="#map-el-moustachio"] {
   background: url(%%maps-5%%) -720px -360px;
 }
 
-.md a[href$="#map-convoy"] {
+.md a[href$="#map-cosmic"] {
   background: url(%%maps-5%%) -720px -540px;
 }
 
-.md a[href$="#map-choke"] {
+.md a[href$="#map-convoy"] {
   background: url(%%maps-5%%) 0 -720px;
 }
 
-.md a[href$="#map-cedar"] {
+.md a[href$="#map-choke"] {
   background: url(%%maps-5%%) -180px -720px;
 }
 
-.md a[href$="#map-cactus"] {
+.md a[href$="#map-cedar"] {
   background: url(%%maps-5%%) -360px -720px;
 }
 
-.md a[href$="#map-blobfish"] {
+.md a[href$="#map-cactus"] {
   background: url(%%maps-5%%) -540px -720px;
 }
 
-.md a[href$="#map-bigmouth"] {
+.md a[href$="#map-blobfish"] {
   background: url(%%maps-5%%) -720px -720px;
 }
 
-.md a[href$="#map-baffle"] {
+.md a[href$="#map-bigmouth"] {
   background: url(%%maps-5%%) -900px 0;
 }
 
-.md a[href$="#map-apparition"] {
+.md a[href$="#map-baffle"] {
   background: url(%%maps-5%%) -900px -180px;
 }
 
-.md a[href$="#map-aerodent"] {
+.md a[href$="#map-apparition"] {
   background: url(%%maps-5%%) -900px -360px;
+}
+
+.md a[href$="#map-aerodent"] {
+  background: url(%%maps-5%%) -900px -540px;
 }
