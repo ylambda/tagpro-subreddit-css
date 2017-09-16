@@ -1,0 +1,16 @@
+
+.md a[href$="#map-vardo"] {
+  background: url(%%maps-6%%) 0 0;
+}
+
+.md a[href$="#map-grenadine"] {
+  background: url(%%maps-6%%) -180px 0;
+}
+
+.md a[href$="#map-brute"] {
+  background: url(%%maps-6%%) 0 -180px;
+}
+
+.md a[href$="#map-artichoke-papi"] {
+  background: url(%%maps-6%%) -180px -180px;
+}
